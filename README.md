@@ -3,7 +3,7 @@ This package provides functionality to retrieve legal typification's related to 
 
 ## Install
 To install this package, use go get:
-``` 
+``` go
 go get github.com/DanielFillol/laws
 ``` 
 
