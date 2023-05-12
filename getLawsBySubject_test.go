@@ -1,18 +1,12 @@
 package laws
 
 import (
-	"fmt"
 	"github.com/DanielFillol/laws/models"
 	"reflect"
 	"testing"
 )
 
 func TestGetLawsBySubject(t *testing.T) {
-
-	// Test if the code is working
-	test := GetLawsBySubject("Crimes contra a vida / Homicídio Simples")
-	fmt.Println(test)
-
 	// Initialize some test cases.
 	testCases := []struct {
 		subject                 string
