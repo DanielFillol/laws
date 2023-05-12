@@ -1,6 +1,12 @@
 # Laws
 This package provides functionality to retrieve legal typification's related to a given subject. The package includes functions to read and parse a CSV file containing legal information and then store it in memory to provide quick access.
 
+## Install
+To install this package, use go get:
+``` 
+go get github.com/DanielFillol/laws
+``` 
+
 ## Usage
 Import the laws package and call the GetLawsBySubject function to retrieve legal typifications for a given subject.
 ```go
