@@ -5,2349 +5,2350 @@ import (
 )
 
 func CreateLaws() []models.LawBySubject {
-	var laws []models.LawBySubject
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de cargo", SubjectID: "11336", LawDescription: "Artigo 330 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de função", SubjectID: "3561", LawDescription: "Artigo 323 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de função (art. 323)", SubjectID: "9841", LawDescription: "Artigo 323 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de incapaz", SubjectID: "3391", LawDescription: "Artigo 133 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de incapaz (art. 133)", SubjectID: "9651", LawDescription: "Artigo 133 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de pessoa", SubjectID: "11233", LawDescription: "Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de pessoa seguida de morte ou lesão grave", SubjectID: "11234", LawDescription: "Parágrafo 2 Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de pessoa seguida de morte ou lesão grave", SubjectID: "11234", LawDescription: "Parágrafo 1 Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de pessoa seguida de morte ou lesão grave", SubjectID: "11234", LawDescription: "Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono de posto", SubjectID: "11135", LawDescription: "Artigo 195 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Intelectual", SubjectID: "9758", LawDescription: "Artigo 246 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Intelectual", SubjectID: "9966", LawDescription: "Artigo 249 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Intelectual", SubjectID: "3475", LawDescription: "Artigo 247 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Intelectual", SubjectID: "3475", LawDescription: "Artigo 246 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Material", SubjectID: "3474", LawDescription: "Artigo 244 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Material", SubjectID: "9965", LawDescription: "Artigo 24 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Material", SubjectID: "9965", LawDescription: "Artigo 22 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abandono Material", SubjectID: "9757", LawDescription: "Artigo 244 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abatimento proporcional do preço", SubjectID: "7769", LawDescription: "Artigo 20 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abatimento proporcional do preço", SubjectID: "7769", LawDescription: "Parágrafo 1 Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abolitio criminis", SubjectID: "11089", LawDescription: "Artigo 123 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Aborto provocado pela gestante ou com o seu consentimento", SubjectID: "10917", LawDescription: "Artigo 124 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aborto provocado por terceiro", SubjectID: "10918", LawDescription: "Artigo 126 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aborto provocado por terceiro", SubjectID: "10918", LawDescription: "Artigo 125 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aborto qualificado", SubjectID: "10919", LawDescription: "Artigo 127 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso - De Poder Econômico", SubjectID: "11718", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso - De Poder Político/Autoridade", SubjectID: "11719", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso - Uso Indevido de Meio de Comunicação Social", SubjectID: "11720", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de confiança ou boa fé", SubjectID: "11337", LawDescription: "Artigo 332 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de Incapazes", SubjectID: "5842", LawDescription: "Artigo 173 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de Incapazes", SubjectID: "9714", LawDescription: "Artigo 173 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de pessoa", SubjectID: "11166", LawDescription: "Artigo 252 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de Poder", SubjectID: "10894", LawDescription: "Artigo 5 da Inciso LXIX do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de radiação", SubjectID: "11181", LawDescription: "Artigo 271 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso de requisição militar", SubjectID: "11277", LawDescription: "Artigo 173 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso Sexual", SubjectID: "9968", LawDescription: "Artigo 24 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Abuso Sexual", SubjectID: "9968", LawDescription: "Artigo 22 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidente de Trabalho", SubjectID: "2569", LawDescription: "Artigo 7 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidente de Trabalho", SubjectID: "8809", LawDescription: "Artigo 7 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidente de Trânsito", SubjectID: "10504", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidente Ferroviário", SubjectID: "14910", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidente Ferroviário", SubjectID: "14911", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidentes", SubjectID: "14148", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Acidentes", SubjectID: "14162", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Adoção Ilegal", SubjectID: "14663", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Adoção Ilegal", SubjectID: "14667", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Adoção Internacional", SubjectID: "9972", LawDescription: "Artigo 52 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Adoção Nacional", SubjectID: "9973", LawDescription: "Artigo 39 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: "9827", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: "3546", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: "10992", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Advertência", SubjectID: "11386", LawDescription: "Artigo 115 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Advertência", SubjectID: "11386", LawDescription: "Artigo 112 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Advertência / Repreensão", SubjectID: "10364", LawDescription: "Parágrafo 1 Artigo 47 da Lei nº 6.880 de 09 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Advertência / Repreensão", SubjectID: "10364", LawDescription: "Artigo 47 da Lei nº 6.880 de 09 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Advocacia administrativa", SubjectID: "3559", LawDescription: "Artigo 321 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Advocacia administrativa (art. 321)", SubjectID: "9839", LawDescription: "Artigo 321 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciação para motim ou revolta", SubjectID: "11301", LawDescription: "Artigo 154 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento comercial de eleitores", SubjectID: "10826", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento de eleitores", SubjectID: "10819", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento de trabalhadores de um local para outro do território nacional", SubjectID: "3455", LawDescription: "Artigo 207 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento de trabalhadores de um local para outro do território nacional (art. 207)", SubjectID: "9732", LawDescription: "Artigo 207 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento eleitoral", SubjectID: "10752", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento para fins de emigração", SubjectID: "3454", LawDescription: "Artigo 206 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento para fins de emigração (art. 206)", SubjectID: "9731", LawDescription: "Artigo 206 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Aliciamento violento de eleitores", SubjectID: "10825", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "5836", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "5836", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "9708", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9708", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação Parental", SubjectID: "11977", LawDescription: "Artigo 2 da Lei nº 12.318 de 26 de Agosto de 2010"})
-	laws = append(laws, models.LawBySubject{Subject: "Alistamento Eleitoral - Cancelamento", SubjectID: "11575", LawDescription: "Artigo 71 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Alistamento Eleitoral - Domicílio Eleitoral", SubjectID: "11576", LawDescription: "Parágrafo 1 Artigo 42 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Alistamento Eleitoral - Duplicidade/Pluralidade", SubjectID: "11577", LawDescription: "Artigo 71 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Alistamento Eleitoral - Exclusão", SubjectID: "11578", LawDescription: "Artigo 74 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Alistamento Eleitoral - Inscrição Eleitoral", SubjectID: "11579", LawDescription: "Artigo 42 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Alteração de limites", SubjectID: "11152", LawDescription: "Artigo 257 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Alteração de limites", SubjectID: "3423", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alteração de limites (art. 161, caput)", SubjectID: "9682", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alteração de local especialmente protegido", SubjectID: "3429", LawDescription: "Artigo 166 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alteração de local especialmente protegido (art. 166)", SubjectID: "9688", LawDescription: "Artigo 166 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ameaça", SubjectID: "11253", LawDescription: "Artigo 223 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ameaça", SubjectID: "3402", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ameaça", SubjectID: "9661", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Amotinamento", SubjectID: "11297", LawDescription: "Artigo 182 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime impossível", SubjectID: "9915", LawDescription: "Artigo 14 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Análogo à Lesão Corporal em Razão da Condição de Mulher", SubjectID: "14945", LawDescription: "Artigo 103 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "14945", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Análogo à Lesão Corporal em Razão da Condição de Mulher", SubjectID: "14945", LawDescription: "Parágrafo 13 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Análogo à Violência Psicológica contra a Mulher", SubjectID: "14944", LawDescription: "Artigo 103 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Anistia", SubjectID: "10625", LawDescription: "Artigo 5 da Inciso XLIII do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Anistia", SubjectID: "11100", LawDescription: "Artigo 123 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Anistia Administrativa", SubjectID: "10231", LawDescription: "Artigo 1 da Lei nº 8.878 de 08 de Setembro de 1994 de São Paulo"})
-	laws = append(laws, models.LawBySubject{Subject: "Anulação de Débito Fiscal", SubjectID: "6004", LawDescription: "Artigo 38 da Lei nº 6.830 de Outubro de 2010"})
-	laws = append(laws, models.LawBySubject{Subject: "Apadrinhamento Cultural", SubjectID: "14675", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Apadrinhamento de Criança ou Adolescente", SubjectID: "12341", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Apadrinhamento Material", SubjectID: "14673", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Apadrinhamento Prestador de Serviço", SubjectID: "14674", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Aplicação ilegal de verba ou dinheiro", SubjectID: "11338", LawDescription: "Artigo 331 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Apologia de crime ou criminoso", SubjectID: "9806", LawDescription: "Artigo 287 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apologia de crime ou criminoso", SubjectID: "5870", LawDescription: "Artigo 287 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apologia de fato criminoso ou do seu autor", SubjectID: "11302", LawDescription: "Artigo 156 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Aposição, supressão ou alteração de marca", SubjectID: "11153", LawDescription: "Artigo 258 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de coisa achada", SubjectID: "11175", LawDescription: "Parágrafo 1 Artigo 249 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de coisa achada", SubjectID: "5573", LawDescription: "Parágrafo 1 Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de coisa achada", SubjectID: "9706", LawDescription: "Parágrafo 1 Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de coisa havida acidentalmente", SubjectID: "11176", LawDescription: "Artigo 249 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de Coisa Havida por Erro, Caso Fortuito ou Força da Natureza", SubjectID: "3437", LawDescription: "Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de Coisa Havida por Erro, Caso Fortuito ou Força da Natureza (art.169)", SubjectID: "9696", LawDescription: "Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação de Tesouro", SubjectID: "9705", LawDescription: "Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação indébita", SubjectID: "3436", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação indébita", SubjectID: "11177", LawDescription: "Artigo 248 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação indébita", SubjectID: "9695", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação Indébita Eleitoral", SubjectID: "12634", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação indébita", SubjectID: "9689", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Arrebatamento de preso", SubjectID: "3588", LawDescription: "Artigo 353 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Arrebatamento de preso", SubjectID: "9946", LawDescription: "Artigo 353 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Arrebatamento de preso ou internado", SubjectID: "11298", LawDescription: "Artigo 181 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Arregimentação de Eleitor ou Boca de Urna", SubjectID: "11513", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Arremesso de projétil", SubjectID: "11194", LawDescription: "Artigo 286 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Arremesso de projétil", SubjectID: "9783", LawDescription: "Artigo 264 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Arremesso de projétil", SubjectID: "3502", LawDescription: "Artigo 264 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Assédio Moral", SubjectID: "14175", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Assédio sexual", SubjectID: "5851", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Assédio sexual", SubjectID: "9749", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "14685", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "14687", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Assunção de comando sem ordem ou autorização", SubjectID: "11278", LawDescription: "Artigo 167 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Assunção de Obrigação no Último Ano do Mandato ou Legislatura", SubjectID: "5905", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Assunção de Obrigação no Último Ano do Mandato ou Legislatura", SubjectID: "9958", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Assédio sexual", SubjectID: "9744", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Assédio sexual", SubjectID: "3467", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a liberdade de associação", SubjectID: "3448", LawDescription: "Artigo 199 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a liberdade de associação (art. 199)", SubjectID: "9725", LawDescription: "Artigo 199 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a liberdade de contrato de trabalho e boicotagem violenta", SubjectID: "3447", LawDescription: "Artigo 198 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a liberdade de contrato de trabalho e boicotagem violenta (art. 198)", SubjectID: "9724", LawDescription: "Artigo 198 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a liberdade de trabalho", SubjectID: "3446", LawDescription: "Artigo 197 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a liberdade de trabalho (art. 197)", SubjectID: "9723", LawDescription: "Artigo 197 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de serviço de utilidade pública", SubjectID: "3503", LawDescription: "Artigo 265 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de serviço de utilidade pública", SubjectID: "9784", LawDescription: "Artigo 265 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de transporte público", SubjectID: "9782", LawDescription: "Artigo 263 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de transporte público", SubjectID: "9782", LawDescription: "Artigo 262 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de transporte público", SubjectID: "9782", LawDescription: "Artigo 261 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de transporte público", SubjectID: "3501", LawDescription: "Artigo 263 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de transporte público", SubjectID: "3501", LawDescription: "Artigo 262 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra a segurança de transporte público", SubjectID: "3501", LawDescription: "Artigo 261 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra serviço de utilidade militar", SubjectID: "11195", LawDescription: "Artigo 287 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra transporte", SubjectID: "11196", LawDescription: "Artigo 283 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra viatura ou outro meio de transporte", SubjectID: "11197", LawDescription: "Artigo 285 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado contra viatura ou outro meio de transporte", SubjectID: "11197", LawDescription: "Artigo 284 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado Violento ao Pudor", SubjectID: "11249", LawDescription: "Artigo 233 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado Violento ao Pudor", SubjectID: "9743", LawDescription: "Artigo 214 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Atentado Violento ao Pudor", SubjectID: "3466", LawDescription: "Artigo 214 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ato / Negócio Jurídico", SubjectID: "4701", LawDescription: "Artigo 137 da Lei nº 10.406 de 01 de Maio de 1943"})
-	laws = append(laws, models.LawBySubject{Subject: "Ato Libidinoso", SubjectID: "11252", LawDescription: "Artigo 235 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ato obsceno", SubjectID: "11231", LawDescription: "Artigo 238 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ato obsceno", SubjectID: "14705", LawDescription: "Artigo 233 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Administração Ambiental", SubjectID: "14801", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Ausência/Deficiência de Fiscalização", SubjectID: "14164", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Ausência/Deficiência de Fiscalização", SubjectID: "14166", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Auto-acusação falsa", SubjectID: "11358", LawDescription: "Artigo 345 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Auto-acusação falsa", SubjectID: "3578", LawDescription: "Artigo 341 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Auto-acusação falsa", SubjectID: "9936", LawDescription: "Artigo 341 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Autofalência", SubjectID: "4998", LawDescription: "Artigo 107 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Autofalência", SubjectID: "4998", LawDescription: "Artigo 106 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Bigamia", SubjectID: "9761", LawDescription: "Artigo 235 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Bigamia", SubjectID: "3479", LawDescription: "Artigo 235 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Boca de urna", SubjectID: "10755", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Busca e Apreensão de Bens", SubjectID: "10914", LawDescription: "Artigo 170 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Busca e Apreensão de Bens", SubjectID: "10914", LawDescription: "Artigo 240 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Busca e Apreensão de Menores", SubjectID: "5801", LawDescription: "Artigo 839 da Lei nº 5.869 de 11 de Janeiro de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 34 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 33 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 32 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 31 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 30 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 29 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 28 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 27 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 26 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 25 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 24 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 23 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 22 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 21 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 20 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 19 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 18 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 17 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 16 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 15 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 14 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 13 da Lei nº 5.197 de 19 de Abril de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 12 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 11 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 10 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 9 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 8 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 7 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 6 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 5 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 4 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 3 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 2 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça (Lei nº 5.197/67)", SubjectID: "9884", LawDescription: "Artigo 1 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça Ilegal e Condutas Equiparadas", SubjectID: "14779", LawDescription: "Parágrafo 1 Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Calúnia", SubjectID: "3395", LawDescription: "Artigo 138 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Calúnia", SubjectID: "11262", LawDescription: "Artigo 214 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Calúnia", SubjectID: "10748", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Calúnia", SubjectID: "9656", LawDescription: "Artigo 138 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Calúnia na Propaganda Eleitoral", SubjectID: "11484", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Captação Ambiental de Sinais Eletromagnéticos, Ópticos e Acústicos", SubjectID: "14876", LawDescription: "Artigo 3 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Captação Ilícita de Sufrágio", SubjectID: "11721", LawDescription: "Artigo 41 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Captação ou Gasto Ilícito de Recursos Financeiros de Campanha Eleitoral", SubjectID: "11685", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Casa de Prostituição", SubjectID: "5853", LawDescription: "Artigo 229 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Casa de Prostituição", SubjectID: "9751", LawDescription: "Artigo 229 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Cassação de licença para direção de veículo motorizado", SubjectID: "11058", LawDescription: "Artigo 115 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Cassação de licença para direção de veículo motorizado", SubjectID: "11058", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Cédula de Crédito à Exportação", SubjectID: "4961", LawDescription: "Artigo 1 da Lei nº 6.313 de 16 de Dezembro de 1975"})
-	laws = append(laws, models.LawBySubject{Subject: "Cerceamento da Fiscalização Partidária", SubjectID: "11480", LawDescription: "Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Certidão ou atestado ideologicamente falso", SubjectID: "11318", LawDescription: "Artigo 314 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Certidão ou atestado ideologicamente falso", SubjectID: "3535", LawDescription: "Artigo 301 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Chantagem", SubjectID: "11155", LawDescription: "Artigo 245 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Charlatanismo", SubjectID: "3510", LawDescription: "Artigo 283 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Charlatanismo (Art. 283)", SubjectID: "9791", LawDescription: "Artigo 283 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Cheques sem fundos", SubjectID: "11319", LawDescription: "Artigo 313 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Clonagem Humana - Biossegurança", SubjectID: "10516", LawDescription: "Artigo 26 da Lei nº 11.105 de 24 de Março de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Coação", SubjectID: "11359", LawDescription: "Artigo 342 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Coação eleitoral", SubjectID: "10824", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Coação no curso do processo", SubjectID: "9938", LawDescription: "Artigo 344 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Coação no curso do processo", SubjectID: "3580", LawDescription: "Artigo 344 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Coação Visando a Obtenção de Voto ou a sua Abstenção", SubjectID: "11502", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Coleta de Assinatura em Mais de Uma Ficha de Registro Partidário", SubjectID: "11520", LawDescription: "Artigo 321 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Comércio, Posse ou Tráfico Proveniente de Pesca Ilegal", SubjectID: "14785", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Comércio, Posse ou Tráfico Proveniente de Pesca Ilegal", SubjectID: "14785", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Comunicação falsa de crime", SubjectID: "11360", LawDescription: "Artigo 344 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Comunicação falsa de crime ou de contravenção", SubjectID: "3577", LawDescription: "Artigo 340 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Comunicação falsa de crime ou de contravenção", SubjectID: "9935", LawDescription: "Artigo 340 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Concentração de Eleitores para Embaraçar ou Fraudar o Exercício do Voto", SubjectID: "11504", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Concussão", SubjectID: "11355", LawDescription: "Artigo 305 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Concussão", SubjectID: "10836", LawDescription: "Artigo 305 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Concussão", SubjectID: "3553", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Concussão", SubjectID: "9833", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Condescendência criminosa", SubjectID: "11339", LawDescription: "Artigo 322 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Condescendência criminosa", SubjectID: "3558", LawDescription: "Artigo 320 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Condescendência criminosa (art. 320)", SubjectID: "9838", LawDescription: "Artigo 320 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Alistamento Eleitoral", SubjectID: "11586", LawDescription: "Artigo 42 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Domicílio Eleitoral na Circunscrição", SubjectID: "11587", LawDescription: "Artigo 9 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Filiação Partidária", SubjectID: "11589", LawDescription: "Artigo 9 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Idade Mínima", SubjectID: "11588", LawDescription: "Parágrafo 3 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Nacionalidade Brasileira", SubjectID: "11590", LawDescription: "Parágrafo 3 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Pleno Exercício dos Direitos Políticos", SubjectID: "11591", LawDescription: "Parágrafo 3 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Quitação Eleitoral", SubjectID: "11592", LawDescription: "Parágrafo 7 Artigo 11 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Condição de Elegibilidade - Quitação Eleitoral", SubjectID: "11592", LawDescription: "Artigo 11 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Condicionamento de Atendimento Médico Hospitalar Emergencial", SubjectID: "14690", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Condicionamento de Atendimento Médico Hospitalar Emergencial (Art. 135-A)", SubjectID: "14691", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Condução de Embarcação ou Aeronave sob Efeito de Drogas", SubjectID: "5901", LawDescription: "Artigo 39 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Condução de Embarcação ou Aeronave sob Efeito de Drogas", SubjectID: "9868", LawDescription: "Artigo 39 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada a Agente Público", SubjectID: "11558", LawDescription: "Artigo 78 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada a Agente Público", SubjectID: "11558", LawDescription: "Artigo 77 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada a Agente Público", SubjectID: "11558", LawDescription: "Artigo 76 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada a Agente Público", SubjectID: "11558", LawDescription: "Artigo 75 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada a Agente Público", SubjectID: "11558", LawDescription: "Artigo 74 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada a Agente Público", SubjectID: "11558", LawDescription: "Artigo 73 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada ao Agente Público", SubjectID: "12063", LawDescription: "Artigo 78 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada ao Agente Público", SubjectID: "12063", LawDescription: "Artigo 77 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada ao Agente Público", SubjectID: "12063", LawDescription: "Artigo 76 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada ao Agente Público", SubjectID: "12063", LawDescription: "Artigo 75 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada ao Agente Público", SubjectID: "12063", LawDescription: "Artigo 74 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Conduta Vedada ao Agente Público", SubjectID: "12063", LawDescription: "Artigo 73 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Confisco", SubjectID: "11059", LawDescription: "Artigo 119 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Confisco", SubjectID: "11059", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Conhecimento Prévio de Impedimento", SubjectID: "3480", LawDescription: "Artigo 237 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Conhecimento Prévio de Impedimento", SubjectID: "9762", LawDescription: "Artigo 237 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Conservação ilegal de comando", SubjectID: "11279", LawDescription: "Artigo 168 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Conspiração", SubjectID: "11288", LawDescription: "Artigo 152 do Decreto Lei nº 1.001 de 01 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "14689", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "14688", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Constragimento ilegal", SubjectID: "11254", LawDescription: "Artigo 222 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Constrangimento ilegal", SubjectID: "3401", LawDescription: "Artigo 146 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Constrangimento ilegal", SubjectID: "9660", LawDescription: "Artigo 146 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Contas - Aprovação das Contas", SubjectID: "11695", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Contas - Aprovação das Contas com Ressalvas", SubjectID: "11696", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Contas - Aprovação das Contas com Ressalvas", SubjectID: "11696", LawDescription: "Artigo 30 da Lei nº 9.504 de 10 de Fevereiro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Contas - Desaprovação/Rejeição das Contas", SubjectID: "11697", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Contas - Não Apresentação das Contas", SubjectID: "11698", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Administração da Justiça - Lei da Ação de Alimentos", SubjectID: "9913", LawDescription: "Artigo 22 da Lei nº 5.478 de 25 de Julho de 1968"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 30 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 29 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 28 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 27 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 26 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 25 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 24 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 23 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 22 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 21 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 20 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 19 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 18 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 17 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 16 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 15 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 14 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 13 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 12 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 11 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 10 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 9 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 8 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 7 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 6 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 5 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 4 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 3 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 2 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Economia Popular", SubjectID: "9856", LawDescription: "Artigo 1 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Fauna", SubjectID: "9879", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Fauna", SubjectID: "9879", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Fauna", SubjectID: "9879", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Fauna", SubjectID: "9879", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Fauna", SubjectID: "9879", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Fauna", SubjectID: "9879", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 53 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 47 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 43 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Flora", SubjectID: "9880", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "12194", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12194", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12194", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "12196", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12196", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12196", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 29 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 28 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 27 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 26 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 25 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 24 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 23 da Lei nº 7.170 de 14 de Novembro de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 22 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 21 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 20 da Lei nº 7.170 de 06 de Dezembro de 1837"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 19 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 18 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 17 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 16 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 15 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 14 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 13 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 12 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 11 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 10 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 9 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "9871", LawDescription: "Artigo 8 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "9635", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Finanças Públicas", SubjectID: "9955", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Marcas", SubjectID: "9851", LawDescription: "Artigo 190 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Marcas", SubjectID: "9851", LawDescription: "Artigo 189 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano", SubjectID: "3426", LawDescription: "Artigo 163 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desenvolver clandestinamente atividades de telecomunicação", SubjectID: "9889", LawDescription: "Artigo 183 da Lei nº 9.472 de 16 de Julho de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Indicações Geográficas e Demais Indicações", SubjectID: "9853", LawDescription: "Artigo 194 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Indicações Geográficas e Demais Indicações", SubjectID: "9853", LawDescription: "Artigo 193 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Indicações Geográficas e Demais Indicações", SubjectID: "9853", LawDescription: "Artigo 192 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 68 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 67 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 66 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 60 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 59 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 58 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 57 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 56 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 53 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 47 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 43 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 37 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 36 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Meio Ambiente", SubjectID: "9878", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o mercado de capitais", SubjectID: "9896", LawDescription: "Artigo 74 da Lei nº 4.728 de 14 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o mercado de capitais", SubjectID: "9896", LawDescription: "Artigo 73 da Lei nº 4.728 de 14 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11779", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11779", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11779", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11779", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação qualificada", SubjectID: "9674", LawDescription: "Parágrafo 3 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "9674", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 46 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 45 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 44 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 43 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 42 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 41 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 40 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 39 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 38 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 37 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "9870", LawDescription: "Artigo 36 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra o Sistema Financeiro Nacional", SubjectID: "9872", LawDescription: "Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra os Desenhos Industriais", SubjectID: "9850", LawDescription: "Artigo 188 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra os Desenhos Industriais", SubjectID: "9850", LawDescription: "Artigo 187 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Patente de Invenção", SubjectID: "9849", LawDescription: "Artigo 186 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Patente de Invenção", SubjectID: "9849", LawDescription: "Artigo 185 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Patente de Invenção", SubjectID: "9849", LawDescription: "Artigo 184 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra Patente de Invenção", SubjectID: "9849", LawDescription: "Artigo 183 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "12195", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12195", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12195", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "12197", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12197", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12197", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Contrabando ou descaminho", SubjectID: "3574", LawDescription: "Artigo 334 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Contrabando ou descaminho", SubjectID: "9927", LawDescription: "Artigo 334 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 70 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 69 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 62 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 61 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 60 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 50 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 46 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 45 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 42 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 40 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 27 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 25 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "9914", LawDescription: "Artigo 24 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 70 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 69 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 62 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 61 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 60 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 50 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 46 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 45 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 42 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 40 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 27 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 25 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contravenções Penais", SubjectID: "3692", LawDescription: "Artigo 24 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Contribuição de Iluminação Pública", SubjectID: "6083", LawDescription: "Artigo 149A da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Convolação de recuperação judicial em falência", SubjectID: "9556", LawDescription: "Artigo 74 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Convolação de recuperação judicial em falência", SubjectID: "9556", LawDescription: "Artigo 73 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ativa", SubjectID: "3568", LawDescription: "Artigo 333 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ativa", SubjectID: "10837", LawDescription: "Artigo 309 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ativa", SubjectID: "11352", LawDescription: "Artigo 309 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ativa", SubjectID: "9921", LawDescription: "Artigo 333 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ativa de testemunha, perito ou intérprete", SubjectID: "11361", LawDescription: "Artigo 347 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção Ativa em Transação Comercial Internacional", SubjectID: "9930", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção Ativa em Transação Comercial Internacional", SubjectID: "5876", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção de Menores", SubjectID: "3468", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção de Menores", SubjectID: "11250", LawDescription: "Artigo 234 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção de Menores", SubjectID: "9745", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção Eleitoral", SubjectID: "11501", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ou Fraude", SubjectID: "11722", LawDescription: "Parágrafo 10 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ou Poluição de Água Potável", SubjectID: "11200", LawDescription: "Artigo 294 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ou Poluição de Água Potável", SubjectID: "3511", LawDescription: "Artigo 271 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção ou Poluição de Água Potável (Art. 271)", SubjectID: "9792", LawDescription: "Artigo 271 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção passiva", SubjectID: "11353", LawDescription: "Artigo 308 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção passiva", SubjectID: "3555", LawDescription: "Parágrafo 2 Artigo 317 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção passiva (art. 317)", SubjectID: "9835", LawDescription: "Parágrafo 2 Artigo 317 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Corrupção Praticada por Prefeitos e Vereadores", SubjectID: "10991", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Criação ou simulação de incapacidade física", SubjectID: "11120", LawDescription: "Artigo 184 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime / Contravenção contra Criança / Adolescente", SubjectID: "10950", LawDescription: "Artigo 2 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime / Contravenção contra Criança / Adolescente", SubjectID: "10950", LawDescription: "Artigo 61 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime / Contravenção contra Idoso", SubjectID: "10951", LawDescription: "Artigo 61 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime / Contravenção contra Idoso", SubjectID: "10951", LawDescription: "Artigo 1 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Administração Ambiental", SubjectID: "10986", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Administração Ambiental", SubjectID: "10986", LawDescription: "Artigo 68 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Administração Ambiental", SubjectID: "10986", LawDescription: "Artigo 67 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Administração Ambiental", SubjectID: "10986", LawDescription: "Artigo 66 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Administração da Justiça - Lei da Ação de Alimentos", SubjectID: "5893", LawDescription: "Artigo 22 da Lei nº 5.478 de 25 de Julho de 1968"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Culposo", SubjectID: "11069", LawDescription: "Artigo 33 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Descumprimento de Medida Protetiva de Urgência", SubjectID: "14227", LawDescription: "Artigo 24 da Lei nº 11.340 de 07 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Desvio e/ou Circulação de Moeda Não Autorizada", SubjectID: "11006", LawDescription: "Artigo 289 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Moeda Falsa Praticado por Funcionário Público", SubjectID: "11007", LawDescription: "Artigo 289 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Quebra de Sigilo Financeiro", SubjectID: "3655", LawDescription: "Artigo 10 da Lc nº 105 de 10 de Janeiro de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime impossível", SubjectID: "5555", LawDescription: "Artigo 14 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Tentado", SubjectID: "11071", LawDescription: "Artigo 30 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Agrários", SubjectID: "3651", LawDescription: "Artigo 20 da Lei nº 4.947 de 06 de Abril de 1966"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Agrários", SubjectID: "3651", LawDescription: "Artigo 19 da Lei nº 4.947 de 06 de Abril de 1966"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Cometidos por Meio de Marca, Título de Estabelecimento e Sinal de Propaganda", SubjectID: "5881", LawDescription: "Artigo 191 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Economia Popular", SubjectID: "3605", LawDescription: "Artigo 2 da Lei nº 1.521 de 26 de Dezembro de 1951"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 37 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 36 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Fauna", SubjectID: "3619", LawDescription: "Artigo 1 da Lei nº 7.643 de 18 de Dezembro de 1987"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime contra a fé pública", SubjectID: "3523", LawDescription: "Artigo 289 a 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "3620", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Ordem Tributária", SubjectID: "3614", LawDescription: "Artigo 2 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Ordem Tributária", SubjectID: "3614", LawDescription: "Artigo 1 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Ordem Tributária praticado por Funcionário Público", SubjectID: "10985", LawDescription: "Artigo 12 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Ordem Tributária praticado por Funcionário Público", SubjectID: "10985", LawDescription: "Artigo 3 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 29 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 28 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 27 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 26 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 25 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 24 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 23 da Lei nº 7.170 de 14 de Novembro de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 22 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 21 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 20 da Lei nº 7.170 de 06 de Dezembro de 1837"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 19 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 18 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 17 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 16 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 15 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 14 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 13 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 12 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 11 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 10 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 9 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: "3611", LawDescription: "Artigo 8 da Lei nº 7.170 de 14 de Dezembro de 1983"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Finanças Públicas", SubjectID: "5875", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Marcas", SubjectID: "5880", LawDescription: "Artigo 190 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Marcas", SubjectID: "5880", LawDescription: "Artigo 189 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 80 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 79 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 78 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 77 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 76 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 75 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 74 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 73 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 72 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 71 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 70 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 69 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 68 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 67 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 66 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 65 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 64 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 63 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 62 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 61 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra as Relações de Consumo", SubjectID: "3616", LawDescription: "Artigo 7 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Desenvolver clandestinamente atividades de telecomunicação", SubjectID: "3629", LawDescription: "Artigo 183 da Lei nº 9.472 de 16 de Julho de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Indicações Geeográficas e Demais Indicações", SubjectID: "5882", LawDescription: "Artigo 194 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Indicações Geeográficas e Demais Indicações", SubjectID: "5882", LawDescription: "Artigo 193 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Indicações Geeográficas e Demais Indicações", SubjectID: "5882", LawDescription: "Artigo 192 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 68 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 67 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 66 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 61 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 60 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 59 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 58 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 57 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 56 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 53 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 47 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 46 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 43 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 42 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 41 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 37 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 36 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: "3618", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Caça", SubjectID: "3624", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o mercado de capitais", SubjectID: "3638", LawDescription: "Artigo 74 da Lei nº 4.728 de 14 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o mercado de capitais", SubjectID: "3638", LawDescription: "Artigo 73 da Lei nº 4.728 de 14 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11780", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11780", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: "11780", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruir, inutilizar ou deteriorar", SubjectID: "11780", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 46 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 45 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 44 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 43 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 42 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 41 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 40 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 39 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 38 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 37 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: "3610", LawDescription: "Artigo 36 da Lei nº 6.538 de 22 de Junho de 1978"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 23 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 22 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 21 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 20 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 19 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 18 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 17 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 16 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 15 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 14 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 13 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 12 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 11 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 10 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 9 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 8 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 7 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 6 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 5 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 4 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 3 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: "3612", LawDescription: "Artigo 2 da Lei nº 7.492 de 16 de Junho de 1986"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra os Desenhos Industriais", SubjectID: "5879", LawDescription: "Artigo 188 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra os Desenhos Industriais", SubjectID: "5879", LawDescription: "Artigo 187 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Patente de Invenção", SubjectID: "5878", LawDescription: "Artigo 186 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Patente de Invenção", SubjectID: "5878", LawDescription: "Artigo 185 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Patente de Invenção", SubjectID: "5878", LawDescription: "Artigo 184 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra Patente de Invenção", SubjectID: "5878", LawDescription: "Artigo 183 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra portadores de deficiência", SubjectID: "11410", LawDescription: "Artigo 8 da Lei nº 7.853 de 24 de Outubro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 98 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 97 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 96 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 95 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 94 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 93 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 92 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 91 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 90 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "3642", LawDescription: "Artigo 89 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 20 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 19 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 18 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 17 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 16 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 15 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "3643", LawDescription: "Artigo 14 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Lavagem ou Ocultação de Bens, Direitos ou Valores", SubjectID: "3628", LawDescription: "Artigo 1 da Lei nº 9.613 de 03 de Março de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Concorrência Desleal", SubjectID: "5883", LawDescription: "Artigo 195 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de genocídio", SubjectID: "3640", LawDescription: "Artigo 3 da Lei nº 2.889 de 01 de Outubro de 1956"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de genocídio", SubjectID: "3640", LawDescription: "Artigo 2 da Lei nº 2.889 de 01 de Outubro de 1956"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de genocídio", SubjectID: "3640", LawDescription: "Artigo 1 da Lei nº 2.889 de 01 de Outubro de 1956"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Tortura", SubjectID: "3631", LawDescription: "Artigo 1 da Lei nº 9.455 de 07 de Abril de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 312 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 311 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 310 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 309 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 308 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 307 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 306 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 305 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 304 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "3632", LawDescription: "Artigo 303 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 18 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 17 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 16 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 15 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 14 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 13 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "3633", LawDescription: "Artigo 12 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 351 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 346 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 345 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 344 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 343 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 342 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 341 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 340 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 338 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 336 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 335 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 333 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 332 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 331 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 330 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 329 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 328 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 327 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 323 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 322 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 321 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 320 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 319 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 318 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 317 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 316 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 315 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 314 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 313 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 312 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 311 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 310 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 309 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 308 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 307 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 306 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 305 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 304 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 303 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 298 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 297 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 295 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 294 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 293 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 292 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 291 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 352 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 349 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "3654", LawDescription: "Artigo 337 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Código Brasileiro de Telecomunicações", SubjectID: "3656", LawDescription: "Artigo 56 da Lei nº 4.117 de 27 de Agosto de 1962"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Código Brasileiro de Telecomunicações", SubjectID: "3656", LawDescription: "Artigo 70 da Lei nº 4.117 de 27 de Agosto de 1962"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Código Brasileiro de Telecomunicações", SubjectID: "3656", LawDescription: "Artigo 72 da Lei nº 4.117 de 27 de Agosto de 1962"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 178 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 177 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 176 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 175 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 174 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 173 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 172 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 171 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 170 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 169 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "3661", LawDescription: "Artigo 168 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Hediondos", SubjectID: "10864", LawDescription: "Parágrafo 2 Artigo 2 da Lei nº 8.072 de 25 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes ocorridos na investigação da prova", SubjectID: "12335", LawDescription: "Artigo 21 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes ocorridos na investigação da prova", SubjectID: "12335", LawDescription: "Artigo 20 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes ocorridos na investigação da prova", SubjectID: "12335", LawDescription: "Artigo 19 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes ocorridos na investigação da prova", SubjectID: "12335", LawDescription: "Artigo 18 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes praticados contra os índios e a cultura indígena", SubjectID: "3647", LawDescription: "Artigo 58 da Lei nº 6.001 de 19 de Dezembro de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Praticados por Particular Contra a Administração Pública Estrangeira", SubjectID: "5873", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes previstos na Lei da Organização Criminosa", SubjectID: "12333", LawDescription: "Artigo 1 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos na Lei de Estrangeiros", SubjectID: "3630", LawDescription: "Artigo 125 da Lei nº 6.815 de 19 de Agosto de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 244 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 243 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 242 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 241 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 239 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 238 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 237 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 236 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 235 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 234 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 233 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 232 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 231 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 230 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 229 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: "3637", LawDescription: "Artigo 228 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 108 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 107 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 106 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 105 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 104 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 103 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 102 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 101 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 100 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 99 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 98 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 97 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: "3659", LawDescription: "Artigo 96 da Lei nº 10.741 de 01 de Outubro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 20 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 19 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 18 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 17 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 16 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 15 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 14 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 13 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 12 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 11 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 10 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 9 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 8 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 7 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 6 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 5 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 4 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 3 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: "3613", LawDescription: "Artigo 2 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Curandeirismo", SubjectID: "3512", LawDescription: "Artigo 284 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Curandeirismo (Art. 284)", SubjectID: "9793", LawDescription: "Artigo 284 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 98 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 97 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 96 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 95 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 94 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 93 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 92 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 91 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 90 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de licitações", SubjectID: "9899", LawDescription: "Artigo 89 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 20 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 19 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 18 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 17 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 16 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 15 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: "9900", LawDescription: "Artigo 14 da Lei nº 9.434 de 04 de Fevereiro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 60 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 59 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 58 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 57 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 56 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Poluição", SubjectID: "9881", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano a Equipamento Eleitoral", SubjectID: "11466", LawDescription: "Artigo 72 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruir, danificar, lesar ou maltratar, por qualquer modo ou meio, plantas de ornamentação de logradouros públicos ou em propriedade privada alheia", SubjectID: "14792", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano atenuado", SubjectID: "11168", LawDescription: "Artigo 260 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano em aparelhos e instalações", SubjectID: "11169", LawDescription: "Artigo 264 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano em coisa de valor artístico, arqueológico ou histórico", SubjectID: "3428", LawDescription: "Artigo 165 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano em coisa de valor artístico, arqueológico ou histórico (art. 165)", SubjectID: "9687", LawDescription: "Artigo 165 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano em navio de guerra ou mercante em serviço militar", SubjectID: "11170", LawDescription: "Artigo 263 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano material ou aparelhamento de guerra", SubjectID: "11171", LawDescription: "Artigo 262 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano qualificado", SubjectID: "11172", LawDescription: "Artigo 261 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Dano simples", SubjectID: "11173", LawDescription: "Artigo 259 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Lavagem ou Ocultação de Bens, Direitos ou Valores", SubjectID: "9888", LawDescription: "Artigo 1 da Lei nº 9.613 de 03 de Março de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Concorrência Desleal", SubjectID: "9854", LawDescription: "Artigo 195 da Lei nº 9.279 de 14 de Maio de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de genocídio", SubjectID: "9897", LawDescription: "Artigo 3 da Lei nº 2.889 de 01 de Outubro de 1956"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de genocídio", SubjectID: "9897", LawDescription: "Artigo 2 da Lei nº 2.889 de 01 de Outubro de 1956"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de genocídio", SubjectID: "9897", LawDescription: "Artigo 1 da Lei nº 2.889 de 01 de Outubro de 1956"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Quebra de Sigilo Financeiro", SubjectID: "9907", LawDescription: "Artigo 10 da Lc nº 105 de 10 de Janeiro de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime de Tortura", SubjectID: "9891", LawDescription: "Artigo 1 da Lei nº 9.455 de 07 de Abril de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 312 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 311 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 310 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 309 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 308 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 307 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 306 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 305 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 304 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 303 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Trânsito", SubjectID: "9892", LawDescription: "Artigo 302 da Lei nº 9.503 de 23 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "5560", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "5560", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "5560", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "9647", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9647", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9647", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Defensores Dativos ou Ad Hoc", SubjectID: "14841", LawDescription: "Artigo 5 da Inciso LXXIV do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "9709", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9709", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "5837", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "5837", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Denegação", SubjectID: "7941", LawDescription: "Artigo 516 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Denunciação caluniosa", SubjectID: "3576", LawDescription: "Artigo 339 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Denunciação caluniosa", SubjectID: "9934", LawDescription: "Artigo 339 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Denunciação caluniosa", SubjectID: "11362", LawDescription: "Artigo 343 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desabamento ou desmoronamento", SubjectID: "11182", LawDescription: "Artigo 274 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desabamento ou desmoronamento", SubjectID: "3496", LawDescription: "Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desabamento ou desmoronamento (art. 256)", SubjectID: "9778", LawDescription: "Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desabamento ou desmoronamento culposo", SubjectID: "11969", LawDescription: "Parágrafo 1 Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desabamento ou desmoronamento culposo", SubjectID: "11970", LawDescription: "Parágrafo 1 Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desacato", SubjectID: "11363", LawDescription: "Artigo 341 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desacato", SubjectID: "3573", LawDescription: "Artigo 331 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desacato", SubjectID: "9926", LawDescription: "Artigo 331 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desacato a assemelhado ou funcionário", SubjectID: "11326", LawDescription: "Artigo 300 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desacato a militar", SubjectID: "11327", LawDescription: "Artigo 299 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desacato a superior", SubjectID: "11328", LawDescription: "Artigo 298 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desafio para duelo", SubjectID: "11255", LawDescription: "Artigo 224 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desaparecimento,consunção ou extravio", SubjectID: "11174", LawDescription: "Artigo 265 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação Indireta", SubjectID: "10125", LawDescription: "Artigo 10 do Decreto Lei nº 3.365 de 21 de Junho de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação para Regularização de Comunidade Quilombola / Dec. 4887/2003", SubjectID: "12031", LawDescription: "Artigo 13 do Decreto nº 4.887 de 20 de Novembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação por Interesse Social Comum / L 4.132/1962", SubjectID: "10123", LawDescription: "Artigo 1 da Lei nº 4.132 de 10 de Setembro de 1962"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação por Utilidade Pública / DL 3.365/1941", SubjectID: "10122", LawDescription: "Artigo 5 do Decreto Lei nº 3.365 de 21 de Junho de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação por Utilidade Pública / DL 3.365/1941", SubjectID: "10122", LawDescription: "Artigo 2 do Decreto Lei nº 3.365 de 21 de Junho de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação por Utilidade Pública / DL 3.365/1941", SubjectID: "10122", LawDescription: "Artigo 1 do Decreto Lei nº 3.365 de 21 de Junho de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário", SubjectID: "9781", LawDescription: "Parágrafo 3 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário", SubjectID: "9781", LawDescription: "Parágrafo 1 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário / Perigo de Desastre Ferroviário", SubjectID: "3500", LawDescription: "Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário", SubjectID: "11972", LawDescription: "Parágrafo 2 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário culposo", SubjectID: "11972", LawDescription: "Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário", SubjectID: "11973", LawDescription: "Parágrafo 2 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário culposo", SubjectID: "11973", LawDescription: "Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: "11455", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: "11455", LawDescription: "Artigo 10 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: "11455", LawDescription: "Artigo 8 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: "11455", LawDescription: "Artigo 5 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento de determinação de sigilo", SubjectID: "12338", LawDescription: "Artigo 20 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento de Medida Protetiva de Urgência", SubjectID: "14229", LawDescription: "Artigo 24 da Lei nº 11.340 de 07 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento de missão", SubjectID: "11136", LawDescription: "Artigo 196 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento do Dever de Informar o Número, Espécie e Lotação de Veículos e Embarcações", SubjectID: "11453", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Descumprimento do Dever de Informar o Número, Espécie e Lotação de Veículos e Embarcações", SubjectID: "11453", LawDescription: "Artigo 3 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Desenho ou levantamento de plano ou planta de local militar", SubjectID: "11210", LawDescription: "Artigo 147 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção", SubjectID: "10839", LawDescription: "Artigo 391 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção", SubjectID: "11127", LawDescription: "Artigo 187 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção", SubjectID: "7940", LawDescription: "Artigo 576 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção - casos assimilados", SubjectID: "11128", LawDescription: "Artigo 188 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção especial", SubjectID: "11129", LawDescription: "Artigo 190 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção por evasão ou fuga", SubjectID: "11130", LawDescription: "Artigo 192 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção privilegiada", SubjectID: "11131", LawDescription: "Artigo 189 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Deserção qualificada", SubjectID: "11132", LawDescription: "Artigo 189 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência", SubjectID: "11329", LawDescription: "Artigo 301 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência", SubjectID: "3572", LawDescription: "Artigo 330 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência", SubjectID: "9925", LawDescription: "Artigo 330 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência a decisão judicial", SubjectID: "11364", LawDescription: "Artigo 349 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência a decisão judicial sobre perda ou suspensão de direitos", SubjectID: "3595", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência a decisão judicial sobre perda ou suspensão de direitos", SubjectID: "9953", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência a decisão sobre perda ou suspensão de atividade ou direito", SubjectID: "11365", LawDescription: "Artigo 354 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência à determinações da Justiça Eleitoral", SubjectID: "10754", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Desobediência a Ordens ou Instruções da Justiça Eleitoral", SubjectID: "11452", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Desordem eleitoral", SubjectID: "10815", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Despojamento desprezível", SubjectID: "11304", LawDescription: "Parágrafo 1 Artigo 162 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desrespeito a comandante, oficial-general ou oficial de serviço", SubjectID: "11305", LawDescription: "Parágrafo 1 Artigo 160 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desrespeito a símbolo nacional", SubjectID: "11306", LawDescription: "Artigo 161 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Desrespeito a superior", SubjectID: "11307", LawDescription: "Artigo 160 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruição / Subração / Ocultação de Cadáver", SubjectID: "9735", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruição / Subração / Ocultação de Cadáver", SubjectID: "3458", LawDescription: "Artigo 211 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruição de Dados Eleitorais", SubjectID: "11479", LawDescription: "Artigo 72 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "14786", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "14786", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "14786", LawDescription: "Parágrafo 3 Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "14786", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "14786", LawDescription: "Parágrafo 1 Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Flora", SubjectID: "14786", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruição ou Degradação Mediante Desmatamento ou Exploração Econômica", SubjectID: "14788", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruição, Supressão ou Ocultação de Urna Contendo Votos ou Documentos Eleitorais", SubjectID: "11510", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Desvio", SubjectID: "11356", LawDescription: "Artigo 307 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Devolução de Cheques", SubjectID: "14154", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Devolução de Cheques", SubjectID: "14168", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Difamação", SubjectID: "10749", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Difamação", SubjectID: "10843", LawDescription: "Artigo 215 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Difamação", SubjectID: "11263", LawDescription: "Artigo 215 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Difamação", SubjectID: "3396", LawDescription: "Artigo 139 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Difamação", SubjectID: "9657", LawDescription: "Artigo 139 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Difamação na Propaganda Eleitoral", SubjectID: "11486", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Difusão culposa de doença ou praga", SubjectID: "11958", LawDescription: "Parágrafo 1 Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Difusão culposa de doença ou praga", SubjectID: "11971", LawDescription: "Parágrafo 1 Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Difusão de doença ou praga", SubjectID: "3498", LawDescription: "Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Difusão de doença ou praga (art. 259)", SubjectID: "9780", LawDescription: "Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Difusão de epizootia ou praga vegetal", SubjectID: "11183", LawDescription: "Artigo 278 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Perda dos Direitos Políticos", SubjectID: "11726", LawDescription: "Artigo 15 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Restabelecimento dos Direitos Políticos", SubjectID: "11727", LawDescription: "Artigo 15 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Suspensão de Direitos Políticos", SubjectID: "11728", LawDescription: "Artigo 15 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Disponibilidade / Aproveitamento", SubjectID: "10234", LawDescription: "Artigo 41 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "9707", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9707", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "5835", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "5835", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Dissolução de Órgão de Direção Partidária", SubjectID: "11765", LawDescription: "Parágrafo 1 Artigo 17 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Importunação sexual", SubjectID: "12385", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Divulgação de Falsa Imputação", SubjectID: "11485", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Divulgação de Fatos Inverídicos na Propaganda Eleitoral", SubjectID: "11483", LawDescription: "Artigo 323 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Divulgação de pesquisa de fraudulenta", SubjectID: "10820", LawDescription: "Parágrafo 4 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Divulgação de Propaganda Eleitoral no Dia da Eleição", SubjectID: "11514", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Divulgação de segredo", SubjectID: "11256", LawDescription: "Artigo 228 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Divulgação de segredo", SubjectID: "3413", LawDescription: "Artigo 153 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 18 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 17 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 16 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 15 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 14 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 13 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: "9893", LawDescription: "Artigo 12 da Lei nº 10.826 de 22 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Doação de Recursos Acima do Limite Legal - Pessoa Física", SubjectID: "11700", LawDescription: "Artigo 23 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Doação de Recursos Acima do Limite Legal - Pessoa Jurídica", SubjectID: "11701", LawDescription: "Artigo 81 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Dormir em serviço", SubjectID: "11137", LawDescription: "Artigo 203 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Duplicata Simulada", SubjectID: "5841", LawDescription: "Artigo 172 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Duplicata Simulada", SubjectID: "9713", LawDescription: "Artigo 172 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 351 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 346 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 345 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 344 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 343 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 342 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 341 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 340 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 338 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 336 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 335 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 333 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 332 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 331 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 330 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 329 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 328 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 327 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 323 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 322 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 321 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 320 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 319 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 318 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 317 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 316 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 315 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 314 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 313 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 312 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 311 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 310 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 309 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 308 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 307 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 306 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 305 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 304 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 303 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 298 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 297 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 295 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 294 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 293 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 292 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 291 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 352 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 349 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Eleitorais", SubjectID: "9906", LawDescription: "Artigo 337 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Embriaguez ao volante", SubjectID: "11184", LawDescription: "Artigo 279 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Embriaguez em serviço", SubjectID: "11138", LawDescription: "Artigo 202 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Emissão de título ao portador sem permissão legal", SubjectID: "3528", LawDescription: "Artigo 292 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emissão de título ao portador sem permissão legal (art. 292)", SubjectID: "9810", LawDescription: "Artigo 292 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emissão Irregular de Conhecimento de Depósito ou Warrant", SubjectID: "9718", LawDescription: "Artigo 178 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emissão Irregular de Conhecimento de Depósito ou Warrant", SubjectID: "5846", LawDescription: "Artigo 178 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emprego de gás tóxico ou asfixiante", SubjectID: "11185", LawDescription: "Artigo 270 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Emprego de Processo Proibido/Substância não permitida", SubjectID: "3506", LawDescription: "Artigo 274 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emprego de Processo Proibido/Substância não permitida", SubjectID: "9787", LawDescription: "Artigo 274 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emprego irregular de verbas ou rendas públicas", SubjectID: "3552", LawDescription: "Artigo 315 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Emprego irregular de verbas ou rendas públicas (art. 315)", SubjectID: "9832", LawDescription: "Artigo 315 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Entendimento para empenhar o Brasil à neutralidade ou à guerra", SubjectID: "11211", LawDescription: "Artigo 140 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Entendimento para gerar conflito ou divergência com o Brasil", SubjectID: "11212", LawDescription: "Artigo 141 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Entrada de aparelho telefônico de comunicação móvel em estabelecimento prisional", SubjectID: "11797", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Entrada de aparelho telefônico de comunicação móvel em estabelecimento prisional", SubjectID: "11939", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Entrada e Permanência de Menores", SubjectID: "9977", LawDescription: "Artigo 149 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Entrega de Filho Menor a Pessoa Inidônea", SubjectID: "9759", LawDescription: "Artigo 245 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Entrega de Filho Menor a Pessoa Inidônea", SubjectID: "3476", LawDescription: "Artigo 245 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Envenenamento com perigo extensivo", SubjectID: "11201", LawDescription: "Artigo 293 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Envenenamento de Água Potável / Substância Alimentícia ou Medicinal", SubjectID: "3513", LawDescription: "Artigo 270 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Envenenamento de Água Potável / Substância Alimentícia ou Medicinal (Art. 270)", SubjectID: "9794", LawDescription: "Artigo 270 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Causar Epidemia", SubjectID: "3505", LawDescription: "Artigo 267 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Causar Epidemia", SubjectID: "11202", LawDescription: "Artigo 292 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Causar Epidemia", SubjectID: "9786", LawDescription: "Artigo 267 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Escrito ou objeto obsceno", SubjectID: "11232", LawDescription: "Artigo 239 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Escrito ou objeto obsceno", SubjectID: "14706", LawDescription: "Artigo 234 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9690", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "10833", LawDescription: "Artigo 251 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "11167", LawDescription: "Artigo 251 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "3431", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "14692", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato contra idoso", SubjectID: "14692", LawDescription: "Parágrafo 4 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "14693", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato contra idoso", SubjectID: "14693", LawDescription: "Parágrafo 4 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "3432", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9691", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estupro", SubjectID: "11251", LawDescription: "Artigo 232 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Estupro", SubjectID: "3465", LawDescription: "Artigo 213 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estupro", SubjectID: "9742", LawDescription: "Artigo 213 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estupro de Vulnerável", SubjectID: "11417", LawDescription: "Artigo 217 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estupro de Vulnerável", SubjectID: "11456", LawDescription: "Artigo 217 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Evasão de preso ou internado", SubjectID: "11299", LawDescription: "Artigo 180 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Evasão mediante violência contra a pessoa", SubjectID: "9945", LawDescription: "Artigo 352 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Evasão mediante violência contra a pessoa", SubjectID: "3587", LawDescription: "Artigo 352 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Excesso de exação", SubjectID: "11357", LawDescription: "Artigo 306 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Excesso de exação", SubjectID: "3554", LawDescription: "Parágrafo 2 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Excesso de exação", SubjectID: "3554", LawDescription: "Parágrafo 1 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Concussão", SubjectID: "3554", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Excesso de exação", SubjectID: "9834", LawDescription: "Parágrafo 2 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Excesso de exação", SubjectID: "9834", LawDescription: "Parágrafo 1 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Concussão", SubjectID: "9834", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão - Receitas Provenientes de Exportação", SubjectID: "10558", LawDescription: "Parágrafo 2 Artigo 149 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão das Forças Armadas", SubjectID: "11091", LawDescription: "Artigo 102 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão de filiado", SubjectID: "9549", LawDescription: "Artigo 25 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão de filiado", SubjectID: "9549", LawDescription: "Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão de filiado", SubjectID: "9549", LawDescription: "Artigo 21 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão de filiado", SubjectID: "9549", LawDescription: "Artigo 15 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução - De Multa Eleitoral", SubjectID: "11731", LawDescription: "Artigo 367 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 76 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 75 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 74 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 73 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 72 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 71 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 70 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 69 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 68 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 67 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Execução Contratual", SubjectID: "10429", LawDescription: "Artigo 66 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício arbitrário das próprias razões", SubjectID: "9939", LawDescription: "Artigo 345 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício arbitrário das próprias razões", SubjectID: "3581", LawDescription: "Artigo 346 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício arbitrário das próprias razões", SubjectID: "3581", LawDescription: "Artigo 345 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício arbitrário ou abuso de poder", SubjectID: "3585", LawDescription: "Artigo 350 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício arbitrário ou abuso de poder", SubjectID: "9943", LawDescription: "Artigo 350 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício de atividade com infração de decisão administrativa", SubjectID: "3453", LawDescription: "Artigo 205 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício de atividade com infração de decisão administrativa", SubjectID: "9730", LawDescription: "Artigo 205 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício de comércio por oficial", SubjectID: "11125", LawDescription: "Artigo 204 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício funcional ilegal", SubjectID: "11340", LawDescription: "Artigo 329 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício funcional ilegalmente antecipado ou prolongado", SubjectID: "3562", LawDescription: "Artigo 324 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício funcional ilegalmente antecipado ou prolongado (art. 324)", SubjectID: "9842", LawDescription: "Artigo 324 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício Ilegal da Medicina, Arte Dentária ou Farmacêutica", SubjectID: "3509", LawDescription: "Artigo 282 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exercício Ilegal da Medicina, Arte Dentária ou Farmacêutica (art. 282)", SubjectID: "9790", LawDescription: "Artigo 282 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exploração de prestígio", SubjectID: "11366", LawDescription: "Artigo 353 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Exploração de prestígio", SubjectID: "9951", LawDescription: "Artigo 357 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exploração de prestígio", SubjectID: "3593", LawDescription: "Artigo 357 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exploração do Trabalho Infantil", SubjectID: "9969", LawDescription: "Artigo 60 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Exploração Sexual", SubjectID: "14664", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exploração Sexual", SubjectID: "14666", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão", SubjectID: "11186", LawDescription: "Artigo 269 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão", SubjectID: "9775", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão", SubjectID: "3493", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão culposa", SubjectID: "11963", LawDescription: "Parágrafo 3 Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão culposa", SubjectID: "11963", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão culposa", SubjectID: "11964", LawDescription: "Parágrafo 3 Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Explosão culposa", SubjectID: "11964", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Exposição a Substâncias Tóxicas (Dicloro-Difenil-Tricloroetano (DDT / Mercúrio / Outras)", SubjectID: "14163", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Exposição a Substâncias Tóxicas - Dicloro-Difenil-Tricloroetano (DDT/Mercúrio/Outras)", SubjectID: "14149", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Exposição ou Abandono de Recém Nascido", SubjectID: "10509", LawDescription: "Artigo 134 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Expurgos inflacionários sobre os benefícios", SubjectID: "6143", LawDescription: "Artigo 1 da Lei nº 6.899 de 08 de Abril de 1981"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão", SubjectID: "11156", LawDescription: "Artigo 243 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão", SubjectID: "3420", LawDescription: "Artigo 158 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão", SubjectID: "9679", LawDescription: "Artigo 158 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão indireta", SubjectID: "3422", LawDescription: "Artigo 160 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão indireta", SubjectID: "11157", LawDescription: "Artigo 246 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão indireta (art. 160)", SubjectID: "9681", LawDescription: "Artigo 160 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "11158", LawDescription: "Artigo 244 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "3421", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "9680", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante Sequestro Seguida de Lesão Corporal Grave", SubjectID: "9702", LawDescription: "Parágrafo 2 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "9702", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante Sequestro Seguida de Lesão Corporal Grave", SubjectID: "5569", LawDescription: "Parágrafo 2 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "5569", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante Seqüestro Seguida de Morte", SubjectID: "5568", LawDescription: "Parágrafo 3 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "5568", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante Seqüestro Seguida de Morte", SubjectID: "9701", LawDescription: "Parágrafo 3 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão mediante seqüestro", SubjectID: "9701", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extração ou Exploração Ilegal de Madeira e Condutas Equiparadas", SubjectID: "14789", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Extração ou Exploração Ilegal de Madeira e Condutas Equiparadas", SubjectID: "14789", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Extração ou Exploração Ilegal de Madeira e Condutas Equiparadas", SubjectID: "14789", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Extravio de bagagem", SubjectID: "4832", LawDescription: "Artigo 14 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Extravio, sonegação ou inutilização de livro ou documento", SubjectID: "3551", LawDescription: "Artigo 314 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extravio, sonegação ou inutilização de livro ou documento", SubjectID: "11341", LawDescription: "Artigo 321 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Extravio, sonegação ou inutilização de livro ou documento (art. 314)", SubjectID: "9831", LawDescription: "Artigo 314 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fabricação de Objeto Destinado a Produção de Drogas e Condutas Afins", SubjectID: "9861", LawDescription: "Artigo 34 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Fabricação de Objeto Destinado a Produção de Drogas e Condutas Afins", SubjectID: "5894", LawDescription: "Artigo 34 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Fabricação, Aquisição, Fornecimento, Subtração ou Guarda de Materiais de Uso da Justiça Eleitoral", SubjectID: "11436", LawDescription: "Artigo 340 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Fabrico / Fornecimento / Aquisição / Posse ou Transporte de Explosivos ou Gás Tóxico ou Asfixiante", SubjectID: "9800", LawDescription: "Artigo 253 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fabrico / Fornecimento / Aquisição / Posse ou Transporte de Explosivos ou Gás Tóxico ou Asfixiante", SubjectID: "5862", LawDescription: "Artigo 253 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Facilitação de contrabando ou descaminho", SubjectID: "3556", LawDescription: "Artigo 318 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Facilitação de contrabando ou descaminho (art. 318)", SubjectID: "9836", LawDescription: "Artigo 318 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 188 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 187 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 186 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 185 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 184 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 183 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 182 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 181 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 180 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 179 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 178 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 177 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 176 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 175 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 174 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 173 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 172 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 171 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 170 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 169 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Falimentares", SubjectID: "9911", LawDescription: "Artigo 168 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsa identidade", SubjectID: "9824", LawDescription: "Artigo 308 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsa identidade", SubjectID: "9824", LawDescription: "Artigo 307 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsa identidade", SubjectID: "11320", LawDescription: "Artigo 318 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsa identidade", SubjectID: "3542", LawDescription: "Artigo 308 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsa identidade", SubjectID: "3542", LawDescription: "Artigo 307 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes contra a Administração Ambiental", SubjectID: "14802", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade de atestado médico", SubjectID: "3537", LawDescription: "Artigo 302 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade de atestado médico (art. 302)", SubjectID: "9819", LawDescription: "Artigo 302 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade ideológica", SubjectID: "11321", LawDescription: "Artigo 312 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade ideológica", SubjectID: "11473", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade ideológica", SubjectID: "3533", LawDescription: "Artigo 299 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade ideológica", SubjectID: "9815", LawDescription: "Artigo 299 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade ideológica", SubjectID: "10995", LawDescription: "Artigo 299 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade material de atestado ou certidão", SubjectID: "3536", LawDescription: "Parágrafo 1 Artigo 301 do Decreto Lei nº 2.848 de 12 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade material de atestado ou certidão", SubjectID: "3536", LawDescription: "Artigo 301 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsidade material de atestado ou certidão (art. 301, § 1º)", SubjectID: "9818", LawDescription: "Parágrafo 1 Artigo 301 do Decreto Lei nº 2.848 de 12 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação / Corrupção / Adulteração / Alteração de produto destinado a fins terapêuticos ou medicinais", SubjectID: "9789", LawDescription: "Artigo 273 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação / Corrupção / Adulteração / Alteração de produto destinado a fins terapêuticos ou medicinais", SubjectID: "3508", LawDescription: "Artigo 273 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação / Corrupção / Adulteração / Alteração de Substância ou Produtos Alimentícios", SubjectID: "3514", LawDescription: "Artigo 272 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação / Corrupção / Adulteração / Alteração de Substância ou Produtos Alimentícios", SubjectID: "9795", LawDescription: "Artigo 272 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento", SubjectID: "11322", LawDescription: "Artigo 311 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento particular", SubjectID: "3532", LawDescription: "Artigo 298 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento particular (art. 298)", SubjectID: "9814", LawDescription: "Artigo 298 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento público", SubjectID: "9813", LawDescription: "Artigo 297 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento público", SubjectID: "3531", LawDescription: "Artigo 297 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento público para fins eleitorais", SubjectID: "10816", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de documento público", SubjectID: "10998", LawDescription: "Artigo 297 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de papéis públicos", SubjectID: "3529", LawDescription: "Artigo 293 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de papéis públicos (art. 293)", SubjectID: "9811", LawDescription: "Artigo 293 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de Papéis Públicos Praticado por Funcionário Público", SubjectID: "11005", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação de Papéis Públicos Praticado por Funcionário Público", SubjectID: "11005", LawDescription: "Artigo 293 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação do selo ou sinal público", SubjectID: "3530", LawDescription: "Artigo 296 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação do selo ou sinal público (art. 296)", SubjectID: "9812", LawDescription: "Artigo 296 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação do Selo ou Sinal Público Praticado por Funcionário Público", SubjectID: "11004", LawDescription: "Artigo 296 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação do sinal empregado no contraste de metal precioso ou na fiscalização alfandegária, ou para outros fins", SubjectID: "3541", LawDescription: "Artigo 306 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação do sinal empregado no contraste de metal precioso ou na fiscalização alfandegária, ou para outros fins", SubjectID: "9823", LawDescription: "Artigo 306 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação ou Alteração de Documento Particular para Fins Eleitorais", SubjectID: "14221", LawDescription: "Artigo 349 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Falsificação ou Alteração de Documento Público para Fins Eleitorais", SubjectID: "11472", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso eleitoral", SubjectID: "10753", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso reconhecimento de firma ou letra", SubjectID: "3534", LawDescription: "Artigo 300 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso reconhecimento de firma ou letra (art. 300)", SubjectID: "9816", LawDescription: "Artigo 300 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso testemunho ou falsa perícia", SubjectID: "9937", LawDescription: "Artigo 343 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso testemunho ou falsa perícia", SubjectID: "11367", LawDescription: "Artigo 346 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso testemunho ou falsa perícia", SubjectID: "3579", LawDescription: "Artigo 343 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Falso testemunho ou falsa perícia", SubjectID: "3579", LawDescription: "Artigo 342 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fauna Aquática Afetada por Traslado ou Descarte de Resíduos/Efluentes, ou Poluição ou Degradação da Água", SubjectID: "14783", LawDescription: "Parágrafo 1 Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento a convocado", SubjectID: "11121", LawDescription: "Artigo 186 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento a desertor", SubjectID: "11133", LawDescription: "Artigo 193 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento da Prostituição", SubjectID: "9750", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento da Prostituição", SubjectID: "5852", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento da prostituição ou outra forma de exploração sexual", SubjectID: "11420", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento da prostituição ou outra forma de exploração sexual de vulnerável", SubjectID: "11419", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento de Prostituição ou Outra Forma de Exploração Sexual", SubjectID: "11457", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento de Prostituição ou Outra Forma de Exploração Sexual de Vulnerável", SubjectID: "11458", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento pessoal", SubjectID: "11368", LawDescription: "Artigo 350 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento pessoal", SubjectID: "3583", LawDescription: "Artigo 348 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento pessoal", SubjectID: "9941", LawDescription: "Artigo 348 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento real", SubjectID: "9942", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento real", SubjectID: "11369", LawDescription: "Artigo 351 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Favorecimento real", SubjectID: "3584", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "12091", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "12091", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Férias", SubjectID: "10339", LawDescription: "Artigo 50 da Lei nº 6.880 de 09 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Fiança", SubjectID: "9592", LawDescription: "Artigo 828 da Lei nº 10.406 de Outubro de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Fies", SubjectID: "12844", LawDescription: "Artigo 1 da Lei nº 13.570 de 21 de Dezembro de 2017"})
-	laws = append(laws, models.LawBySubject{Subject: "Filiação Partidária - Cancelamento", SubjectID: "11756", LawDescription: "Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Filiação Partidária - Coexistência", SubjectID: "11757", LawDescription: "Parágrafo 1 Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Filiação Partidária - Exclusão", SubjectID: "11758", LawDescription: "Parágrafo 1 Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Fornecimento ao Eleitor de Cédula Oficial Já Assinalada ou Marcada", SubjectID: "11505", LawDescription: "Artigo 307 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Fornecimento de Cédula Eleitoral Rubricada a Destempo", SubjectID: "11506", LawDescription: "Artigo 308 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude / Quebra de ordem cronológica", SubjectID: "11923", LawDescription: "Parágrafo 6 Artigo 100 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude / Quebra de ordem cronológica", SubjectID: "11923", LawDescription: "Parágrafo 2 Artigo 100 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude / Quebra de ordem cronológica", SubjectID: "11923", LawDescription: "Parágrafo 1 Artigo 100 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude à execução", SubjectID: "3434", LawDescription: "Artigo 179 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude à execução (art. 179)", SubjectID: "9693", LawDescription: "Artigo 179 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude de lei sobre estrangeiros", SubjectID: "9825", LawDescription: "Artigo 310 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude de lei sobre estrangeiros", SubjectID: "9825", LawDescription: "Artigo 309 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude de lei sobre estrangeiros", SubjectID: "3543", LawDescription: "Artigo 310 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude de lei sobre estrangeiros", SubjectID: "3543", LawDescription: "Artigo 309 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "5838", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "5838", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "9710", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9710", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude no Comércio", SubjectID: "9716", LawDescription: "Artigo 175 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude no Comércio", SubjectID: "5844", LawDescription: "Artigo 175 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "5840", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "5840", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "9712", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9712", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "9711", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "9711", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: "5839", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Estelionato", SubjectID: "5839", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude processual", SubjectID: "3582", LawDescription: "Artigo 347 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraude processual", SubjectID: "9940", LawDescription: "Artigo 347 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraudes e Abusos na Fundação ou Administração de Sociedade por Ações", SubjectID: "9717", LawDescription: "Artigo 177 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fraudes e Abusos na Fundação ou Administração de Sociedade por Ações", SubjectID: "5845", LawDescription: "Artigo 177 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: "14731", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Frustração de direitos assegurados por lei trabalhista", SubjectID: "3452", LawDescription: "Artigo 203 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Frustração de direitos assegurados por lei trabalhista (art. 203)", SubjectID: "9729", LawDescription: "Artigo 203 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Frustração de lei sobre a nacionalização do trabalho", SubjectID: "3456", LawDescription: "Artigo 204 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Frustração de lei sobre a nacionalização do trabalho (art. 204)", SubjectID: "9733", LawDescription: "Artigo 204 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fuga após acidente de trânsito", SubjectID: "11188", LawDescription: "Artigo 281 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Fuga de pessoa presa ou submetida a medida de segurança", SubjectID: "9944", LawDescription: "Artigo 351 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fuga de pessoa presa ou submetida a medida de segurança", SubjectID: "3586", LawDescription: "Artigo 351 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fuga de preso ou internado", SubjectID: "11300", LawDescription: "Artigo 178 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Funrural", SubjectID: "6040", LawDescription: "Artigo 15 da Lc nº 11 de 25 de Maio de 1971"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "3416", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto simples", SubjectID: "11163", LawDescription: "Artigo 240 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "9675", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto de coisa comum", SubjectID: "3418", LawDescription: "Artigo 156 do Decreto Lei nº 2.848 de 01 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto de coisa comum (art. 156)", SubjectID: "9677", LawDescription: "Artigo 156 do Decreto Lei nº 2.848 de 01 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto de uso", SubjectID: "11164", LawDescription: "Artigo 241 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto qualificado", SubjectID: "5565", LawDescription: "Parágrafo 5 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "5565", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto qualificado", SubjectID: "9698", LawDescription: "Parágrafo 5 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "9698", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto Privilegiado", SubjectID: "9697", LawDescription: "Parágrafo 2 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "9697", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto Privilegiado", SubjectID: "5564", LawDescription: "Parágrafo 2 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "5564", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto qualificado", SubjectID: "3417", LawDescription: "Parágrafo 4 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto simples", SubjectID: "11165", LawDescription: "Artigo 240 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto simples", SubjectID: "11165", LawDescription: "Artigo 6 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto simples", SubjectID: "11165", LawDescription: "Artigo 5 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto qualificado", SubjectID: "11165", LawDescription: "Parágrafo 4 Artigo 240 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Furto", SubjectID: "9676", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fusão", SubjectID: "9550", LawDescription: "Parágrafo 1 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Fusão", SubjectID: "9550", LawDescription: "Artigo 27 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Fusão", SubjectID: "9550", LawDescription: "Artigo 2 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Genocídio", SubjectID: "11248", LawDescription: "Artigo 208 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal grave", SubjectID: "10848", LawDescription: "Parágrafo 1 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal de natureza grave", SubjectID: "5556", LawDescription: "Parágrafo 1 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "5556", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal de natureza grave", SubjectID: "9644", LawDescription: "Parágrafo 1 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9644", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal de natureza grave", SubjectID: "9645", LawDescription: "Parágrafo 2 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9645", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal de natureza grave", SubjectID: "5557", LawDescription: "Parágrafo 2 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "5557", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "10840", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "11243", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "12130", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "12131", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "3371", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "9637", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "9638", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "9638", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "10846", LawDescription: "Parágrafo 2 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "10846", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "11244", LawDescription: "Parágrafo 2 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "11244", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "3372", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "3370", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "9636", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio simples", SubjectID: "10845", LawDescription: "Parágrafo 1 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicido privilegiado", SubjectID: "11245", LawDescription: "Parágrafo 1 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Hostilidade contra país estrangeiro", SubjectID: "11213", LawDescription: "Artigo 136 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Hostilidade qualificada pelo resultado", SubjectID: "11214", LawDescription: "Parágrafo 1 Artigo 136 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Identificação Numérica de Candidato", SubjectID: "11594", LawDescription: "Artigo 15 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Casos de nulidade", SubjectID: "10600", LawDescription: "Artigo 500 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento", SubjectID: "10600", LawDescription: "Artigo 255 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento / Detenção / Prisão", SubjectID: "10365", LawDescription: "Artigo 47 da Lei nº 6.880 de 09 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento à fiscalização das pesquisas", SubjectID: "10821", LawDescription: "Parágrafo 2 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento do Exercício da Propaganda", SubjectID: "11490", LawDescription: "Artigo 332 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento ou Embaraço ao Exercício do Sufrágio", SubjectID: "11499", LawDescription: "Artigo 297 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento ou Perturbação de Cerimônia Funerária", SubjectID: "3459", LawDescription: "Artigo 209 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento ou Perturbação de Cerimônia Funerária (Art. 209)", SubjectID: "9736", LawDescription: "Artigo 209 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento, perturbação ou fraude de concorrência", SubjectID: "3569", LawDescription: "Artigo 335 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento, perturbação ou fraude de concorrência", SubjectID: "11331", LawDescription: "Artigo 339 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Impedimento, perturbação ou fraude de concorrência (art. 335)", SubjectID: "9922", LawDescription: "Artigo 335 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Introduzir espécime animal no País, sem parecer técnico oficial favorável e licença expedida por autoridade competente", SubjectID: "14781", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Impostos", SubjectID: "5916", LawDescription: "Artigo 154 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Improbidade Administrativa", SubjectID: "11559", LawDescription: "Artigo 1 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Identidade de Eleitor Admitido a Votar", SubjectID: "11707", LawDescription: "Parágrafo 1 Artigo 147 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Inscrição Eleitoral", SubjectID: "11581", LawDescription: "Parágrafo 7 Artigo 45 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Nomeação de Membro da Junta Eleitoral", SubjectID: "11709", LawDescription: "Parágrafo 2 Artigo 36 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Nomeação de Membro da Mesa Receptora", SubjectID: "11708", LawDescription: "Artigo 63 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Sistema Eletrônico de Votação", SubjectID: "11710", LawDescription: "Parágrafo 3 Artigo 66 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Sistema Eletrônico de Votação", SubjectID: "11710", LawDescription: "Parágrafo 2 Artigo 66 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Sistema Eletrônico de Votação", SubjectID: "11710", LawDescription: "Parágrafo 1 Artigo 66 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Transferência de Domicílio Eleitoral", SubjectID: "11582", LawDescription: "Artigo 57 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação - Voto por Cédula", SubjectID: "11711", LawDescription: "Parágrafo 1 Artigo 69 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Impugnação ao Registro de Candidatura", SubjectID: "11616", LawDescription: "Artigo 3 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Imputação falsa de prática de infração penal ou revelação inverídica sobre estrutura de organização criminal", SubjectID: "12337", LawDescription: "Artigo 19 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Imunidade", SubjectID: "5914", LawDescription: "Artigo 150 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Imunidade Recíproca", SubjectID: "10530", LawDescription: "Artigo 150 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inabilitação para o exercício de Função Pública", SubjectID: "11092", LawDescription: "Artigo 104 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Incapacidade Laborativa Parcial", SubjectID: "6108", LawDescription: "Artigo 6 da Lei nº 6.367 de 19 de Outubro de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Incapacidade Laborativa Temporária", SubjectID: "6110", LawDescription: "Artigo 6 da Lei nº 6.367 de 19 de Outubro de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio", SubjectID: "3492", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio", SubjectID: "9774", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio", SubjectID: "10834", LawDescription: "Artigo 268 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio", SubjectID: "11189", LawDescription: "Artigo 268 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio culposo", SubjectID: "11961", LawDescription: "Parágrafo 2 Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio", SubjectID: "11961", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio culposo", SubjectID: "11962", LawDescription: "Parágrafo 2 Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incêndio", SubjectID: "11962", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incentivos fiscais", SubjectID: "6003", LawDescription: "Parágrafo 3 Artigo 227 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incentivos fiscais", SubjectID: "6003", LawDescription: "Parágrafo 3 Artigo 195 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incentivos fiscais", SubjectID: "6003", LawDescription: "Parágrafo 3 Artigo 156 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incentivos fiscais", SubjectID: "6003", LawDescription: "Artigo 151 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incentivos fiscais", SubjectID: "6003", LawDescription: "Parágrafo 2 Artigo 43 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência na Execução Não Embargada", SubjectID: "14845", LawDescription: "Artigo 1D da Lei nº 9.494 de 10 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Ações de Companhias Abertas", SubjectID: "5949", LawDescription: "Artigo 1 da Lei nº 8.033 de 12 de Abril de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Benefícios Pagos Acumuladamente", SubjectID: "14992", LawDescription: "Artigo 12 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: "5926", LawDescription: "Artigo 22 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: "5926", LawDescription: "Artigo 21 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: "5926", LawDescription: "Artigo 20 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: "5926", LawDescription: "Artigo 19 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: "5926", LawDescription: "Artigo 18 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Participação nos Lucros", SubjectID: "5925", LawDescription: "Artigo 35 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incitação ao Crime", SubjectID: "5869", LawDescription: "Artigo 286 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incitação ao Crime", SubjectID: "9805", LawDescription: "Artigo 286 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Incitamento", SubjectID: "11303", LawDescription: "Artigo 155 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Inclusão de Dependente", SubjectID: "6171", LawDescription: "Artigo 22 do Decreto nº 3.048 de 06 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Inclusão Indevida em Cadastro de Inadimplentes", SubjectID: "6226", LawDescription: "Artigo 43 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Incompatibilidade para o Oficialato", SubjectID: "11093", LawDescription: "Artigo 101 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Incorporação de Partidos Políticos", SubjectID: "11763", LawDescription: "Parágrafo 7 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Incorporação de Partidos Políticos", SubjectID: "11763", LawDescription: "Parágrafo 6 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Incorporação de Partidos Políticos", SubjectID: "11763", LawDescription: "Parágrafo 3 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Incorporação de Partidos Políticos", SubjectID: "11763", LawDescription: "Parágrafo 2 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Incorporação Imobiliária", SubjectID: "10470", LawDescription: "Artigo 1 da Lei nº 4.591 de 16 de Dezembro de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Material", SubjectID: "10502", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Material", SubjectID: "7780", LawDescription: "Artigo 20 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Material", SubjectID: "7780", LawDescription: "Parágrafo 1 Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Material", SubjectID: "7780", LawDescription: "Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Material", SubjectID: "7780", LawDescription: "Artigo 14 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Material", SubjectID: "7780", LawDescription: "Artigo 12 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização Trabalhista", SubjectID: "6058", LawDescription: "Artigo 195 da Alínea \"b\" do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenizações Regulares", SubjectID: "10340", LawDescription: "Artigo 53 da Lei nº 6.880 de 09 de Dezembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Índice de 4,02% da Lei 8.222/91", SubjectID: "6154", LawDescription: "Artigo 10 da Lei nº 8.222 de 05 de Setembro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Indignidade para o Oficialato", SubjectID: "11094", LawDescription: "Artigo 100 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Indisponibilidade / Seqüestro de Bens", SubjectID: "10913", LawDescription: "Artigo 199 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Indisponibilidade / Seqüestro de Bens", SubjectID: "10913", LawDescription: "Artigo 125 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Indisponibilidade de Bens", SubjectID: "10206", LawDescription: "Artigo 7 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Indisponibilidade de Bens", SubjectID: "10212", LawDescription: "Artigo 7 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Indisponibilidade de Bens", SubjectID: "10218", LawDescription: "Artigo 7 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Indivisibilidade da Chapa", SubjectID: "15012", LawDescription: "Artigo 91 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Indução à inscrição indevida", SubjectID: "10756", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Indução, Instigação ou Auxílio ao Uso de Drogas", SubjectID: "5895", LawDescription: "Parágrafo 2 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "5895", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento a erro essencial e ocultação de impedimento", SubjectID: "9763", LawDescription: "Artigo 236 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento a erro essencial e ocultação de impedimento", SubjectID: "3481", LawDescription: "Artigo 236 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento à Especulação", SubjectID: "5843", LawDescription: "Artigo 174 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento à Especulação", SubjectID: "9715", LawDescription: "Artigo 174 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento a Fuga, Entrega Arbitrária ou Sonegação de Incapazes", SubjectID: "3489", LawDescription: "Artigo 248 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento a Fuga, Entrega Arbitrária ou Sonegação de Incapazes (Art. 248)", SubjectID: "9771", LawDescription: "Artigo 248 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento à Inscrição de Eleitor em Infração às Normas Legais", SubjectID: "11439", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento, Instigação ou Auxílio a Suicídio", SubjectID: "9639", LawDescription: "Artigo 122 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Induzimento, Instigação ou Auxílio a Suicídio", SubjectID: "3373", LawDescription: "Artigo 122 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 138 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 137 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 136 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 135 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 134 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 133 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 132 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 131 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 130 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Ineficácia de atos  em relação à massa", SubjectID: "9555", LawDescription: "Artigo 129 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Abuso do Poder Econômico ou Político", SubjectID: "11596", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Abuso do Poder Econômico ou Político", SubjectID: "11596", LawDescription: "Artigo 1 da Alínea \"d\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Analfabetismo", SubjectID: "11597", LawDescription: "Parágrafo 4 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Analfabetismo", SubjectID: "11597", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Analfabetismo", SubjectID: "11597", LawDescription: "Artigo 1 da Alínea \"a\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Aposentadoria Compulsória ou PAD (magistrados e membros do MP)", SubjectID: "12395", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Aposentadoria Compulsória ou PAD (magistrados e membros do MP)", SubjectID: "12395", LawDescription: "Artigo 1 da Alínea \"q\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Condenação Criminal por órgão colegiado ou Transitada em Julgado", SubjectID: "11598", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Declaração de Indignidade ou de Incompatibilidade com o Oficialato", SubjectID: "11599", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Declaração de Indignidade ou de Incompatibilidade com o Oficialato", SubjectID: "11599", LawDescription: "Artigo 1 da Alínea \"f\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Demissão do serviço público", SubjectID: "12396", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Demissão do serviço público", SubjectID: "12396", LawDescription: "Artigo 1 da Alínea \"o\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Desincompatibilização", SubjectID: "11600", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Exclusão do exercício de profissão", SubjectID: "12393", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Exclusão do exercício de profissão", SubjectID: "12393", LawDescription: "Artigo 1 da Alínea \"m\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Parentesco", SubjectID: "11602", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Parentesco", SubjectID: "11602", LawDescription: "Parágrafo 3 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Parentesco", SubjectID: "11602", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Perda de Mandato", SubjectID: "14936", LawDescription: "Artigo 1 da Alínea \"b\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Perda de Mandato", SubjectID: "14936", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Perda de Mandato", SubjectID: "14936", LawDescription: "Artigo 1 da Alínea \"c\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Reeleição", SubjectID: "11603", LawDescription: "Parágrafo 5 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Rejeição de Contas Públicas", SubjectID: "11604", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Rejeição de Contas Públicas", SubjectID: "11604", LawDescription: "Artigo 1 da Alínea \"g\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Renúncia a cargo político na pendência de representação ou petição que possa levar a outra causa de inelegibilidade", SubjectID: "12392", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Renúncia a cargo político na pendência de representação ou petição que possa levar a outra causa de inelegibilidade", SubjectID: "12392", LawDescription: "Artigo 1 da Alínea \"k\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Representação ou Ação de Investigação Judicial Eleitoral Jugada Procedente pela Justiça Eleitoral", SubjectID: "11605", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Responsável por Doação Tida com Ilegal", SubjectID: "14939", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Responsável por Doação Tida com Ilegal", SubjectID: "14939", LawDescription: "Artigo 1 da Alínea \"p\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Suspensão dos Direitos Políticos por Ato Doloso de Improbidade Administrativa", SubjectID: "14938", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Suspensão dos Direitos Políticos por Ato Doloso de Improbidade Administrativa", SubjectID: "14938", LawDescription: "Artigo 1 da Alínea \"l\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Terceiro Mandato", SubjectID: "11606", LawDescription: "Parágrafo 5 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Vida Pregressa", SubjectID: "11607", LawDescription: "Parágrafo 9 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Vínculo Afetivo", SubjectID: "11608", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Vínculo Conjugal", SubjectID: "11609", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Vínculo Conjugal", SubjectID: "11609", LawDescription: "Parágrafo 3 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Vínculo em União Estável", SubjectID: "11610", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inexigibilidade", SubjectID: "14132", LawDescription: "Artigo 25 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Inexigibilidade de Conduta Diversa", SubjectID: "11110", LawDescription: "Artigo 38 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Inexigibilidade de Conduta Diversa", SubjectID: "10619", LawDescription: "Artigo 22 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Infanticídio", SubjectID: "9640", LawDescription: "Artigo 123 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Infanticídio", SubjectID: "3375", LawDescription: "Artigo 123 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Infiltração de Agentes", SubjectID: "14879", LawDescription: "Artigo 3 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Infração de medida sanitária preventiva", SubjectID: "3515", LawDescription: "Artigo 268 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Infração de medida sanitária preventiva", SubjectID: "9796", LawDescription: "Artigo 268 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "9658", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "11264", LawDescription: "Artigo 216 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "10844", LawDescription: "Artigo 216 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Injuria eleitoral violenta", SubjectID: "11488", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Injuria na Propaganda Eleitoral", SubjectID: "11487", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Injuria real", SubjectID: "11265", LawDescription: "Artigo 217 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Inobservancia de lei, regulamento ou instrução", SubjectID: "11342", LawDescription: "Artigo 324 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição de Despesas Não Empenhadas", SubjectID: "5904", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição de Despesas Não Empenhadas", SubjectID: "9957", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição em Cadastro Restritivo de Crédito", SubjectID: "14169", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição em Cadastro Restrito de Crédito", SubjectID: "14155", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição Fraudulenta", SubjectID: "11438", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição Fraudulenta", SubjectID: "10747", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição Fraudulenta Efetivada pelo Juiz", SubjectID: "11440", LawDescription: "Artigo 291 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição na Matrícula de Registro Torrens", SubjectID: "7897", LawDescription: "Artigo 277 da Lei nº 6.015 de 31 de Dezembro de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Inscrição Simultânea em Dois ou Mais Partidos", SubjectID: "11519", LawDescription: "Artigo 320 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Inserção de dados falsos em sistema de informações", SubjectID: "3596", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inserção de dados falsos em sistema de informações (art. 313-A)", SubjectID: "9845", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Insubmissão", SubjectID: "11122", LawDescription: "Artigo 183 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Insubmissão privilegiada", SubjectID: "11123", LawDescription: "Parágrafo 2 Artigo 183 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Interdição de estabecimento  ou associação", SubjectID: "11061", LawDescription: "Artigo 118 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Interdição de estabecimento  ou associação", SubjectID: "11061", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Introdução ou abandono de animais em propriedade alheia", SubjectID: "3427", LawDescription: "Artigo 164 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Introdução ou abandono de animais em propriedade alheia (art. 164)", SubjectID: "9686", LawDescription: "Artigo 164 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação", SubjectID: "11190", LawDescription: "Artigo 272 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação / Perigo de Inundação", SubjectID: "3495", LawDescription: "Artigo 255 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação / Perigo de Inundação", SubjectID: "3495", LawDescription: "Artigo 254 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação / Perigo de Inundação", SubjectID: "9777", LawDescription: "Artigo 255 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação / Perigo de Inundação", SubjectID: "9777", LawDescription: "Artigo 254 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação culposa", SubjectID: "11967", LawDescription: "Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inundação culposa", SubjectID: "11968", LawDescription: "Artigo 254 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Inutilização, Alteração ou Perturbação de Propaganda", SubjectID: "11489", LawDescription: "Artigo 331 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Inutilização,sonegação ou descaminho de material probante", SubjectID: "11370", LawDescription: "Artigo 352 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Invasão de Dispositivo Informático", SubjectID: "11978", LawDescription: "Artigo 154 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Invasão de estabelecimento industrial, comercial ou agrícola. Sabotagem", SubjectID: "3451", LawDescription: "Artigo 202 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Invasão de estabelecimento industrial, comercial ou agrícola. Sabotagem (art. 202)", SubjectID: "9728", LawDescription: "Artigo 202 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Investigação de Paternidade", SubjectID: "5804", LawDescription: "Artigo 1601 da Lei nº 10.406 de 11 de Janeiro de 2002"})
-	laws = append(laws, models.LawBySubject{Subject: "Invólucro ou recipiente com falsa indicação", SubjectID: "3507", LawDescription: "Artigo 275 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Invólucro ou recipiente com falsa indicação (art. 275)", SubjectID: "9788", LawDescription: "Artigo 275 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "IPMF - Imposto Provisório sobre Movimentação Financeira", SubjectID: "10690", LawDescription: "Artigo 2 da Lc nº 77 de 13 de Julho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Irregularidades dos Dados Publicados em Pesquisas Eleitorais", SubjectID: "11524", LawDescription: "Parágrafo 3 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Irregularidades dos Dados Publicados em Pesquisas Eleitorais", SubjectID: "11524", LawDescription: "Parágrafo 2 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Irregularidades dos Dados Publicados em Pesquisas Eleitorais", SubjectID: "11524", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Estabelecer ou explorar jogo de azar em lugar público ou acessivel ao público, mediante o pagamento de entrada ou sem ele", SubjectID: "12350", LawDescription: "Artigo 50 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Latrocínio", SubjectID: "5567", LawDescription: "Parágrafo 3 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "5567", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Latrocínio", SubjectID: "5567", LawDescription: "Artigo 2 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Latrocínio", SubjectID: "10852", LawDescription: "Parágrafo 3 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Latrocínio", SubjectID: "11159", LawDescription: "Parágrafo 3 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Latrocínio", SubjectID: "9700", LawDescription: "Parágrafo 3 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "9700", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Legítima Defesa", SubjectID: "10616", LawDescription: "Artigo 25 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Legítima Defesa", SubjectID: "11111", LawDescription: "Artigo 42 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lei Geral de Proteção de Dados (LGPD)", SubjectID: "14205", LawDescription: "Artigo 1 da Lei nº 13.709 de 14 de Agosto de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Leilão", SubjectID: "14137", LawDescription: "Artigo 22 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "14943", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão Cometida em Razão da Condição de Mulher", SubjectID: "14943", LawDescription: "Parágrafo 13 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão grave", SubjectID: "11237", LawDescription: "Parágrafo 1 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão grave", SubjectID: "11237", LawDescription: "Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão leve", SubjectID: "11238", LawDescription: "Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão levíssima", SubjectID: "11239", LawDescription: "Parágrafo 6 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão levíssima", SubjectID: "10842", LawDescription: "Parágrafo 6 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão privilegiada", SubjectID: "11240", LawDescription: "Parágrafo 4 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão seguida de morte", SubjectID: "11241", LawDescription: "Parágrafo 3 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesões qualificadas pelo resultado", SubjectID: "10849", LawDescription: "Parágrafo 3 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9642", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "3385", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "3386", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "10847", LawDescription: "Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Liberação ou Descarte de OGM (Organismo Geneticamente Modificado) - Biossegurança", SubjectID: "3626", LawDescription: "Artigo 27 da Lei nº 11.105 de 24 de Março de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Liberdade assistida", SubjectID: "11389", LawDescription: "Artigo 118 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Limitação Administrativa", SubjectID: "10130", LawDescription: "Artigo 170 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Limitações ao Poder de Tributar", SubjectID: "5913", LawDescription: "Artigo 150 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Má-gestão praticada por Prefeitos e Vereadores", SubjectID: "10990", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Majoração de Preços de Utilidade e Serviços Necessários à Realização das Eleições", SubjectID: "11444", LawDescription: "Artigo 303 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Manutenção ou financiamento do terrorismo", SubjectID: "12221", LawDescription: "Artigo 6 da Lei nº 13.260 de 16 de Março de 2016"})
-	laws = append(laws, models.LawBySubject{Subject: "Maus tratos", SubjectID: "14782", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Maus tratos", SubjectID: "11235", LawDescription: "Artigo 213 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Maus tratos", SubjectID: "10508", LawDescription: "Artigo 136 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Maus tratos seguido de morte ou lesão grave", SubjectID: "11236", LawDescription: "Parágrafo 2 Artigo 213 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Maus tratos seguido de morte ou lesão grave", SubjectID: "11236", LawDescription: "Parágrafo 1 Artigo 213 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Mediação para Servir a Lascívia de Outrem", SubjectID: "3471", LawDescription: "Artigo 227 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Mediação para Servir a Lascívia de Outrem", SubjectID: "9747", LawDescription: "Artigo 227 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Medicamento em Desacordo com Receita Médica", SubjectID: "9802", LawDescription: "Artigo 280 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Medicamento em Desacordo com Receita Médica", SubjectID: "5867", LawDescription: "Artigo 280 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Menagem", SubjectID: "11054", LawDescription: "Artigo 263 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Mineração Ilegal", SubjectID: "14795", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Mineração Ilegal em Floresta", SubjectID: "14791", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Modificação ou alteração não autorizada de sistema de informações", SubjectID: "3597", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Modificação ou alteração não autorizada de sistema de informações (art. 313-B)", SubjectID: "9846", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes assimilados ao de moeda falsa", SubjectID: "9808", LawDescription: "Artigo 290 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes assimilados ao de moeda falsa", SubjectID: "3524", LawDescription: "Artigo 290 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Monitoração Eletrônica", SubjectID: "14932", LawDescription: "Artigo 146 da Lei nº 7.210 de 11 de Julho de 1984"})
-	laws = append(laws, models.LawBySubject{Subject: "Motim", SubjectID: "10830", LawDescription: "Artigo 149 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Motim", SubjectID: "11289", LawDescription: "Artigo 149 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Motim de presos", SubjectID: "9947", LawDescription: "Artigo 354 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Motim de presos", SubjectID: "3589", LawDescription: "Artigo 354 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Multas e demais Sanções", SubjectID: "10395", LawDescription: "Parágrafo 4 Artigo 39 da Lei nº 4.320 de 17 de Março de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Multas e demais Sanções", SubjectID: "10395", LawDescription: "Parágrafo 3 Artigo 39 da Lei nº 4.320 de 17 de Março de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Não Cancelamento de Restos a Pagar", SubjectID: "5908", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Não Cancelamento de Restos a Pagar", SubjectID: "9961", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Não Cumprimento dos Deveres Impostos pelo Código Eleitoral à Autoridade Judiciária e aos Funcionários da Justiça Eleitoral", SubjectID: "11450", LawDescription: "Artigo 345 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Não Observância de Chamamento de Eleitores para Votar", SubjectID: "11432", LawDescription: "Artigo 306 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Não-Acesso dos Partidos aos Dados Relativos às Pesquisas Eleitorais", SubjectID: "11523", LawDescription: "Parágrafo 2 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Não-Acesso dos Partidos aos Dados Relativos às Pesquisas Eleitorais", SubjectID: "11523", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Não-Apresentação de Denúncia ou Não Execução de Sentença Penal Condenatória no Prazo Legal", SubjectID: "11447", LawDescription: "Artigo 342 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Obrigação de reparar o dano", SubjectID: "11390", LawDescription: "Artigo 116 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Obstáculo à hasta pública, concorrência ou tomada de preços", SubjectID: "11344", LawDescription: "Artigo 328 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Obstamento do Transporte e Fornecimento de Alimentos a Eleitores pela Justiça Eleitoral", SubjectID: "11464", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Obstamento do Transporte e Fornecimento de Alimentos a Eleitores pela Justiça Eleitoral", SubjectID: "11464", LawDescription: "Artigo 8 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Obstamento do Transporte e Fornecimento de Alimentos a Eleitores pela Justiça Eleitoral", SubjectID: "11464", LawDescription: "Artigo 4 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Obtenção de Acesso a Sistema de Dados Eleitorais", SubjectID: "11478", LawDescription: "Artigo 72 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Obtenção de documento falso", SubjectID: "10818", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Obtenção de Documento Falso para Fins Eleitorais", SubjectID: "11476", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Ocultação de urna", SubjectID: "10827", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Ocultação, Sonegação ou Recusa de Fornecimento de Utilidades, Alimentos e Transporte no Dia da Eleição", SubjectID: "11445", LawDescription: "Artigo 304 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Ocupação Temporária", SubjectID: "10129", LawDescription: "Artigo 35 do Decreto Lei nº 3.365 de 21 de Junho de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Ofensa às forças armadas", SubjectID: "11266", LawDescription: "Artigo 219 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ofensa aviltante a inferior", SubjectID: "11280", LawDescription: "Parágrafo 1 Artigo 176 do Decreto Lei nº 1.001 de 08 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Oferecimento de Drogas para Consumo Conjunto", SubjectID: "5896", LawDescription: "Parágrafo 3 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "5896", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão da Entrega do Boletim de Urna", SubjectID: "11477", LawDescription: "Artigo 68 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de eficiência da força", SubjectID: "11139", LawDescription: "Artigo 198 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de lealdade militar", SubjectID: "11290", LawDescription: "Artigo 151 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de Notificação de Doença", SubjectID: "11205", LawDescription: "Artigo 297 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de Notificação de Doença", SubjectID: "3516", LawDescription: "Artigo 269 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de Notificação de Doença (Art. 269)", SubjectID: "9797", LawDescription: "Artigo 269 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de Oficial", SubjectID: "11134", LawDescription: "Artigo 194 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de providências para evitar danos", SubjectID: "11140", LawDescription: "Artigo 199 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de providências para salvar comandados", SubjectID: "11141", LawDescription: "Artigo 200 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de socorro", SubjectID: "11142", LawDescription: "Artigo 201 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de socorro", SubjectID: "3392", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão de socorro", SubjectID: "9652", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão na Expedição de Boletim de Apuração", SubjectID: "11468", LawDescription: "Artigo 313 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Omissão no Recolhimento das Cédulas Apuradas, no Fechamento e Lacração da Urna", SubjectID: "11469", LawDescription: "Artigo 314 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Operação militar sem ordem superior", SubjectID: "11281", LawDescription: "Parágrafo 1 Artigo 169 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Oposição a ordem de sentinela", SubjectID: "11293", LawDescription: "Artigo 164 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ordem arbitrária de invasão", SubjectID: "11282", LawDescription: "Artigo 170 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ordenação de Despesa Não Autorizada", SubjectID: "5906", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ordenação de Despesa Não Autorizada", SubjectID: "9959", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Organização de grupo para prática de violência", SubjectID: "11291", LawDescription: "Artigo 150 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Organização Terrorista", SubjectID: "12219", LawDescription: "Artigo 3 da Lei nº 13.260 de 16 de Março de 2016"})
-	laws = append(laws, models.LawBySubject{Subject: "Outras fraudes", SubjectID: "9692", LawDescription: "Artigo 176 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Outras fraudes", SubjectID: "3433", LawDescription: "Artigo 176 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Outras Substâncias Nocivas a Saúde Pública", SubjectID: "3517", LawDescription: "Artigo 278 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Outras Substâncias Nocivas a Saúde Pública (Art. 278)", SubjectID: "9798", LawDescription: "Artigo 278 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Outros Atos Contra o Meio-Ambient", SubjectID: "14793", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Pagamento Atrasado / Correção Monetária", SubjectID: "10422", LawDescription: "Artigo 78 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Paralisação de trabalho de interesse coletivo", SubjectID: "3450", LawDescription: "Artigo 201 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Paralisação de trabalho de interesse coletivo (art. 201)", SubjectID: "9727", LawDescription: "Artigo 201 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Participação de Pessoa Não Detentora de Direitos Políticos em Atividades Partidárias e de Propaganda Eleitoral", SubjectID: "11493", LawDescription: "Artigo 337 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Participação em rixa", SubjectID: "11242", LawDescription: "Artigo 211 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Parto Suposto", SubjectID: "3485", LawDescription: "Artigo 242 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Parto Suposto (Art. 242)", SubjectID: "9767", LawDescription: "Artigo 242 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Patrocínio indébito", SubjectID: "11345", LawDescription: "Artigo 334 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Patrocínio infiel", SubjectID: "9948", LawDescription: "Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Patrocínio infiel", SubjectID: "3590", LawDescription: "Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Patrocínio simultâneo ou tergiversação", SubjectID: "3591", LawDescription: "Parágrafo 1 Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Patrocínio simultâneo ou tergiversação", SubjectID: "9949", LawDescription: "Parágrafo 1 Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato", SubjectID: "11315", LawDescription: "Artigo 303 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato", SubjectID: "10835", LawDescription: "Artigo 303 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato", SubjectID: "3548", LawDescription: "Parágrafo 1 Artigo 312 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato", SubjectID: "9829", LawDescription: "Parágrafo 1 Artigo 312 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato mediante aproveitamento ou erro de outrem", SubjectID: "11316", LawDescription: "Artigo 304 do Decreto Lei nº 1.001 de 19 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato mediante erro de outrem", SubjectID: "3550", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato mediante erro de outrem (art. 313)", SubjectID: "9830", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Peculato-furto", SubjectID: "11317", LawDescription: "Parágrafo 2 Artigo 303 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Pederastia ou outro ato de libidinagem", SubjectID: "10831", LawDescription: "Artigo 235 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Penetração com o fim de espionagem", SubjectID: "11215", LawDescription: "Artigo 146 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo de contágio de moléstia grave", SubjectID: "3389", LawDescription: "Artigo 131 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo de contágio de moléstia grave", SubjectID: "9649", LawDescription: "Artigo 131 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo de Contágio Venéreo", SubjectID: "9654", LawDescription: "Artigo 130 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo de Contágio Venéreo", SubjectID: "5911", LawDescription: "Artigo 130 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo de desastre ferroviário", SubjectID: "11199", LawDescription: "Artigo 282 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo de inundação", SubjectID: "11191", LawDescription: "Artigo 273 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo para a vida ou saúde de outrem", SubjectID: "3390", LawDescription: "Artigo 132 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo para a vida ou saúde de outrem (art. 132)", SubjectID: "9650", LawDescription: "Artigo 132 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perigo resultante de violação de regra de trânsito", SubjectID: "11192", LawDescription: "Artigo 280 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ameaça", SubjectID: "14684", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ameaça", SubjectID: "14686", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Perturbar alguem o trabalho ou o sossego alheios", SubjectID: "12347", LawDescription: "Artigo 42 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Perturbação ou Impedimento de Alistamento", SubjectID: "11442", LawDescription: "Artigo 293 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Pescar mediante a utilização de", SubjectID: "14784", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesca Ilegal", SubjectID: "14784", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Pescar em período no qual a pesca seja proibida ou em lugares interditados por órgão competente", SubjectID: "14784", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesquisa Eleitoral - Divulgação de Pesquisa Eleitoral Fraudulenta", SubjectID: "11649", LawDescription: "Parágrafo 4 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesquisa Eleitoral - Divulgação de Pesquisa Eleitoral Fraudulenta", SubjectID: "11649", LawDescription: "Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesquisa Eleitoral - Registro de Pesquisa Eleitoral", SubjectID: "11651", LawDescription: "Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesquisa Eleitoral - Registro de Pesquisa Eleitoral", SubjectID: "11651", LawDescription: "Parágrafo 1 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesquisa Fraudulenta", SubjectID: "11495", LawDescription: "Parágrafo 4 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesquisa Fraudulenta", SubjectID: "11495", LawDescription: "Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: "3545", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: "3545", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: "9826", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: "9826", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos de Falsificação de Papéis Públicos por Funcionário Público", SubjectID: "10993", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos de Falsificação de Papéis Públicos por Funcionário Público", SubjectID: "10993", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos para falsificação de moeda", SubjectID: "3527", LawDescription: "Artigo 291 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos para falsificação de moeda (art. 291)", SubjectID: "9809", LawDescription: "Artigo 291 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos para falsificação de moeda por Funcionário Público", SubjectID: "10994", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Petrechos para falsificação de moeda por Funcionário Público", SubjectID: "10994", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Posse de Drogas", SubjectID: "5885", LawDescription: "Artigo 28 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Posse de Drogas", SubjectID: "9860", LawDescription: "Artigo 28 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Posse Sexual Mediante Fraude", SubjectID: "9748", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Posse Sexual Mediante Fraude", SubjectID: "5850", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Prática de engenharia genética em célula germinal, zigoto ou embrião humanos - Biossegurança", SubjectID: "10515", LawDescription: "Artigo 25 da Lei nº 11.105 de 24 de Março de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes praticados contra os índios e a cultura indígena", SubjectID: "9901", LawDescription: "Artigo 58 da Lei nº 6.001 de 19 de Dezembro de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Práticas Irregulares que Determinam a Anulação da Votação", SubjectID: "11433", LawDescription: "Artigo 310 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria Preconceituosa", SubjectID: "12543", LawDescription: "Parágrafo 3 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "12543", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria Preconceituosa", SubjectID: "12547", LawDescription: "Parágrafo 3 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "12547", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Preparação de ato terrorista", SubjectID: "12220", LawDescription: "Artigo 5 da Lei nº 13.260 de 16 de Março de 2016"})
-	laws = append(laws, models.LawBySubject{Subject: "Preterição à Prioridade Postal", SubjectID: "11521", LawDescription: "Artigo 338 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Prevaricação", SubjectID: "11346", LawDescription: "Artigo 319 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Prevaricação", SubjectID: "10838", LawDescription: "Artigo 319 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Prevaricação", SubjectID: "9837", LawDescription: "Artigo 319 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Prevaricação", SubjectID: "3557", LawDescription: "Artigo 319 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9646", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "5558", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Processamento de Recurso Contra Expedição de Diploma", SubjectID: "12642", LawDescription: "Artigo 262 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Processo Disciplinar / Sindicância", SubjectID: "10190", LawDescription: "Artigo 42 da Lc nº 35 de 14 de Março de 1979"})
-	laws = append(laws, models.LawBySubject{Subject: "Processo Disciplinar / Sindicância", SubjectID: "10197", LawDescription: "Parágrafo 2 Artigo 130 da do Artigo 130A da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Processo Disciplinar / Sindicância", SubjectID: "10197", LawDescription: "Parágrafo 2 Artigo 130A da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Processo Disciplinar / Sindicância", SubjectID: "10197", LawDescription: "Artigo 130A da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Programa de Computador", SubjectID: "10499", LawDescription: "Artigo 1 da Lei nº 9.610 de 19 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Proibição de frequentar determinados locais", SubjectID: "11062", LawDescription: "Artigo 117 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Proibição de frequentar determinados locais", SubjectID: "11062", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Promoção de Desordem nos Trabalhos Eleitorais", SubjectID: "11443", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Promoção de migração ilegal", SubjectID: "14704", LawDescription: "Artigo 232 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "12333", LawDescription: "Artigo 2 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "12334", LawDescription: "Artigo 2 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por dano material em virtude de protesto indevido de título de crédito", SubjectID: "14156", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por dano moral em virtude de protesto indevido de título de crédito", SubjectID: "14170", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Provocação a país estrangeiro", SubjectID: "11216", LawDescription: "Artigo 137 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Provocação de tumulto ou conduta inconveniente", SubjectID: "12340", LawDescription: "Artigo 40 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Provocação direta ou auxílio a suicídio", SubjectID: "11246", LawDescription: "Artigo 207 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Provocação indireta ao suicídio", SubjectID: "11247", LawDescription: "Artigo 207 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Provocação indireta ao suicídio", SubjectID: "11247", LawDescription: "Parágrafo 2 Artigo 207 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Publicação de pesquisa irregular", SubjectID: "10822", LawDescription: "Parágrafo 3 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Publicação de pesquisa irregular", SubjectID: "10822", LawDescription: "Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Publicação ou crítica indevida", SubjectID: "11294", LawDescription: "Artigo 166 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Publicidade opressiva", SubjectID: "11371", LawDescription: "Artigo 348 do Decreto Lei nº 1.001 de 19 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "3521", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Associação Criminosa", SubjectID: "9804", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Quebra do Sigilo Telefônico", SubjectID: "10609", LawDescription: "Artigo 1 da Lei nº 9.296 de 24 de Julho de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Racismo", SubjectID: "14697", LawDescription: "Artigo 1 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Racismo", SubjectID: "14699", LawDescription: "Artigo 1 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Reabilitação", SubjectID: "11104", LawDescription: "Artigo 123 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria Real", SubjectID: "12542", LawDescription: "Parágrafo 2 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "12542", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria Real", SubjectID: "12546", LawDescription: "Parágrafo 2 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "12546", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Realização de Propaganda Eleitoral em Língua Estrangeira", SubjectID: "11492", LawDescription: "Artigo 335 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Receita Ilegal", SubjectID: "11206", LawDescription: "Artigo 291 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "11162", LawDescription: "Artigo 254 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "9694", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "3435", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação qualificada", SubjectID: "11959", LawDescription: "Parágrafo 3 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "11959", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação qualificada", SubjectID: "5847", LawDescription: "Parágrafo 2 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "5847", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação qualificada", SubjectID: "9719", LawDescription: "Parágrafo 2 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Receptação", SubjectID: "9719", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Recondução", SubjectID: "10204", LawDescription: "Artigo 6 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Recondução", SubjectID: "10204", LawDescription: "Artigo 5 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Recondução", SubjectID: "10204", LawDescription: "Artigo 4 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Reconhecimento Indevido de Firma ou Letras para Fins Eleitorais", SubjectID: "11474", LawDescription: "Artigo 352 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 167 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 166 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 165 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 164 da Lei nº 11.101 de 01 de Janeiro de 2173"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 163 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 162 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Recuperação extrajudicial", SubjectID: "4994", LawDescription: "Artigo 161 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Recursos Administrativos", SubjectID: "10391", LawDescription: "Artigo 109 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa a obediência", SubjectID: "11295", LawDescription: "Artigo 163 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa de Entrega de Boletim", SubjectID: "11481", LawDescription: "Parágrafo 4 Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa de Entrega de Boletim", SubjectID: "11481", LawDescription: "Parágrafo 2 Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa de Entrega de Boletim", SubjectID: "11481", LawDescription: "Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa de função na Justiça Militar", SubjectID: "11372", LawDescription: "Artigo 340 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa ou Abandono do Serviço Eleitoral", SubjectID: "11449", LawDescription: "Artigo 344 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa ou omissão de dados cadastrais, registros, documentos e informações", SubjectID: "12339", LawDescription: "Artigo 21 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa, retardamento ou omissão de dados técnicos indispensáveis à propositura de Ação Civil Pública", SubjectID: "3650", LawDescription: "Artigo 10 da Lei nº 7.347 de 24 de Julho de 1985"})
-	laws = append(laws, models.LawBySubject{Subject: "Recusa, retardamento ou omissão de dados técnicos indispensáveis à propositura de Ação Civil Pública", SubjectID: "9903", LawDescription: "Artigo 10 da Lei nº 7.347 de 24 de Julho de 1985"})
-	laws = append(laws, models.LawBySubject{Subject: "Redução a condição análoga à de escravo", SubjectID: "3404", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Redução a condição análoga à de escravo (art. 149)", SubjectID: "9663", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Redução da Capacidade Auditiva", SubjectID: "6112", LawDescription: "Parágrafo 5 Artigo 104 do Decreto nº 3.048 de 06 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Redução da Capacidade Auditiva", SubjectID: "6112", LawDescription: "Artigo 104 do Decreto nº 3.048 de 06 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Redução dos Honorários Contratuais", SubjectID: "14844", LawDescription: "Artigo 34 da Lei nº 8.906 de 04 de Julho de 1994"})
-	laws = append(laws, models.LawBySubject{Subject: "Registro de Óbito após prazo legal", SubjectID: "7925", LawDescription: "Artigo 83 da Lei nº 6.015 de 31 de Dezembro de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Assédio sexual", SubjectID: "14703", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Remição", SubjectID: "10637", LawDescription: "Artigo 126 da Lei nº 7.210 de 11 de Julho de 1984"})
-	laws = append(laws, models.LawBySubject{Subject: "Remoção", SubjectID: "10200", LawDescription: "Artigo 61 da Lei nº 8.625 de 12 de Fevereiro de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Remoção Compulsória", SubjectID: "12379", LawDescription: "Artigo 42 da Lc nº 35 de 14 de Março de 1979"})
-	laws = append(laws, models.LawBySubject{Subject: "Remoção de Órgão", SubjectID: "14660", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Remoção de Órgão", SubjectID: "14670", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Reparação do Dano", SubjectID: "11113", LawDescription: "Artigo 109 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Repasse de Verbas Públicas", SubjectID: "10957", LawDescription: "Parágrafo 2 Artigo 169 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Repasse de Verbas Públicas", SubjectID: "10957", LawDescription: "Artigo 169 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Representação caluniosa", SubjectID: "3617", LawDescription: "Artigo 19 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Representação caluniosa", SubjectID: "9877", LawDescription: "Artigo 19 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Representação do Corregedor", SubjectID: "11064", LawDescription: "Artigo 498 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Reprodução ou adulteração de selo ou peça filatélica", SubjectID: "3538", LawDescription: "Artigo 303 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Reprodução ou adulteração de selo ou peça filatélica (art. 303)", SubjectID: "9820", LawDescription: "Artigo 303 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Requerimento de Apreensão de Veículo", SubjectID: "12161", LawDescription: "Artigo 3 do Decreto Lei nº 911 de 01 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Requerimento de Apreensão de Veículo", SubjectID: "12161", LawDescription: "Parágrafo 9 Artigo 3 do Decreto Lei nº 911 de 01 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Rescisão", SubjectID: "10425", LawDescription: "Artigo 79 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Rescisão", SubjectID: "10425", LawDescription: "Artigo 78 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Resistência", SubjectID: "3566", LawDescription: "Artigo 329 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Usurpação de função pública", SubjectID: "9919", LawDescription: "Artigo 328 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Resistência mediante ameaça ou violência", SubjectID: "11287", LawDescription: "Artigo 177 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 20 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 19 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 18 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 17 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 16 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 15 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 14 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 13 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 12 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 11 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 10 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 9 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 8 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 7 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 6 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 5 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 4 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 3 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: "9873", LawDescription: "Artigo 2 da Lei nº 7.716 de 05 de Janeiro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Retificação de Sexo", SubjectID: "7835", LawDescription: "Artigo 3 do Decreto nº 678 de 06 de Novembro de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Reunião ilícita", SubjectID: "11296", LawDescription: "Artigo 165 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Revelação de identidade, fotografia ou filmagem do colaborador", SubjectID: "12336", LawDescription: "Artigo 18 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Revelação de notícia, informação ou documento", SubjectID: "11217", LawDescription: "Artigo 144 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Revelação de notícia, informação ou documento, com o fim de espionagem militar", SubjectID: "11218", LawDescription: "Artigo 144 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Revogação de atos praticados em prejuízo de credores e da massa", SubjectID: "5003", LawDescription: "Artigo 130 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Revolta", SubjectID: "11292", LawDescription: "Parágrafo 1 Artigo 149 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "3419", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "11160", LawDescription: "Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "9678", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo Majorado", SubjectID: "9699", LawDescription: "Parágrafo 2 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "9699", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo Majorado", SubjectID: "5566", LawDescription: "Parágrafo 2 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "5566", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo qualificado", SubjectID: "11161", LawDescription: "Parágrafo 2 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo qualificado", SubjectID: "10851", LawDescription: "Parágrafo 2 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo simples", SubjectID: "10850", LawDescription: "Parágrafo 1 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo/Leilão Indevido de Bem Empenhado", SubjectID: "14171", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Rufianismo", SubjectID: "9752", LawDescription: "Artigo 230 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Rufianismo", SubjectID: "5854", LawDescription: "Artigo 230 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sanções Administrativas", SubjectID: "10390", LawDescription: "Artigo 88 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Sanções Administrativas", SubjectID: "10390", LawDescription: "Artigo 87 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Sanções Administrativas", SubjectID: "10390", LawDescription: "Artigo 86 da Lei nº 8.666 de 21 de Junho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Saque Fraudulento", SubjectID: "14158", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Saque Fraudulento", SubjectID: "14172", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Satisfação de lascívia mediante presença de criança ou adolescente", SubjectID: "11418", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Satisfação de lascívia mediante presença de criança ou adolescente", SubjectID: "11459", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Saúde", SubjectID: "10064", LawDescription: "Artigo 196 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Saúde", SubjectID: "10064", LawDescription: "Artigo 200 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Saúde", SubjectID: "10064", LawDescription: "Artigo 199 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Saúde", SubjectID: "10064", LawDescription: "Artigo 198 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Saúde", SubjectID: "10064", LawDescription: "Artigo 197 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal seguida de morte", SubjectID: "9643", LawDescription: "Parágrafo 3 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "9643", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal seguida de morte", SubjectID: "3387", LawDescription: "Parágrafo 3 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Semiliberdade", SubjectID: "11392", LawDescription: "Artigo 120 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Separação de Corpos", SubjectID: "11982", LawDescription: "Parágrafo 1 Artigo 7 da Lei nº 6.515 de 26 de Dezembro de 1977"})
-	laws = append(laws, models.LawBySubject{Subject: "Seqüestro e cárcere privado", SubjectID: "3403", LawDescription: "Artigo 148 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Seqüestro e cárcere privado", SubjectID: "9662", LawDescription: "Artigo 148 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sequestro ou cárcere privado", SubjectID: "11257", LawDescription: "Artigo 225 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Servidão", SubjectID: "14662", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Servidão", SubjectID: "14668", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Servidão Administrativa", SubjectID: "10128", LawDescription: "Artigo 40 do Decreto Lei nº 3.365 de 21 de Junho de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "3397", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "12544", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Injúria", SubjectID: "12545", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Simulação de Autoridade para Celebração de Casamento", SubjectID: "9765", LawDescription: "Artigo 238 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Simulação de Autoridade para Celebração de Casamento", SubjectID: "3483", LawDescription: "Artigo 238 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Simulação de Casamento", SubjectID: "3482", LawDescription: "Artigo 239 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Simulação de Casamento", SubjectID: "9764", LawDescription: "Artigo 239 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Fingir-se funcionário público", SubjectID: "12348", LawDescription: "Artigo 45 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Sobre a Receita Bruta (Substitutiva)", SubjectID: "14889", LawDescription: "Artigo 8 da Lei nº 12.546 de 14 de Dezembro de 2011"})
-	laws = append(laws, models.LawBySubject{Subject: "Sobre a Receita Bruta (Substitutiva)", SubjectID: "14889", LawDescription: "Artigo 7 da Lei nº 12.546 de 14 de Dezembro de 2011"})
-	laws = append(laws, models.LawBySubject{Subject: "Sobrestamento", SubjectID: "10738", LawDescription: "Artigo 528 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Sobrevôo em local interdito", SubjectID: "11219", LawDescription: "Artigo 148 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação de contribuição previdenciária (art. 337-A e Lei 8.212/91)", SubjectID: "9928", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação de papel ou objeto de valor probatório", SubjectID: "9950", LawDescription: "Artigo 356 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação de papel ou objeto de valor probatório", SubjectID: "3592", LawDescription: "Artigo 356 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação do Estado de Filiação", SubjectID: "3487", LawDescription: "Artigo 241 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação do Estado de Filiação (Art. 243)", SubjectID: "9769", LawDescription: "Artigo 243 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação ou destruição de correspondência", SubjectID: "3409", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação ou destruição de correspondência", SubjectID: "9668", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação ou destruição de correspondência (art. 151, § 1º, I)", SubjectID: "9668", LawDescription: "Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Submissão à Condição Análoga à de Escravo", SubjectID: "14661", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Submissão à Condição Análoga à de Escravo", SubjectID: "14669", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subscrição de Mais de Uma Ficha de Filiação Partidária", SubjectID: "11518", LawDescription: "Artigo 319 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Substância Destinada à Falsificação", SubjectID: "3519", LawDescription: "Artigo 277 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Substância Destinada à Falsificação (Art. 277)", SubjectID: "9799", LawDescription: "Artigo 277 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Substituição do Produto", SubjectID: "7767", LawDescription: "Parágrafo 1 Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Substituição Tributária", SubjectID: "5981", LawDescription: "Parágrafo 7 Artigo 150 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração de Incapazes", SubjectID: "3490", LawDescription: "Artigo 249 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração de Incapazes (Art. 249)", SubjectID: "9772", LawDescription: "Artigo 249 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração ou inutilização de livro ou documento", SubjectID: "3571", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração ou inutilização de livro ou documento (art. 337, caput)", SubjectID: "9924", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração ou inutilização de livro, processo ou documento", SubjectID: "11333", LawDescription: "Artigo 337 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração, ocultação ou inutilização de material de salvamento", SubjectID: "3497", LawDescription: "Artigo 257 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração, ocultação ou inutilização de material de salvamento (art. 257)", SubjectID: "9779", LawDescription: "Artigo 257 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Subtração, ocultação ou inutilização de material de socorro", SubjectID: "11193", LawDescription: "Artigo 275 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Superendividamento", SubjectID: "15048", LawDescription: "Artigo 4 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Superendividamento", SubjectID: "15048", LawDescription: "Artigo 104 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Superendividamento", SubjectID: "15048", LawDescription: "Artigo 5 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Superendividamento", SubjectID: "15048", LawDescription: "Artigo 51 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Supressão de documento", SubjectID: "11323", LawDescription: "Artigo 316 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Supressão de documento", SubjectID: "3540", LawDescription: "Artigo 305 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Supressão de documento (art. 305)", SubjectID: "9822", LawDescription: "Artigo 305 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Supressão ou Alteração de Marca em Animais", SubjectID: "9703", LawDescription: "Artigo 162 do Decreto Lei nº 2.848 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Supressão ou Alteração de Marca em Animais", SubjectID: "5570", LawDescription: "Artigo 162 do Decreto Lei nº 2.848 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Talidomida", SubjectID: "14764", LawDescription: "Artigo 2 da Lei nº 7.070 de 20 de Dezembro de 1982"})
-	laws = append(laws, models.LawBySubject{Subject: "Talidomida", SubjectID: "14764", LawDescription: "Artigo 1 da Lei nº 7.070 de 20 de Dezembro de 1982"})
-	laws = append(laws, models.LawBySubject{Subject: "Tentativa contra a soberania do Brasil", SubjectID: "11220", LawDescription: "Artigo 142 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Terrorismo", SubjectID: "12217", LawDescription: "Artigo 2 da Lei nº 13.260 de 16 de Março de 2016"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfego de Veículo com Excesso de Peso", SubjectID: "14161", LawDescription: "Artigo 231 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfego de Veículo com Excesso de Peso", SubjectID: "14161", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfego de Veículo com Excesso de Peso", SubjectID: "14174", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "3607", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "3608", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "9859", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de influência", SubjectID: "11334", LawDescription: "Artigo 336 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de influência", SubjectID: "3567", LawDescription: "Artigo 332 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de influência (art. 332)", SubjectID: "9920", LawDescription: "Artigo 332 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Influência em Transação Comercial Internacional", SubjectID: "9931", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Influência em Transação Comercial Internacional", SubjectID: "5877", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Ilícito de Drogas praticado por Funcionário Público", SubjectID: "10987", LawDescription: "Artigo 40 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Internacional de Pessoa", SubjectID: "14665", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico internacional de pessoa para fim de exploração sexual", SubjectID: "11421", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico internacional de pessoa para fim de exploração sexual", SubjectID: "9741", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Internacional de Pessoas", SubjectID: "9753", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Internacional de Pessoas", SubjectID: "5855", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Interno de Pessoa", SubjectID: "14659", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico interno de pessoa para fim de exploração sexual", SubjectID: "11422", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico interno de pessoa para fim de exploração sexual", SubjectID: "11460", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Interno de Pessoas", SubjectID: "5856", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico Interno de Pessoas", SubjectID: "9754", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico, posse ou uso de entorpecente ou substância de efeito similar", SubjectID: "11207", LawDescription: "Artigo 290 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Transgênicos", SubjectID: "10115", LawDescription: "Artigo 1 da Lei nº 11.105 de 24 de Março de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Poluição", SubjectID: "14794", LawDescription: "Parágrafo 2 Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Poluição", SubjectID: "14794", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Tratados e Convenções Internacionais", SubjectID: "6212", LawDescription: "Artigo 109 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Turbação de objeto ou documento", SubjectID: "11221", LawDescription: "Artigo 145 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Ultraje / Impedimento ou Perturbação de Culto Religioso", SubjectID: "9739", LawDescription: "Artigo 208 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ultraje / Impedimento ou Perturbação de Culto Religioso", SubjectID: "3462", LawDescription: "Artigo 208 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: "3469", LawDescription: "Artigo 234 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: "3469", LawDescription: "Artigo 233 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: "9746", LawDescription: "Artigo 234 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: "9746", LawDescription: "Artigo 233 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso culposo de gás tóxico ou asfixiante", SubjectID: "11965", LawDescription: "Parágrafo 1 Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso culposo de gás tóxico ou asfixiante", SubjectID: "11966", LawDescription: "Parágrafo 1 Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de documento falso", SubjectID: "11324", LawDescription: "Artigo 315 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de documento falso", SubjectID: "10817", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de documento falso", SubjectID: "3539", LawDescription: "Artigo 304 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de documento falso", SubjectID: "9821", LawDescription: "Artigo 304 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de Documento Falso para Fins Eleitorais", SubjectID: "11475", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de documento pessoal alheio", SubjectID: "11325", LawDescription: "Artigo 317 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de gás tóxico ou asfixiante", SubjectID: "9776", LawDescription: "Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de gás tóxico ou asfixiante", SubjectID: "3494", LawDescription: "Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso de símbolos governamentais em propaganda eleitoral", SubjectID: "10823", LawDescription: "Artigo 40 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso indevido de uniforme, distintivo ou insígnia militar por qualquer pessoa", SubjectID: "11284", LawDescription: "Artigo 172 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso indevido por militar de uniforme, distintivo ou insígnia", SubjectID: "11285", LawDescription: "Artigo 171 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso ou Tráfico de Drogas", SubjectID: "9971", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso Proibido de Alto-Falantes", SubjectID: "11512", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Uso, na Propaganda Eleitoral, de Símbolo de Órgãos de Governo", SubjectID: "11496", LawDescription: "Artigo 40 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Usura pecuniária", SubjectID: "11154", LawDescription: "Artigo 267 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Usurpação de águas", SubjectID: "3424", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Esbulho possessório", SubjectID: "9683", LawDescription: "Parágrafo 1 Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Usurpação de águas (art. 161, § 1º, I)", SubjectID: "9683", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Usurpação de função", SubjectID: "11335", LawDescription: "Artigo 335 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Usurpação de função pública", SubjectID: "3565", LawDescription: "Artigo 328 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Usurpação de função pública (art. 328)", SubjectID: "9918", LawDescription: "Artigo 328 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Utilização de Embrião Humano em Desacordo com a Legislação - Biossegurança", SubjectID: "10514", LawDescription: "Artigo 24 da Lei nº 11.105 de 24 de Março de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Utilização de Organização Comercial para Propaganda ou Aliciamento de Eleitores", SubjectID: "11491", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Utilização de Prédios ou Serviços de Repartições Públicas para Beneficiar Partido ou Organização de Caráter Político", SubjectID: "11451", LawDescription: "Artigo 346 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Utilização de Veículos e Embarcações Públicas em Campanha Eleitoral", SubjectID: "11465", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: "11775", LawDescription: "Parágrafo 5 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: "11775", LawDescription: "Parágrafo 1 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Inserções", SubjectID: "11776", LawDescription: "Parágrafo 6 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Inserções", SubjectID: "11776", LawDescription: "Parágrafo 1 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Veículos", SubjectID: "14964", LawDescription: "Artigo 1 da Lei nº 8.989 de 24 de Fevereiro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Venda de Produtos ou Substância nas Condições dos Artigos 274 e 275", SubjectID: "5866", LawDescription: "Artigo 276 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Venda de Produtos ou Substância nas Condições dos Artigos 274 e 275", SubjectID: "9801", LawDescription: "Artigo 276 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Vilipêndio a Cadáver", SubjectID: "9737", LawDescription: "Artigo 212 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Vilipêndio a Cadáver", SubjectID: "3460", LawDescription: "Artigo 212 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação a Sepultura", SubjectID: "3461", LawDescription: "Artigo 210 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação a Sepultura (Art. 210)", SubjectID: "9738", LawDescription: "Artigo 210 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação ou destruição de correspondência", SubjectID: "3410", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação ou destruição de correspondência", SubjectID: "9669", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de comunicação telegráfica, radioelétrica ou telefônica (art. 151, § 1º, II, III e IV)", SubjectID: "9669", LawDescription: "Parágrafo 1 Artigo 151 da do Decreto Lei nº 2.848 de 17 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de correspondência", SubjectID: "11258", LawDescription: "Artigo 227 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de correspondência", SubjectID: "3408", LawDescription: "Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de correspondência (art. 151, caput)", SubjectID: "9667", LawDescription: "Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de Correspondência comercial", SubjectID: "3411", LawDescription: "Artigo 152 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de Correspondência comercial (art. 152)", SubjectID: "9670", LawDescription: "Artigo 152 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de domicílio", SubjectID: "3406", LawDescription: "Artigo 150 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de domicílio", SubjectID: "11259", LawDescription: "Artigo 226 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de domicílio", SubjectID: "9665", LawDescription: "Artigo 150 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de recato", SubjectID: "11260", LawDescription: "Artigo 229 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de segredo profissional", SubjectID: "11261", LawDescription: "Artigo 230 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de sigilo de proposta de concorrência", SubjectID: "11347", LawDescription: "Artigo 327 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de sigilo funcional", SubjectID: "11348", LawDescription: "Artigo 326 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de território estrangeiro", SubjectID: "11222", LawDescription: "Artigo 139 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do dever funcional com o fim de lucro", SubjectID: "11349", LawDescription: "Artigo 320 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do segredo profissional", SubjectID: "3414", LawDescription: "Artigo 154 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do segredo profissional (art. 154)", SubjectID: "9673", LawDescription: "Artigo 154 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do Sigilo da Urna ou dos Invólucros", SubjectID: "11509", LawDescription: "Artigo 317 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do sigilo de proposta de concorrência", SubjectID: "3564", LawDescription: "Artigo 326 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do sigilo de proposta de concorrência (art. 326)", SubjectID: "9844", LawDescription: "Artigo 326 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do Sigilo do Voto", SubjectID: "11508", LawDescription: "Artigo 312 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do sigilo funcional", SubjectID: "3563", LawDescription: "Artigo 325 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação do sigilo funcional (art. 325)", SubjectID: "9843", LawDescription: "Artigo 325 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação ou divulgação indevida de correspondência ou comunicação", SubjectID: "11350", LawDescription: "Artigo 325 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação sexual mediante fraude", SubjectID: "11416", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência arbitrária", SubjectID: "11351", LawDescription: "Artigo 333 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência arbitrária", SubjectID: "3560", LawDescription: "Artigo 322 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência arbitrária (art. 322)", SubjectID: "9840", LawDescription: "Artigo 322 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência contra inferior", SubjectID: "11286", LawDescription: "Artigo 175 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência contra militar de serviço", SubjectID: "11275", LawDescription: "Artigo 158 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência contra superior", SubjectID: "11276", LawDescription: "Artigo 157 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "11979", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "10948", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "10949", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência ou fraude em arrematação judicial", SubjectID: "9952", LawDescription: "Artigo 358 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência ou fraude em arrematação judicial", SubjectID: "3594", LawDescription: "Artigo 358 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência ou Grave Ameaça Visando a Obtenção de Voto ou a sua Abstenção", SubjectID: "11503", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Ameaça", SubjectID: "14942", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Votação de Eleitor na Seção Eleitoral na qual Não Está Inscrito ou Autorizado a Votar", SubjectID: "11434", LawDescription: "Artigo 311 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Votação Múltipla ou Realizada em Lugar de Outrem", SubjectID: "11507", LawDescription: "Artigo 309 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Adesão a Programa de Parcelamento de Débito", SubjectID: "14953", LawDescription: "Artigo 38 da Lei nº 6.830 de Outubro de 2010"})
-	laws = append(laws, models.LawBySubject{Subject: "Adesão a Programa de Parcelamento de Débito", SubjectID: "14953", LawDescription: "Artigo 38 da Lei nº 13.043 de 13 de Novembro de 2014"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 33 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 32 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 31 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 30 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 29 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 28 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 27 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 26 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 25 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 24 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 23 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Administração judicial", SubjectID: "9558", LawDescription: "Artigo 22 da Lei nº 11.101 de 09 de Fevereiro de 2005"})
-	laws = append(laws, models.LawBySubject{Subject: "Afastamento do Cargo", SubjectID: "10202", LawDescription: "Artigo 20 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Agente Agressivo - Eletricidade", SubjectID: "14756", LawDescription: "Artigo 31 da Lei nº 3.807 de 26 de Agosto de 1960"})
-	laws = append(laws, models.LawBySubject{Subject: "Agente Cancerígeno", SubjectID: "14751", LawDescription: "Parágrafo 4 Artigo 68 do Decreto nº 3.048 de 06 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Agrotóxicos", SubjectID: "3622", LawDescription: "Artigo 15 da Lei nº 7.802 de 11 de Julho de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "AITP/Adicional de Indenização do Trabalhador Portuário Avulso", SubjectID: "6074", LawDescription: "Artigo 61 da Lei nº 8.630 de 25 de Fevereiro de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "A alienação fiduciária regulada por esta Lei é o negócio jurídico pelo qual o devedor, ou fiduciante, com o escopo de garantia, contrata a transferência ao credor, ou fiduciário, da propriedade resolúvel de coisa imóvel.", SubjectID: "9582", LawDescription: "Artigo 22 da Lei nº 9.514 de 20 de Novembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Alimentação Escolar", SubjectID: "12862", LawDescription: "Artigo 208 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Apropriação indébita", SubjectID: "3430", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Arrolamento de Bens", SubjectID: "6020", LawDescription: "Artigo 64 da Lei nº 9.532 de 10 de Dezembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Ato Lesivo ao Patrimônio Artístico, Estético, Histórico ou Turístico", SubjectID: "10010", LawDescription: "Artigo 1 da Lei nº 7.347 de 24 de Julho de 1985"})
-	laws = append(laws, models.LawBySubject{Subject: "Ato Lesivo ao Patrimônio Artístico, Estético, Histórico ou Turístico", SubjectID: "10010", LawDescription: "Artigo 1 da Lei nº 4.717 de 29 de Junho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Autorização de Funcionamento/Fiscalização de Estabelecimentos de Ensino", SubjectID: "12814", LawDescription: "Artigo 206 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Bullying, Violência e Discriminação", SubjectID: "12857", LawDescription: "Artigo 3 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Bullying, Violência e Discriminação", SubjectID: "12857", LawDescription: "Artigo 227 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Captação ilícita de votos ou corrupção eleitoral", SubjectID: "10751", LawDescription: "Artigo 41 da Lei nº 9.504 de 30 de Setembro de 1997"})
-	laws = append(laws, models.LawBySubject{Subject: "Captação ilícita de votos ou corrupção eleitoral", SubjectID: "10751", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Cartão de Crédito", SubjectID: "9585", LawDescription: "Artigo 39 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Cartão de Crédito", SubjectID: "9585", LawDescription: "Artigo 1 do Decreto nº 22.626 de 07 de Abril de 1933"})
-	laws = append(laws, models.LawBySubject{Subject: "Cartão de Crédito", SubjectID: "9585", LawDescription: "Artigo 10 da Lei nº 4.595 de 31 de Dezembro de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Cartão de Crédito", SubjectID: "9585", LawDescription: "Artigo 4 da Lei nº 4.595 de 31 de Dezembro de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Colaboração Premiada", SubjectID: "14877", LawDescription: "Artigo 4 da Lei nº 12.850 de 02 de Agosto de 2013"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Contra a Economia e as Relações de Consumo", SubjectID: "9875", LawDescription: "Artigo 6 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime Contra a Economia e as Relações de Consumo", SubjectID: "9875", LawDescription: "Artigo 2 da Lei nº 8.176 de 08 de Fevereiro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime contra a ordem econômica", SubjectID: "9875", LawDescription: "Artigo 1 da Lei nº 8.176 de 08 de Fevereiro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Ordem Tributária", SubjectID: "9874", LawDescription: "Artigo 3 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Ordem Tributária", SubjectID: "9874", LawDescription: "Artigo 2 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Ordem Tributária", SubjectID: "9874", LawDescription: "Artigo 1 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra a Ordem Tributária", SubjectID: "9874", LawDescription: "Artigo 1 da Lei nº 4.729 de 14 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 80 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 79 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 78 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 77 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 76 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 75 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 74 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 73 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 72 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 71 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 70 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 69 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 68 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 67 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 66 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 65 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 64 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 63 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 62 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 61 da Lei nº 8.078 de 11 de Setembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Contra as Relações de Consumo", SubjectID: "9876", LawDescription: "Artigo 7 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Contribuição INCRA", SubjectID: "6041", LawDescription: "Artigo 7 da Lei nº 2.613 de 23 de Setembro de 1955"})
-	laws = append(laws, models.LawBySubject{Subject: "Contribuição INCRA", SubjectID: "6041", LawDescription: "Artigo 6 da Lei nº 2.613 de 23 de Setembro de 1955"})
-	laws = append(laws, models.LawBySubject{Subject: "Contribuição INCRA", SubjectID: "6041", LawDescription: "Artigo 1 do Decreto Lei nº 1.110 de 09 de Julho de 1970"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "12342", LawDescription: "Parágrafo 12 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "12342", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes cometidos contra autoridade ou agente descrito nos arts. 142 e 143 da Constituição Federal, integrantes do sistema prisional e da Força Nacional de Segurança Pública", SubjectID: "12342", LawDescription: "Artigo 1 da Lei nº 8.072 de 25 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Lesão corporal", SubjectID: "12342", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "12342", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime contra a Economia e as Relações de Consumo", SubjectID: "3615", LawDescription: "Artigo 6 da Lei nº 8.137 de 27 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Crime contra a ordem econômica", SubjectID: "3615", LawDescription: "Artigo 1 da Lei nº 8.176 de 08 de Fevereiro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Responsabilidade", SubjectID: "3604", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Responsabilidade", SubjectID: "3604", LawDescription: "Artigo 1 da Lei nº 1.079 de 10 de Abril de 1950"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: "11895", LawDescription: "Artigo 41G da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: "11895", LawDescription: "Artigo 41F da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: "11895", LawDescription: "Artigo 41D da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: "11895", LawDescription: "Artigo 41C da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: "11895", LawDescription: "Artigo 41B da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Responsabilidade", SubjectID: "9855", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Debêntures", SubjectID: "4971", LawDescription: "Artigo 72 da Lei nº 6.404 de 15 de Dezembro de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Debêntures", SubjectID: "4971", LawDescription: "Artigo 52 da Lei nº 6.404 de 15 de Dezembro de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Demonstrações Financeiras (DCTF)", SubjectID: "5935", LawDescription: "Artigo 2 da Lei nº 7.799 de 10 de Julho de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Demonstrações Financeiras (DCTF)", SubjectID: "5935", LawDescription: "Artigo 4 da Lei nº 9.249 de 26 de Dezembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Demonstrações Financeiras (DCTF)", SubjectID: "5935", LawDescription: "Artigo 1 da Lei nº 8.200 de 28 de Junho de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Desapropriação por Interesse Social para Reforma Agrária", SubjectID: "10124", LawDescription: "Artigo 184 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Desastre ferroviário", SubjectID: "9781", LawDescription: "Parágrafo 2 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Despejo por Inadimplemento", SubjectID: "14915", LawDescription: "Parágrafo 1 Artigo 9 da Lei nº 8.245 de 18 de Outubro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Despesa", SubjectID: "12837", LawDescription: "Artigo 69 da Lei nº 9.394 de 21 de Setembro de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Despesas Condominiais", SubjectID: "10467", LawDescription: "Artigo 12 da Lei nº 4.591 de 16 de Dezembro de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Destinação de Bens e Mercadorias/Coisas Apreendidas", SubjectID: "14881", LawDescription: "Artigo 118 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Destruição ou Destinação das Coisas Apreendidas", SubjectID: "14958", LawDescription: "Artigo 124 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Dívida Ativa (Execução Fiscal)", SubjectID: "6017", LawDescription: "Parágrafo 3 Artigo 131 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Importunação sexual", SubjectID: "12398", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Enriquecimento ilícito", SubjectID: "10013", LawDescription: "Artigo 9 da Lei nº 8.429 de 02 de Junho de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Equiparação com Instituições Financeiras", SubjectID: "14892", LawDescription: "Parágrafo 6 Artigo 3 da Lei nº 9.718 de 27 de Novembro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Equivalência salarial", SubjectID: "4840", LawDescription: "Artigo 19 da Lei nº 10.150 de 21 de Dezembro de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Erro Médico", SubjectID: "10503", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Esbulho possessório", SubjectID: "3425", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Esbulho possessório", SubjectID: "9684", LawDescription: "Parágrafo 1 Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Esbulho possessório (art. 161, § 1º, II)", SubjectID: "9684", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Escala de Salário-Base", SubjectID: "6130", LawDescription: "Artigo 6 da Lei nº 6.332 de 18 de Maio de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão - ICMS", SubjectID: "10556", LawDescription: "Parágrafo 2 Artigo 3 da Lei nº 9.718 de 27 de Novembro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Exclusão - ICMS", SubjectID: "10556", LawDescription: "Artigo 3 da Lei nº 10.833 de 29 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Fac-símile", SubjectID: "10668", LawDescription: "Artigo 2 da Lei nº 9.800 de 26 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Feminicídio", SubjectID: "12358", LawDescription: "Artigo 104 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Feminicídio", SubjectID: "12358", LawDescription: "Artigo 103 da Lei nº 8.069 de 13 de Julho de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio qualificado", SubjectID: "12358", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Homicídio", SubjectID: "12358", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Importunação sexual", SubjectID: "12384", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Importunação sexual", SubjectID: "12397", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Impostos", SubjectID: "5916", LawDescription: "Artigo 40 da Lei nº 5.172 de 31 de Julho de 2055"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre 1/3 de férias (art. 7º, XVII da CF)", SubjectID: "5927", LawDescription: "Artigo 43 do Decreto nº 3.000 de 26 de Março de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre 13° Salário", SubjectID: "5928", LawDescription: "Artigo 638 do Decreto nº 3.000 de 26 de Março de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre 13° Salário", SubjectID: "5928", LawDescription: "Artigo 26 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Ajuda de Custo", SubjectID: "14988", LawDescription: "Artigo 6 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Ajuda de Custo", SubjectID: "14988", LawDescription: "Artigo 39 do Decreto nº 3.000 de 26 de Março de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: "5920", LawDescription: "Artigo 43 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: "5936", LawDescription: "Artigo 20 da Lei nº 8.383 de 30 de Dezembro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: "5936", LawDescription: "Artigo 37 da Lei nº 8.541 de 23 de Dezembro de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: "5936", LawDescription: "Artigo 36 da Lei nº 8.541 de 23 de Dezembro de 1992"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Aposentadoria", SubjectID: "5919", LawDescription: "Artigo 6 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Função Comissionada", SubjectID: "5929", LawDescription: "Artigo 43 do Decreto nº 3.000 de 26 de Março de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Indenização por Rescisão de Contrato de Trabalho", SubjectID: "14995", LawDescription: "Artigo 6 da Lei nº 7.713 de 22 de Dezembro de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Incidência sobre Indenização por Rescisão de Contrato de Trabalho", SubjectID: "14995", LawDescription: "Artigo 39 do Decreto nº 3.000 de 26 de Março de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Inclusão do 13º salário (gratificação natalina) no PBC", SubjectID: "11940", LawDescription: "Parágrafo 4 Artigo 201 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inclusão do 13º salário (gratificação natalina) no PBC", SubjectID: "11940", LawDescription: "Parágrafo 3 Artigo 201 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inclusão/exclusão de Jurado", SubjectID: "7937", LawDescription: "Artigo 440 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Inclusão/exclusão de Jurado", SubjectID: "7937", LawDescription: "Artigo 439 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Ambiental", SubjectID: "9994", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Indenização por Dano Ambiental", SubjectID: "9994", LawDescription: "Parágrafo 1 Artigo 14 da Lei nº 6.938 de 31 de Agosto de 1981"})
-	laws = append(laws, models.LawBySubject{Subject: "Indução, Instigação ou Auxílio ao Uso de Drogas", SubjectID: "9862", LawDescription: "Parágrafo 2 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "9862", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Desincompatibilização", SubjectID: "11600", LawDescription: "Parágrafo 2 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Desincompatibilização", SubjectID: "11600", LawDescription: "Parágrafo 1 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Inalistável", SubjectID: "11601", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Inalistável", SubjectID: "11601", LawDescription: "Parágrafo 4 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Inalistável", SubjectID: "11601", LawDescription: "Parágrafo 2 Artigo 14 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Inelegibilidade - Inalistável", SubjectID: "11601", LawDescription: "Artigo 5 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Infração à Legislação Previdenciária", SubjectID: "15006", LawDescription: "Artigo 79 da Lei nº 11.941 de 27 de Maio de 2009"})
-	laws = append(laws, models.LawBySubject{Subject: "Infração à Legislação Previdenciária", SubjectID: "15006", LawDescription: "Parágrafo 1 Artigo 291 do Decreto nº 3.048 de 06 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Infração à Legislação Trabalhista", SubjectID: "15007", LawDescription: "Artigo 69 da Lei nº 3.857 de 22 de Dezembro de 1960"})
-	laws = append(laws, models.LawBySubject{Subject: "Internação", SubjectID: "7795", LawDescription: "Parágrafo 1 Artigo 112 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Internação", SubjectID: "7795", LawDescription: "Artigo 659 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Internação", SubjectID: "7795", LawDescription: "Artigo 97 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Isenção", SubjectID: "5915", LawDescription: "Parágrafo 6 Artigo 150 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Isenção sobre Bens Contidos em Remessas Postais Internacionais", SubjectID: "14962", LawDescription: "Artigo 2 do Decreto Lei nº 1.804 de 03 de Setembro de 1980"})
-	laws = append(laws, models.LawBySubject{Subject: "Jornada de Trabalho", SubjectID: "12866", LawDescription: "Artigo 7 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Juros/Correção Monetária", SubjectID: "6005", LawDescription: "Parágrafo 4 Artigo 39 da Lei nº 9.250 de 26 de Dezembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Juros/Correção Monetária", SubjectID: "6005", LawDescription: "Artigo 16 da Lei nº 9.250 de 26 de Dezembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Juros/Correção Monetária", SubjectID: "6005", LawDescription: "Artigo 14 da Lei nº 9.250 de 26 de Dezembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Laudo Arbitral Internacional", SubjectID: "9565", LawDescription: "Artigo 9 do Decreto Lei nº 4.657 de 04 de Setembro de 1942"})
-	laws = append(laws, models.LawBySubject{Subject: "Lei Geral de Proteção de Dados (LGPD)", SubjectID: "14202", LawDescription: "Artigo 1 da Lei nº 13.709 de 14 de Agosto de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Levantamento de depósito", SubjectID: "6025", LawDescription: "Parágrafo 4 Artigo 1 da Lei nº 9.703 de 17 de Novembro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Levantamento de depósito", SubjectID: "6025", LawDescription: "Parágrafo 3 Artigo 1 da Lei nº 9.703 de 17 de Novembro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Levantamento de depósito", SubjectID: "6025", LawDescription: "Artigo 2 do Decreto nº 2.850 de 27 de Novembro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Liberação de mercadorias", SubjectID: "6024", LawDescription: "Parágrafo 4 Artigo 23 do Decreto Lei nº 1.455 de 07 de Abril de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Liberação de mercadorias", SubjectID: "6024", LawDescription: "Artigo 23 do Decreto Lei nº 1.455 de 07 de Abril de 1976"})
-	laws = append(laws, models.LawBySubject{Subject: "Liberação de mercadorias", SubjectID: "6024", LawDescription: "Artigo 26 do Decreto nº 4.543 de 26 de Dezembro de 2002"})
-	laws = append(laws, models.LawBySubject{Subject: "Liberação de Veículo Apreendido", SubjectID: "6028", LawDescription: "Artigo 604 do Decreto nº 4.543 de 26 de Dezembro de 2002"})
-	laws = append(laws, models.LawBySubject{Subject: "Limitação do salário-de-benefício e da renda mensal inicial", SubjectID: "6128", LawDescription: "Artigo 29 da Lei nº 8.870 de 15 de Abril de 1994"})
-	laws = append(laws, models.LawBySubject{Subject: "Liquidação Parcelada", SubjectID: "10885", LawDescription: "Parágrafo 20 Artigo 100 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Manutenção e Desenvolvimento do Ensino", SubjectID: "12838", LawDescription: "Artigo 212 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Monitoração Eletrônica - Medida Cautelar", SubjectID: "14935", LawDescription: "Artigo 319 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Oferecimento de Drogas para Consumo Conjunto", SubjectID: "9863", LawDescription: "Parágrafo 3 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Tráfico de Drogas", SubjectID: "9863", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Operações Comerciais", SubjectID: "15002", LawDescription: "Artigo 4 do Decreto Lei nº 288 de 28 de Fevereiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Operações Comerciais", SubjectID: "15002", LawDescription: "Artigo 7 da Lc nº 70 de 30 de Dezembro de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Operações Comerciais", SubjectID: "15002", LawDescription: "Artigo 2 da Lei nº 10.637 de 30 de Dezembro de 2002"})
-	laws = append(laws, models.LawBySubject{Subject: "Operações Comerciais", SubjectID: "15002", LawDescription: "Parágrafo 2 Artigo 149 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Ordenação da Cidade / Plano Diretor", SubjectID: "10109", LawDescription: "Artigo 39 da Lei nº 10.257 de 10 de Julho de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Pagamento ou Parcelamento do Crédito Tributário", SubjectID: "10627", LawDescription: "Artigo 34 da Lei nº 9.249 de 23 de Março de 1982"})
-	laws = append(laws, models.LawBySubject{Subject: "Paridade Salarial", SubjectID: "14744", LawDescription: "Artigo 7 da Emenda Constitucional nº 41 de 19 de Dezembro de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Perda da qualidade de segurado", SubjectID: "6170", LawDescription: "Artigo 13 do Decreto nº 3.048 de 06 de Maio de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "Perda por crime contra titular do mesmo poder ou descendente (L. 13.715/2018)", SubjectID: "12383", LawDescription: "Artigo 4 da Lei nº 13.715 de 24 de Setembro de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Perdimento de Bens", SubjectID: "6029", LawDescription: "Artigo 604 do Decreto nº 4.543 de 26 de Dezembro de 2002"})
-	laws = append(laws, models.LawBySubject{Subject: "Perempção", SubjectID: "7935", LawDescription: "Artigo 60 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesca", SubjectID: "3627", LawDescription: "Parágrafo 3 Artigo 27 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Pesca (Lei nº 5.197/67, Lei nº 7.643/87, Lei 7.679/88, DL 221/67)", SubjectID: "9887", LawDescription: "Parágrafo 3 Artigo 27 da Lei nº 5.197 de 03 de Janeiro de 1967"})
-	laws = append(laws, models.LawBySubject{Subject: "Pessoa Jurídica Estrangeira", SubjectID: "6218", LawDescription: "Artigo 11 do Decreto Lei nº 4.657 de 04 de Setembro de 1942"})
-	laws = append(laws, models.LawBySubject{Subject: "Pessoa Portadora de Deficiência", SubjectID: "14966", LawDescription: "Parágrafo 2 Artigo 1 da Lei nº 10.182 de 12 de Fevereiro de 2001"})
-	laws = append(laws, models.LawBySubject{Subject: "Pessoa Portadora de Deficiência", SubjectID: "14966", LawDescription: "Artigo 4 do Decreto nº 3.298 de 20 de Dezembro de 1999"})
-	laws = append(laws, models.LawBySubject{Subject: "PIS", SubjectID: "6039", LawDescription: "Artigo 239 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 6 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 5 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 4 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 3 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 2 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "12887", LawDescription: "Artigo 2 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 1 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "12887", LawDescription: "Artigo 1 da Lei nº 11.738 de 16 de Julho de 2008"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "10312", LawDescription: "Artigo 41 da Lei nº 11.494 de 20 de Junho de 2007"})
-	laws = append(laws, models.LawBySubject{Subject: "Piso Salarial", SubjectID: "12887", LawDescription: "Artigo 206 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Plano Municipal de Educação", SubjectID: "12850", LawDescription: "Artigo 214 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Política Pública de Preços", SubjectID: "14173", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Preparo/Deserção", SubjectID: "9050", LawDescription: "Parágrafo 2 Artigo 806 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Preparo/Deserção", SubjectID: "9050", LawDescription: "Artigo 712 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"})
-	laws = append(laws, models.LawBySubject{Subject: "Preparo/Deserção", SubjectID: "9050", LawDescription: "Parágrafo 2 Artigo 275 da Lei nº 4.737 de 15 de Julho de 1965"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 78 da Lei nº 4.320 de 17 de Março de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 78 da Lei nº 4.320 de 17 de Março de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 67 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 67 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 56 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 56 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 49 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 49 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 48 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 48 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 25 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 25 da Lc nº 101 de 04 de Maio de 2000"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10211", LawDescription: "Artigo 34 da Alínea \"d\" do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Prestação de Contas", SubjectID: "10217", LawDescription: "Artigo 34 da Alínea \"d\" do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Previstos no Estatuto do Torcedor", SubjectID: "11896", LawDescription: "Artigo 41 da da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Previstos no Estatuto do Torcedor", SubjectID: "11896", LawDescription: "Artigo 41F da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Previstos no Estatuto do Torcedor", SubjectID: "11896", LawDescription: "Artigo 41D da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Previstos no Estatuto do Torcedor", SubjectID: "11896", LawDescription: "Artigo 41C da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Previstos no Estatuto do Torcedor", SubjectID: "11896", LawDescription: "Artigo 41B da Lei nº 10.671 de 15 de Maio de 2003"})
-	laws = append(laws, models.LawBySubject{Subject: "Processo Administrativo Fiscal", SubjectID: "6018", LawDescription: "Artigo 5 da Inciso LV do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Produção Agropecuária", SubjectID: "6057", LawDescription: "Parágrafo 8 Artigo 195 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Produção Agropecuária", SubjectID: "6057", LawDescription: "Parágrafo 4 Artigo 195 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Produção Agropecuária", SubjectID: "6057", LawDescription: "Artigo 154 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Produção Antecipada de Provas", SubjectID: "14238", LawDescription: "Artigo 11 da Lei nº 13.431 de 04 de Abril de 2017"})
-	laws = append(laws, models.LawBySubject{Subject: "Propaganda Política - Propaganda Eleitoral - Rádio Comunitária", SubjectID: "11674", LawDescription: "Artigo 1 da Lei nº 9.612 de 19 de Fevereiro de 1998"})
-	laws = append(laws, models.LawBySubject{Subject: "Proteção de Dados Pessoais", SubjectID: "14206", LawDescription: "Artigo 1 da Lei nº 13.709 de 14 de Agosto de 2018"})
-	laws = append(laws, models.LawBySubject{Subject: "Quebra de Sigilo Bancário", SubjectID: "10560", LawDescription: "Parágrafo 2 Artigo 38 da Lei nº 4.595 de 31 de Dezembro de 1964"})
-	laws = append(laws, models.LawBySubject{Subject: "Quebra de Sigilo Bancário", SubjectID: "10560", LawDescription: "Artigo 8 da Lei nº 8.021 de 12 de Abril de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Quebra de Sigilo Bancário", SubjectID: "10560", LawDescription: "Artigo 2 da Lei nº 9.034 de 03 de Maio de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Quebra de Sigilo Telemático", SubjectID: "14124", LawDescription: "Parágrafo 1 Artigo 1 da Lei nº 9.296 de 24 de Julho de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Quesitos", SubjectID: "10599", LawDescription: "Artigo 564 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Quinto Constitucional", SubjectID: "10675", LawDescription: "Artigo 94 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Quinto Constitucional", SubjectID: "10675", LawDescription: "Artigo 100 da Lc nº 35 de 14 de Março de 1979"})
-	laws = append(laws, models.LawBySubject{Subject: "Reajuste de Prestações", SubjectID: "4842", LawDescription: "Artigo 1 da Lei nº 8.100 de 05 de Dezembro de 1990"})
-	laws = append(laws, models.LawBySubject{Subject: "Reajuste de Prestações", SubjectID: "4842", LawDescription: "Artigo 1 da Lei nº 8.177 de 01 de Março de 1991"})
-	laws = append(laws, models.LawBySubject{Subject: "Renda Mensal Vitalícia", SubjectID: "6117", LawDescription: "Artigo 40 da Lei nº 8.742 de 07 de Dezembro de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "Restituição de Coisas Apreendidas", SubjectID: "14957", LawDescription: "Parágrafo 2 Artigo 120 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"})
-	laws = append(laws, models.LawBySubject{Subject: "Revisão do Saldo Devedor", SubjectID: "4854", LawDescription: "Artigo 15 da Lei nº 8.692 de 28 de Julho de 1993"})
-	laws = append(laws, models.LawBySubject{Subject: "RMI cuja salário-de-benefício supera menor valor teto", SubjectID: "6129", LawDescription: "Artigo 5 da Lei nº 5.890 de 08 de Junho de 1973"})
-	laws = append(laws, models.LawBySubject{Subject: "Salário-Educação", SubjectID: "6037", LawDescription: "Parágrafo 5 Artigo 212 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Salário-Família (Art. 65/70)", SubjectID: "6102", LawDescription: "Artigo 3 da Lei nº 4.266 de 03 de Outubro de 1963"})
-	laws = append(laws, models.LawBySubject{Subject: "Seguro Acidentes do Trabalho", SubjectID: "6038", LawDescription: "Artigo 195 da Alínea \"a\" do Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Sobre Aquisição de Bens/Veículos", SubjectID: "14963", LawDescription: "Artigo 1 da Lei nº 8.989 de 24 de Fevereiro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Sonegação de contribuição previdenciária", SubjectID: "3598", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Sucessão de Bens de Estrangeiro", SubjectID: "6215", LawDescription: "Artigo 10 do Decreto Lei nº 4.657 de 04 de Setembro de 1942"})
-	laws = append(laws, models.LawBySubject{Subject: "Taxa de Despacho Aduaneiro", SubjectID: "5960", LawDescription: "Artigo 10 da Lei nº 2.145 de 29 de Dezembro de 1953"})
-	laws = append(laws, models.LawBySubject{Subject: "Taxa de Fiscalização Ambiental", SubjectID: "5962", LawDescription: "Artigo 17 da Lei nº 6.938 de 31 de Agosto de 1981"})
-	laws = append(laws, models.LawBySubject{Subject: "Taxa de Fiscalização da Comissão de Valores Mobiliários", SubjectID: "5968", LawDescription: "Artigo 1 da Lei nº 7.940 de 20 de Dezembro de 1989"})
-	laws = append(laws, models.LawBySubject{Subject: "Taxa de Fiscalização da Comissão de Valores Mobiliários", SubjectID: "5968", LawDescription: "Artigo 52 da Lei nº 11.076 de 30 de Dezembro de 2004"})
-	laws = append(laws, models.LawBySubject{Subject: "Terreno Aldeado", SubjectID: "10103", LawDescription: "Artigo 20 da Constituição Federal de 1988"})
-	laws = append(laws, models.LawBySubject{Subject: "Utilização de Dados Relativos à CPMF para Fins de Fiscalização", SubjectID: "6023", LawDescription: "Parágrafo 3 Artigo 11 da Lei nº 9.311 de 24 de Outubro de 1996"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: "11775", LawDescription: "Parágrafo 4 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: "11775", LawDescription: "Parágrafo 3 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: "11775", LawDescription: "Parágrafo 2 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"})
-	laws = append(laws, models.LawBySubject{Subject: "Violação de direito autoral", SubjectID: "3443", LawDescription: "Artigo 184 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Violência doméstica", SubjectID: "14097", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"})
-	laws = append(laws, models.LawBySubject{Subject: "Warrant", SubjectID: "4981", LawDescription: "Artigo 1 da Lei nº 11.076 de 30 de Dezembro de 2004"})
-	laws = append(laws, models.LawBySubject{Subject: "Roubo", SubjectID: "11149", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Extorsão", SubjectID: "11149", LawDescription: "Artigo 158 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"})
-	laws = append(laws, models.LawBySubject{Subject: "Crimes de Lavagem ou Ocultação de Bens, Direitos ou Valores", SubjectID: "10983", LawDescription: "Artigo 1 da Lei nº 9.613 de 03 de Março de 1998"})
+	l := []models.LawBySubject{
+		{Subject: "Abandono de cargo", SubjectID: ":11336", LawDescription: "Artigo 330 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abandono de função", SubjectID: ":3561", LawDescription: "Artigo 323 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono de função (art. 323)", SubjectID: ":9841", LawDescription: "Artigo 323 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono de incapaz", SubjectID: ":3391", LawDescription: "Artigo 133 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono de incapaz (art. 133)", SubjectID: ":9651", LawDescription: "Artigo 133 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono de pessoa", SubjectID: ":11233", LawDescription: "Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abandono de pessoa seguida de morte ou lesão grave", SubjectID: ":11234", LawDescription: "Parágrafo 2 Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abandono de pessoa seguida de morte ou lesão grave", SubjectID: ":11234", LawDescription: "Parágrafo 1 Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abandono de pessoa seguida de morte ou lesão grave", SubjectID: ":11234", LawDescription: "Artigo 212 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abandono de posto", SubjectID: ":11135", LawDescription: "Artigo 195 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abandono Intelectual", SubjectID: ":9758", LawDescription: "Artigo 246 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono Intelectual", SubjectID: ":9966", LawDescription: "Artigo 249 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Abandono Intelectual", SubjectID: ":3475", LawDescription: "Artigo 247 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono Intelectual", SubjectID: ":3475", LawDescription: "Artigo 246 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono Material", SubjectID: ":3474", LawDescription: "Artigo 244 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abandono Material", SubjectID: ":9965", LawDescription: "Artigo 24 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Abandono Material", SubjectID: ":9965", LawDescription: "Artigo 22 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Abandono Material", SubjectID: ":9757", LawDescription: "Artigo 244 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abatimento proporcional do preço", SubjectID: ":7769", LawDescription: "Artigo 20 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Abatimento proporcional do preço", SubjectID: ":7769", LawDescription: "Parágrafo 1 Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Abolitio criminis", SubjectID: ":11089", LawDescription: "Artigo 123 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Aborto provocado pela gestante ou com o seu consentimento", SubjectID: ":10917", LawDescription: "Artigo 124 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aborto provocado por terceiro", SubjectID: ":10918", LawDescription: "Artigo 126 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aborto provocado por terceiro", SubjectID: ":10918", LawDescription: "Artigo 125 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aborto qualificado", SubjectID: ":10919", LawDescription: "Artigo 127 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abuso - De Poder Econômico", SubjectID: ":11718", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Abuso - De Poder Político/Autoridade", SubjectID: ":11719", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Abuso - Uso Indevido de Meio de Comunicação Social", SubjectID: ":11720", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Abuso de confiança ou boa fé", SubjectID: ":11337", LawDescription: "Artigo 332 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abuso de Incapazes", SubjectID: ":5842", LawDescription: "Artigo 173 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abuso de Incapazes", SubjectID: ":9714", LawDescription: "Artigo 173 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Abuso de pessoa", SubjectID: ":11166", LawDescription: "Artigo 252 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abuso de Poder", SubjectID: ":10894", LawDescription: "Artigo 5 da Inciso LXIX do Constituição Federal de 1988"},
+		{Subject: "Abuso de radiação", SubjectID: ":11181", LawDescription: "Artigo 271 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abuso de requisição militar", SubjectID: ":11277", LawDescription: "Artigo 173 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Abuso Sexual", SubjectID: ":9968", LawDescription: "Artigo 24 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Abuso Sexual", SubjectID: ":9968", LawDescription: "Artigo 22 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Acidente de Trabalho", SubjectID: ":2569", LawDescription: "Artigo 7 da Constituição Federal de 1988"},
+		{Subject: "Acidente de Trabalho", SubjectID: ":8809", LawDescription: "Artigo 7 da Constituição Federal de 1988"},
+		{Subject: "Acidente de Trânsito", SubjectID: ":10504", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Acidente Ferroviário", SubjectID: ":14910", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Acidente Ferroviário", SubjectID: ":14911", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Acidentes", SubjectID: ":14148", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Acidentes", SubjectID: ":14162", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Adoção Ilegal", SubjectID: ":14663", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Adoção Ilegal", SubjectID: ":14667", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Adoção Internacional", SubjectID: ":9972", LawDescription: "Artigo 52 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Adoção Nacional", SubjectID: ":9973", LawDescription: "Artigo 39 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: ":9827", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: ":3546", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: ":10992", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Advertência", SubjectID: ":11386", LawDescription: "Artigo 115 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Advertência", SubjectID: ":11386", LawDescription: "Artigo 112 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Advertência / Repreensão", SubjectID: ":10364", LawDescription: "Parágrafo 1 Artigo 47 da Lei nº 6.880 de 09 de Dezembro de 1980"},
+		{Subject: "Advertência / Repreensão", SubjectID: ":10364", LawDescription: "Artigo 47 da Lei nº 6.880 de 09 de Dezembro de 1980"},
+		{Subject: "Advocacia administrativa", SubjectID: ":3559", LawDescription: "Artigo 321 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Advocacia administrativa (art. 321)", SubjectID: ":9839", LawDescription: "Artigo 321 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aliciação para motim ou revolta", SubjectID: ":11301", LawDescription: "Artigo 154 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Aliciamento comercial de eleitores", SubjectID: ":10826", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Aliciamento de eleitores", SubjectID: ":10819", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Aliciamento de trabalhadores de um local para outro do território nacional", SubjectID: ":3455", LawDescription: "Artigo 207 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aliciamento de trabalhadores de um local para outro do território nacional (art. 207)", SubjectID: ":9732", LawDescription: "Artigo 207 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aliciamento eleitoral", SubjectID: ":10752", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Aliciamento para fins de emigração", SubjectID: ":3454", LawDescription: "Artigo 206 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aliciamento para fins de emigração (art. 206)", SubjectID: ":9731", LawDescription: "Artigo 206 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Aliciamento violento de eleitores", SubjectID: ":10825", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":5836", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":5836", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":9708", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9708", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação Parental", SubjectID: ":11977", LawDescription: "Artigo 2 da Lei nº 12.318 de 26 de Agosto de 2010"},
+		{Subject: "Alistamento Eleitoral - Cancelamento", SubjectID: ":11575", LawDescription: "Artigo 71 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Alistamento Eleitoral - Domicílio Eleitoral", SubjectID: ":11576", LawDescription: "Parágrafo 1 Artigo 42 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Alistamento Eleitoral - Duplicidade/Pluralidade", SubjectID: ":11577", LawDescription: "Artigo 71 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Alistamento Eleitoral - Exclusão", SubjectID: ":11578", LawDescription: "Artigo 74 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Alistamento Eleitoral - Inscrição Eleitoral", SubjectID: ":11579", LawDescription: "Artigo 42 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Alteração de limites", SubjectID: ":11152", LawDescription: "Artigo 257 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Alteração de limites", SubjectID: ":3423", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alteração de limites (art. 161, caput)", SubjectID: ":9682", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alteração de local especialmente protegido", SubjectID: ":3429", LawDescription: "Artigo 166 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alteração de local especialmente protegido (art. 166)", SubjectID: ":9688", LawDescription: "Artigo 166 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ameaça", SubjectID: ":11253", LawDescription: "Artigo 223 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ameaça", SubjectID: ":3402", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ameaça", SubjectID: ":9661", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Amotinamento", SubjectID: ":11297", LawDescription: "Artigo 182 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Crime impossível", SubjectID: ":9915", LawDescription: "Artigo 14 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Análogo à Lesão Corporal em Razão da Condição de Mulher", SubjectID: ":14945", LawDescription: "Artigo 103 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Lesão corporal", SubjectID: ":14945", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Análogo à Lesão Corporal em Razão da Condição de Mulher", SubjectID: ":14945", LawDescription: "Parágrafo 13 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Análogo à Violência Psicológica contra a Mulher", SubjectID: ":14944", LawDescription: "Artigo 103 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Anistia", SubjectID: ":10625", LawDescription: "Artigo 5 da Inciso XLIII do Constituição Federal de 1988"},
+		{Subject: "Anistia", SubjectID: ":11100", LawDescription: "Artigo 123 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Anistia Administrativa", SubjectID: ":10231", LawDescription: "Artigo 1 da Lei nº 8.878 de 08 de Setembro de 1994 de São Paulo"},
+		{Subject: "Anulação de Débito Fiscal", SubjectID: ":6004", LawDescription: "Artigo 38 da Lei nº 6.830 de Outubro de 2010"},
+		{Subject: "Apadrinhamento Cultural", SubjectID: ":14675", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Apadrinhamento de Criança ou Adolescente", SubjectID: ":12341", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Apadrinhamento Material", SubjectID: ":14673", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Apadrinhamento Prestador de Serviço", SubjectID: ":14674", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Aplicação ilegal de verba ou dinheiro", SubjectID: ":11338", LawDescription: "Artigo 331 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Apologia de crime ou criminoso", SubjectID: ":9806", LawDescription: "Artigo 287 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apologia de crime ou criminoso", SubjectID: ":5870", LawDescription: "Artigo 287 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apologia de fato criminoso ou do seu autor", SubjectID: ":11302", LawDescription: "Artigo 156 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Aposição, supressão ou alteração de marca", SubjectID: ":11153", LawDescription: "Artigo 258 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Apropriação de coisa achada", SubjectID: ":11175", LawDescription: "Parágrafo 1 Artigo 249 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Apropriação de coisa achada", SubjectID: ":5573", LawDescription: "Parágrafo 1 Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação de coisa achada", SubjectID: ":9706", LawDescription: "Parágrafo 1 Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação de coisa havida acidentalmente", SubjectID: ":11176", LawDescription: "Artigo 249 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Apropriação de Coisa Havida por Erro, Caso Fortuito ou Força da Natureza", SubjectID: ":3437", LawDescription: "Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação de Coisa Havida por Erro, Caso Fortuito ou Força da Natureza (art.169)", SubjectID: ":9696", LawDescription: "Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação de Tesouro", SubjectID: ":9705", LawDescription: "Artigo 169 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação indébita", SubjectID: ":3436", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação indébita", SubjectID: ":11177", LawDescription: "Artigo 248 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Apropriação indébita", SubjectID: ":9695", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Apropriação Indébita Eleitoral", SubjectID: ":12634", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Apropriação indébita", SubjectID: ":9689", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Arrebatamento de preso", SubjectID: ":3588", LawDescription: "Artigo 353 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Arrebatamento de preso", SubjectID: ":9946", LawDescription: "Artigo 353 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Arrebatamento de preso ou internado", SubjectID: ":11298", LawDescription: "Artigo 181 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Arregimentação de Eleitor ou Boca de Urna", SubjectID: ":11513", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Arremesso de projétil", SubjectID: ":11194", LawDescription: "Artigo 286 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Arremesso de projétil", SubjectID: ":9783", LawDescription: "Artigo 264 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Arremesso de projétil", SubjectID: ":3502", LawDescription: "Artigo 264 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Assédio Moral", SubjectID: ":14175", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Assédio sexual", SubjectID: ":5851", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Assédio sexual", SubjectID: ":9749", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Associação Criminosa", SubjectID: ":14685", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Associação Criminosa", SubjectID: ":14687", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Assunção de comando sem ordem ou autorização", SubjectID: ":11278", LawDescription: "Artigo 167 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Assunção de Obrigação no Último Ano do Mandato ou Legislatura", SubjectID: ":5905", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Assunção de Obrigação no Último Ano do Mandato ou Legislatura", SubjectID: ":9958", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Assédio sexual", SubjectID: ":9744", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Assédio sexual", SubjectID: ":3467", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a liberdade de associação", SubjectID: ":3448", LawDescription: "Artigo 199 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a liberdade de associação (art. 199)", SubjectID: ":9725", LawDescription: "Artigo 199 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a liberdade de contrato de trabalho e boicotagem violenta", SubjectID: ":3447", LawDescription: "Artigo 198 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a liberdade de contrato de trabalho e boicotagem violenta (art. 198)", SubjectID: ":9724", LawDescription: "Artigo 198 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a liberdade de trabalho", SubjectID: ":3446", LawDescription: "Artigo 197 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a liberdade de trabalho (art. 197)", SubjectID: ":9723", LawDescription: "Artigo 197 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de serviço de utilidade pública", SubjectID: ":3503", LawDescription: "Artigo 265 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de serviço de utilidade pública", SubjectID: ":9784", LawDescription: "Artigo 265 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de transporte público", SubjectID: ":9782", LawDescription: "Artigo 263 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de transporte público", SubjectID: ":9782", LawDescription: "Artigo 262 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de transporte público", SubjectID: ":9782", LawDescription: "Artigo 261 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de transporte público", SubjectID: ":3501", LawDescription: "Artigo 263 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de transporte público", SubjectID: ":3501", LawDescription: "Artigo 262 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra a segurança de transporte público", SubjectID: ":3501", LawDescription: "Artigo 261 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado contra serviço de utilidade militar", SubjectID: ":11195", LawDescription: "Artigo 287 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Atentado contra transporte", SubjectID: ":11196", LawDescription: "Artigo 283 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Atentado contra viatura ou outro meio de transporte", SubjectID: ":11197", LawDescription: "Artigo 285 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Atentado contra viatura ou outro meio de transporte", SubjectID: ":11197", LawDescription: "Artigo 284 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Atentado Violento ao Pudor", SubjectID: ":11249", LawDescription: "Artigo 233 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Atentado Violento ao Pudor", SubjectID: ":9743", LawDescription: "Artigo 214 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Atentado Violento ao Pudor", SubjectID: ":3466", LawDescription: "Artigo 214 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ato / Negócio Jurídico", SubjectID: ":4701", LawDescription: "Artigo 137 da Lei nº 10.406 de 01 de Maio de 1943"},
+		{Subject: "Ato Libidinoso", SubjectID: ":11252", LawDescription: "Artigo 235 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ato obsceno", SubjectID: ":11231", LawDescription: "Artigo 238 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ato obsceno", SubjectID: ":14705", LawDescription: "Artigo 233 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes contra a Administração Ambiental", SubjectID: ":14801", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Ausência/Deficiência de Fiscalização", SubjectID: ":14164", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Ausência/Deficiência de Fiscalização", SubjectID: ":14166", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Auto-acusação falsa", SubjectID: ":11358", LawDescription: "Artigo 345 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Auto-acusação falsa", SubjectID: ":3578", LawDescription: "Artigo 341 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Auto-acusação falsa", SubjectID: ":9936", LawDescription: "Artigo 341 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Autofalência", SubjectID: ":4998", LawDescription: "Artigo 107 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Autofalência", SubjectID: ":4998", LawDescription: "Artigo 106 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Bigamia", SubjectID: ":9761", LawDescription: "Artigo 235 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Bigamia", SubjectID: ":3479", LawDescription: "Artigo 235 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Boca de urna", SubjectID: ":10755", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Busca e Apreensão de Bens", SubjectID: ":10914", LawDescription: "Artigo 170 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Busca e Apreensão de Bens", SubjectID: ":10914", LawDescription: "Artigo 240 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Busca e Apreensão de Menores", SubjectID: ":5801", LawDescription: "Artigo 839 da Lei nº 5.869 de 11 de Janeiro de 1973"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 34 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 33 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 32 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 31 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 30 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 29 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 28 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 27 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 26 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 25 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 24 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 23 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 22 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 21 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 20 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 19 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 18 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 17 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 16 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 15 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 14 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 13 da Lei nº 5.197 de 19 de Abril de 1973"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 12 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 11 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 10 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 9 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 8 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 7 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 6 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 5 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 4 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 3 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 2 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça (Lei nº 5.197/67)", SubjectID: ":9884", LawDescription: "Artigo 1 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Caça Ilegal e Condutas Equiparadas", SubjectID: ":14779", LawDescription: "Parágrafo 1 Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Calúnia", SubjectID: ":3395", LawDescription: "Artigo 138 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Calúnia", SubjectID: ":11262", LawDescription: "Artigo 214 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Calúnia", SubjectID: ":10748", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Calúnia", SubjectID: ":9656", LawDescription: "Artigo 138 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Calúnia na Propaganda Eleitoral", SubjectID: ":11484", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Captação Ambiental de Sinais Eletromagnéticos, Ópticos e Acústicos", SubjectID: ":14876", LawDescription: "Artigo 3 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Captação Ilícita de Sufrágio", SubjectID: ":11721", LawDescription: "Artigo 41 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Captação ou Gasto Ilícito de Recursos Financeiros de Campanha Eleitoral", SubjectID: ":11685", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Casa de Prostituição", SubjectID: ":5853", LawDescription: "Artigo 229 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Casa de Prostituição", SubjectID: ":9751", LawDescription: "Artigo 229 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Cassação de licença para direção de veículo motorizado", SubjectID: ":11058", LawDescription: "Artigo 115 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Cassação de licença para direção de veículo motorizado", SubjectID: ":11058", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Cédula de Crédito à Exportação", SubjectID: ":4961", LawDescription: "Artigo 1 da Lei nº 6.313 de 16 de Dezembro de 1975"},
+		{Subject: "Cerceamento da Fiscalização Partidária", SubjectID: ":11480", LawDescription: "Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Certidão ou atestado ideologicamente falso", SubjectID: ":11318", LawDescription: "Artigo 314 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Certidão ou atestado ideologicamente falso", SubjectID: ":3535", LawDescription: "Artigo 301 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Chantagem", SubjectID: ":11155", LawDescription: "Artigo 245 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Charlatanismo", SubjectID: ":3510", LawDescription: "Artigo 283 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Charlatanismo (Art. 283)", SubjectID: ":9791", LawDescription: "Artigo 283 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Cheques sem fundos", SubjectID: ":11319", LawDescription: "Artigo 313 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Clonagem Humana - Biossegurança", SubjectID: ":10516", LawDescription: "Artigo 26 da Lei nº 11.105 de 24 de Março de 2005"},
+		{Subject: "Coação", SubjectID: ":11359", LawDescription: "Artigo 342 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Coação eleitoral", SubjectID: ":10824", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Coação no curso do processo", SubjectID: ":9938", LawDescription: "Artigo 344 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Coação no curso do processo", SubjectID: ":3580", LawDescription: "Artigo 344 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Coação Visando a Obtenção de Voto ou a sua Abstenção", SubjectID: ":11502", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Coleta de Assinatura em Mais de Uma Ficha de Registro Partidário", SubjectID: ":11520", LawDescription: "Artigo 321 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Comércio, Posse ou Tráfico Proveniente de Pesca Ilegal", SubjectID: ":14785", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Comércio, Posse ou Tráfico Proveniente de Pesca Ilegal", SubjectID: ":14785", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Comunicação falsa de crime", SubjectID: ":11360", LawDescription: "Artigo 344 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Comunicação falsa de crime ou de contravenção", SubjectID: ":3577", LawDescription: "Artigo 340 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Comunicação falsa de crime ou de contravenção", SubjectID: ":9935", LawDescription: "Artigo 340 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Concentração de Eleitores para Embaraçar ou Fraudar o Exercício do Voto", SubjectID: ":11504", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Concussão", SubjectID: ":11355", LawDescription: "Artigo 305 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Concussão", SubjectID: ":10836", LawDescription: "Artigo 305 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Concussão", SubjectID: ":3553", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Concussão", SubjectID: ":9833", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Condescendência criminosa", SubjectID: ":11339", LawDescription: "Artigo 322 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Condescendência criminosa", SubjectID: ":3558", LawDescription: "Artigo 320 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Condescendência criminosa (art. 320)", SubjectID: ":9838", LawDescription: "Artigo 320 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Condição de Elegibilidade - Alistamento Eleitoral", SubjectID: ":11586", LawDescription: "Artigo 42 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Condição de Elegibilidade - Domicílio Eleitoral na Circunscrição", SubjectID: ":11587", LawDescription: "Artigo 9 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Condição de Elegibilidade - Filiação Partidária", SubjectID: ":11589", LawDescription: "Artigo 9 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Condição de Elegibilidade - Idade Mínima", SubjectID: ":11588", LawDescription: "Parágrafo 3 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Condição de Elegibilidade - Nacionalidade Brasileira", SubjectID: ":11590", LawDescription: "Parágrafo 3 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Condição de Elegibilidade - Pleno Exercício dos Direitos Políticos", SubjectID: ":11591", LawDescription: "Parágrafo 3 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Condição de Elegibilidade - Quitação Eleitoral", SubjectID: ":11592", LawDescription: "Parágrafo 7 Artigo 11 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Condição de Elegibilidade - Quitação Eleitoral", SubjectID: ":11592", LawDescription: "Artigo 11 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Condicionamento de Atendimento Médico Hospitalar Emergencial", SubjectID: ":14690", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Condicionamento de Atendimento Médico Hospitalar Emergencial (Art. 135-A)", SubjectID: ":14691", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Condução de Embarcação ou Aeronave sob Efeito de Drogas", SubjectID: ":5901", LawDescription: "Artigo 39 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Condução de Embarcação ou Aeronave sob Efeito de Drogas", SubjectID: ":9868", LawDescription: "Artigo 39 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Conduta Vedada a Agente Público", SubjectID: ":11558", LawDescription: "Artigo 78 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada a Agente Público", SubjectID: ":11558", LawDescription: "Artigo 77 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada a Agente Público", SubjectID: ":11558", LawDescription: "Artigo 76 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada a Agente Público", SubjectID: ":11558", LawDescription: "Artigo 75 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada a Agente Público", SubjectID: ":11558", LawDescription: "Artigo 74 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada a Agente Público", SubjectID: ":11558", LawDescription: "Artigo 73 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada ao Agente Público", SubjectID: ":12063", LawDescription: "Artigo 78 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada ao Agente Público", SubjectID: ":12063", LawDescription: "Artigo 77 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada ao Agente Público", SubjectID: ":12063", LawDescription: "Artigo 76 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada ao Agente Público", SubjectID: ":12063", LawDescription: "Artigo 75 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada ao Agente Público", SubjectID: ":12063", LawDescription: "Artigo 74 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Conduta Vedada ao Agente Público", SubjectID: ":12063", LawDescription: "Artigo 73 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Confisco", SubjectID: ":11059", LawDescription: "Artigo 119 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Confisco", SubjectID: ":11059", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Conhecimento Prévio de Impedimento", SubjectID: ":3480", LawDescription: "Artigo 237 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Conhecimento Prévio de Impedimento", SubjectID: ":9762", LawDescription: "Artigo 237 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Conservação ilegal de comando", SubjectID: ":11279", LawDescription: "Artigo 168 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Conspiração", SubjectID: ":11288", LawDescription: "Artigo 152 do Decreto Lei nº 1.001 de 01 de Outubro de 1969"},
+		{Subject: "Associação Criminosa", SubjectID: ":14689", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Associação Criminosa", SubjectID: ":14688", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Constragimento ilegal", SubjectID: ":11254", LawDescription: "Artigo 222 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Constrangimento ilegal", SubjectID: ":3401", LawDescription: "Artigo 146 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Constrangimento ilegal", SubjectID: ":9660", LawDescription: "Artigo 146 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Contas - Aprovação das Contas", SubjectID: ":11695", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Contas - Aprovação das Contas com Ressalvas", SubjectID: ":11696", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Contas - Aprovação das Contas com Ressalvas", SubjectID: ":11696", LawDescription: "Artigo 30 da Lei nº 9.504 de 10 de Fevereiro de 2003"},
+		{Subject: "Contas - Desaprovação/Rejeição das Contas", SubjectID: ":11697", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Contas - Não Apresentação das Contas", SubjectID: ":11698", LawDescription: "Artigo 30 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Crimes Contra a Administração da Justiça - Lei da Ação de Alimentos", SubjectID: ":9913", LawDescription: "Artigo 22 da Lei nº 5.478 de 25 de Julho de 1968"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 30 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 29 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 28 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 27 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 26 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 25 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 24 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 23 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 22 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 21 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 20 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 19 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 18 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 17 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 16 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 15 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 14 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 13 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 12 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 11 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 10 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 9 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 8 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 7 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 6 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 5 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 4 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 3 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 2 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Economia Popular", SubjectID: ":9856", LawDescription: "Artigo 1 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes Contra a Fauna", SubjectID: ":9879", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Fauna", SubjectID: ":9879", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Fauna", SubjectID: ":9879", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Fauna", SubjectID: ":9879", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Fauna", SubjectID: ":9879", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Fauna", SubjectID: ":9879", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 53 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 47 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 43 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Flora", SubjectID: ":9880", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Violência doméstica", SubjectID: ":12194", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12194", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12194", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência doméstica", SubjectID: ":12196", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12196", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12196", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 29 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 28 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 27 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 26 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 25 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 24 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 23 da Lei nº 7.170 de 14 de Novembro de 2001"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 22 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 21 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 20 da Lei nº 7.170 de 06 de Dezembro de 1837"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 19 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 18 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 17 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 16 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 15 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 14 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 13 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 12 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 11 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 10 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 9 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":9871", LawDescription: "Artigo 8 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Homicídio", SubjectID: ":9635", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes Contra as Finanças Públicas", SubjectID: ":9955", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes Contra as Marcas", SubjectID: ":9851", LawDescription: "Artigo 190 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra as Marcas", SubjectID: ":9851", LawDescription: "Artigo 189 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Dano", SubjectID: ":3426", LawDescription: "Artigo 163 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desenvolver clandestinamente atividades de telecomunicação", SubjectID: ":9889", LawDescription: "Artigo 183 da Lei nº 9.472 de 16 de Julho de 1997"},
+		{Subject: "Crimes Contra Indicações Geográficas e Demais Indicações", SubjectID: ":9853", LawDescription: "Artigo 194 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra Indicações Geográficas e Demais Indicações", SubjectID: ":9853", LawDescription: "Artigo 193 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra Indicações Geográficas e Demais Indicações", SubjectID: ":9853", LawDescription: "Artigo 192 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 68 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 67 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 66 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 60 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 59 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 58 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 57 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 56 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 53 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 47 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 43 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 37 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 36 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Meio Ambiente", SubjectID: ":9878", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o mercado de capitais", SubjectID: ":9896", LawDescription: "Artigo 74 da Lei nº 4.728 de 14 de Julho de 1965"},
+		{Subject: "Crimes Contra o mercado de capitais", SubjectID: ":9896", LawDescription: "Artigo 73 da Lei nº 4.728 de 14 de Julho de 1965"},
+		{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11779", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11779", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11779", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11779", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Receptação qualificada", SubjectID: ":9674", LawDescription: "Parágrafo 3 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação", SubjectID: ":9674", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 46 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 45 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 44 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 43 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 42 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 41 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 40 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 39 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 38 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 37 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":9870", LawDescription: "Artigo 36 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes Contra o Sistema Financeiro Nacional", SubjectID: ":9872", LawDescription: "Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes Contra os Desenhos Industriais", SubjectID: ":9850", LawDescription: "Artigo 188 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra os Desenhos Industriais", SubjectID: ":9850", LawDescription: "Artigo 187 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra Patente de Invenção", SubjectID: ":9849", LawDescription: "Artigo 186 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra Patente de Invenção", SubjectID: ":9849", LawDescription: "Artigo 185 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra Patente de Invenção", SubjectID: ":9849", LawDescription: "Artigo 184 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes Contra Patente de Invenção", SubjectID: ":9849", LawDescription: "Artigo 183 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Violência doméstica", SubjectID: ":12195", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12195", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12195", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência doméstica", SubjectID: ":12197", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12197", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":12197", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Contrabando ou descaminho", SubjectID: ":3574", LawDescription: "Artigo 334 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Contrabando ou descaminho", SubjectID: ":9927", LawDescription: "Artigo 334 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 70 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 69 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 62 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 61 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 60 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 50 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 46 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 45 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 42 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 40 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 27 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 25 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":9914", LawDescription: "Artigo 24 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 70 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 69 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 62 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 61 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 60 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 50 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 46 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 45 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 42 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 40 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 27 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 25 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contravenções Penais", SubjectID: ":3692", LawDescription: "Artigo 24 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Contribuição de Iluminação Pública", SubjectID: ":6083", LawDescription: "Artigo 149A da Constituição Federal de 1988"},
+		{Subject: "Convolação de recuperação judicial em falência", SubjectID: ":9556", LawDescription: "Artigo 74 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Convolação de recuperação judicial em falência", SubjectID: ":9556", LawDescription: "Artigo 73 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Corrupção ativa", SubjectID: ":3568", LawDescription: "Artigo 333 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção ativa", SubjectID: ":10837", LawDescription: "Artigo 309 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Corrupção ativa", SubjectID: ":11352", LawDescription: "Artigo 309 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Corrupção ativa", SubjectID: ":9921", LawDescription: "Artigo 333 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção ativa de testemunha, perito ou intérprete", SubjectID: ":11361", LawDescription: "Artigo 347 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Corrupção Ativa em Transação Comercial Internacional", SubjectID: ":9930", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção Ativa em Transação Comercial Internacional", SubjectID: ":5876", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção de Menores", SubjectID: ":3468", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção de Menores", SubjectID: ":11250", LawDescription: "Artigo 234 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Corrupção de Menores", SubjectID: ":9745", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção Eleitoral", SubjectID: ":11501", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Corrupção ou Fraude", SubjectID: ":11722", LawDescription: "Parágrafo 10 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Corrupção ou Poluição de Água Potável", SubjectID: ":11200", LawDescription: "Artigo 294 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Corrupção ou Poluição de Água Potável", SubjectID: ":3511", LawDescription: "Artigo 271 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção ou Poluição de Água Potável (Art. 271)", SubjectID: ":9792", LawDescription: "Artigo 271 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção passiva", SubjectID: ":11353", LawDescription: "Artigo 308 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Corrupção passiva", SubjectID: ":3555", LawDescription: "Parágrafo 2 Artigo 317 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção passiva (art. 317)", SubjectID: ":9835", LawDescription: "Parágrafo 2 Artigo 317 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Corrupção Praticada por Prefeitos e Vereadores", SubjectID: ":10991", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Criação ou simulação de incapacidade física", SubjectID: ":11120", LawDescription: "Artigo 184 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Crime / Contravenção contra Criança / Adolescente", SubjectID: ":10950", LawDescription: "Artigo 2 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crime / Contravenção contra Criança / Adolescente", SubjectID: ":10950", LawDescription: "Artigo 61 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crime / Contravenção contra Idoso", SubjectID: ":10951", LawDescription: "Artigo 61 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crime / Contravenção contra Idoso", SubjectID: ":10951", LawDescription: "Artigo 1 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes contra a Administração Ambiental", SubjectID: ":10986", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Administração Ambiental", SubjectID: ":10986", LawDescription: "Artigo 68 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Administração Ambiental", SubjectID: ":10986", LawDescription: "Artigo 67 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Administração Ambiental", SubjectID: ":10986", LawDescription: "Artigo 66 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes Contra a Administração da Justiça - Lei da Ação de Alimentos", SubjectID: ":5893", LawDescription: "Artigo 22 da Lei nº 5.478 de 25 de Julho de 1968"},
+		{Subject: "Crime Culposo", SubjectID: ":11069", LawDescription: "Artigo 33 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Crime de Descumprimento de Medida Protetiva de Urgência", SubjectID: ":14227", LawDescription: "Artigo 24 da Lei nº 11.340 de 07 de Agosto de 2006"},
+		{Subject: "Crime de Desvio e/ou Circulação de Moeda Não Autorizada", SubjectID: ":11006", LawDescription: "Artigo 289 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crime de Moeda Falsa Praticado por Funcionário Público", SubjectID: ":11007", LawDescription: "Artigo 289 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crime de Quebra de Sigilo Financeiro", SubjectID: ":3655", LawDescription: "Artigo 10 da Lc nº 105 de 10 de Janeiro de 2001"},
+		{Subject: "Crime impossível", SubjectID: ":5555", LawDescription: "Artigo 14 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crime Tentado", SubjectID: ":11071", LawDescription: "Artigo 30 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Crimes Agrários", SubjectID: ":3651", LawDescription: "Artigo 20 da Lei nº 4.947 de 06 de Abril de 1966"},
+		{Subject: "Crimes Agrários", SubjectID: ":3651", LawDescription: "Artigo 19 da Lei nº 4.947 de 06 de Abril de 1966"},
+		{Subject: "Crimes Cometidos por Meio de Marca, Título de Estabelecimento e Sinal de Propaganda", SubjectID: ":5881", LawDescription: "Artigo 191 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra a Economia Popular", SubjectID: ":3605", LawDescription: "Artigo 2 da Lei nº 1.521 de 26 de Dezembro de 1951"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 37 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 36 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Fauna", SubjectID: ":3619", LawDescription: "Artigo 1 da Lei nº 7.643 de 18 de Dezembro de 1987"},
+		{Subject: "Crime contra a fé pública", SubjectID: ":3523", LawDescription: "Artigo 289 a 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":3620", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Ordem Tributária", SubjectID: ":3614", LawDescription: "Artigo 2 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes contra a Ordem Tributária", SubjectID: ":3614", LawDescription: "Artigo 1 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes contra a Ordem Tributária praticado por Funcionário Público", SubjectID: ":10985", LawDescription: "Artigo 12 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes contra a Ordem Tributária praticado por Funcionário Público", SubjectID: ":10985", LawDescription: "Artigo 3 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 29 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 28 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 27 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 26 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 25 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 24 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 23 da Lei nº 7.170 de 14 de Novembro de 2001"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 22 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 21 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 20 da Lei nº 7.170 de 06 de Dezembro de 1837"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 19 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 18 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 17 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 16 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 15 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 14 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 13 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 12 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 11 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 10 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 9 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes contra a Segurança Nacional, a Ordem Política e Social", SubjectID: ":3611", LawDescription: "Artigo 8 da Lei nº 7.170 de 14 de Dezembro de 1983"},
+		{Subject: "Crimes Contra as Finanças Públicas", SubjectID: ":5875", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes contra as Marcas", SubjectID: ":5880", LawDescription: "Artigo 190 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra as Marcas", SubjectID: ":5880", LawDescription: "Artigo 189 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 80 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 79 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 78 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 77 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 76 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 75 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 74 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 73 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 72 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 71 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 70 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 69 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 68 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 67 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 66 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 65 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 64 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 63 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 62 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 61 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes contra as Relações de Consumo", SubjectID: ":3616", LawDescription: "Artigo 7 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Desenvolver clandestinamente atividades de telecomunicação", SubjectID: ":3629", LawDescription: "Artigo 183 da Lei nº 9.472 de 16 de Julho de 1997"},
+		{Subject: "Crimes contra Indicações Geeográficas e Demais Indicações", SubjectID: ":5882", LawDescription: "Artigo 194 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra Indicações Geeográficas e Demais Indicações", SubjectID: ":5882", LawDescription: "Artigo 193 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra Indicações Geeográficas e Demais Indicações", SubjectID: ":5882", LawDescription: "Artigo 192 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 68 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 67 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 66 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 61 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 60 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 59 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 58 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 57 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 56 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 53 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 47 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 46 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 43 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 42 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 41 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 37 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 36 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 30 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Meio Ambiente e o Patrimônio Genético", SubjectID: ":3618", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Caça", SubjectID: ":3624", LawDescription: "Artigo 29 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o mercado de capitais", SubjectID: ":3638", LawDescription: "Artigo 74 da Lei nº 4.728 de 14 de Julho de 1965"},
+		{Subject: "Crimes contra o mercado de capitais", SubjectID: ":3638", LawDescription: "Artigo 73 da Lei nº 4.728 de 14 de Julho de 1965"},
+		{Subject: "Crimes contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11780", LawDescription: "Artigo 65 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11780", LawDescription: "Artigo 64 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Ordenamento Urbano e o Patrimônio Cultural", SubjectID: ":11780", LawDescription: "Artigo 63 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Destruir, inutilizar ou deteriorar", SubjectID: ":11780", LawDescription: "Artigo 62 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 46 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 45 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 44 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 43 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 42 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 41 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 40 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 39 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 38 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 37 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Serviço Postal e o Serviço de Telegrama", SubjectID: ":3610", LawDescription: "Artigo 36 da Lei nº 6.538 de 22 de Junho de 1978"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 23 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 22 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 21 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 20 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 19 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 18 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 17 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 16 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 15 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 14 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 13 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 12 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 11 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 10 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 9 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 8 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 7 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 6 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 5 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 4 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 3 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra o Sistema Financeiro Nacional", SubjectID: ":3612", LawDescription: "Artigo 2 da Lei nº 7.492 de 16 de Junho de 1986"},
+		{Subject: "Crimes contra os Desenhos Industriais", SubjectID: ":5879", LawDescription: "Artigo 188 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra os Desenhos Industriais", SubjectID: ":5879", LawDescription: "Artigo 187 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra Patente de Invenção", SubjectID: ":5878", LawDescription: "Artigo 186 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra Patente de Invenção", SubjectID: ":5878", LawDescription: "Artigo 185 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra Patente de Invenção", SubjectID: ":5878", LawDescription: "Artigo 184 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra Patente de Invenção", SubjectID: ":5878", LawDescription: "Artigo 183 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes contra portadores de deficiência", SubjectID: ":11410", LawDescription: "Artigo 8 da Lei nº 7.853 de 24 de Outubro de 1989"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 98 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 97 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 96 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 95 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 94 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 93 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 92 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 91 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 90 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":3642", LawDescription: "Artigo 89 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 20 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 19 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 18 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 17 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 16 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 15 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":3643", LawDescription: "Artigo 14 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes de Lavagem ou Ocultação de Bens, Direitos ou Valores", SubjectID: ":3628", LawDescription: "Artigo 1 da Lei nº 9.613 de 03 de Março de 1998"},
+		{Subject: "Crimes de Concorrência Desleal", SubjectID: ":5883", LawDescription: "Artigo 195 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crimes de genocídio", SubjectID: ":3640", LawDescription: "Artigo 3 da Lei nº 2.889 de 01 de Outubro de 1956"},
+		{Subject: "Crimes de genocídio", SubjectID: ":3640", LawDescription: "Artigo 2 da Lei nº 2.889 de 01 de Outubro de 1956"},
+		{Subject: "Crimes de genocídio", SubjectID: ":3640", LawDescription: "Artigo 1 da Lei nº 2.889 de 01 de Outubro de 1956"},
+		{Subject: "Crimes de Tortura", SubjectID: ":3631", LawDescription: "Artigo 1 da Lei nº 9.455 de 07 de Abril de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 312 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 311 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 310 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 309 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 308 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 307 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 306 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 305 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 304 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":3632", LawDescription: "Artigo 303 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 18 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 17 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 16 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 15 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 14 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 13 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":3633", LawDescription: "Artigo 12 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 351 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 346 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 345 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 344 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 343 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 342 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 341 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 340 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 338 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 336 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 335 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 333 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 332 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 331 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 330 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 329 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 328 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 327 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 323 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 322 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 321 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 320 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 319 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 318 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 317 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 316 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 315 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 314 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 313 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 312 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 311 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 310 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 309 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 308 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 307 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 306 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 305 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 304 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 303 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 298 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 297 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 295 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 294 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 293 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 292 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 291 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 352 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 349 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":3654", LawDescription: "Artigo 337 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes do Código Brasileiro de Telecomunicações", SubjectID: ":3656", LawDescription: "Artigo 56 da Lei nº 4.117 de 27 de Agosto de 1962"},
+		{Subject: "Crimes do Código Brasileiro de Telecomunicações", SubjectID: ":3656", LawDescription: "Artigo 70 da Lei nº 4.117 de 27 de Agosto de 1962"},
+		{Subject: "Crimes do Código Brasileiro de Telecomunicações", SubjectID: ":3656", LawDescription: "Artigo 72 da Lei nº 4.117 de 27 de Agosto de 1962"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 178 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 177 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 176 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 175 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 174 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 173 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 172 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 171 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 170 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 169 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":3661", LawDescription: "Artigo 168 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Hediondos", SubjectID: ":10864", LawDescription: "Parágrafo 2 Artigo 2 da Lei nº 8.072 de 25 de Julho de 1990"},
+		{Subject: "Crimes ocorridos na investigação da prova", SubjectID: ":12335", LawDescription: "Artigo 21 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Crimes ocorridos na investigação da prova", SubjectID: ":12335", LawDescription: "Artigo 20 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Crimes ocorridos na investigação da prova", SubjectID: ":12335", LawDescription: "Artigo 19 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Crimes ocorridos na investigação da prova", SubjectID: ":12335", LawDescription: "Artigo 18 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Crimes praticados contra os índios e a cultura indígena", SubjectID: ":3647", LawDescription: "Artigo 58 da Lei nº 6.001 de 19 de Dezembro de 1973"},
+		{Subject: "Crimes Praticados por Particular Contra a Administração Pública Estrangeira", SubjectID: ":5873", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes previstos na Lei da Organização Criminosa", SubjectID: ":12333", LawDescription: "Artigo 1 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Crimes Previstos na Lei de Estrangeiros", SubjectID: ":3630", LawDescription: "Artigo 125 da Lei nº 6.815 de 19 de Agosto de 1980"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 244 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 243 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 242 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 241 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 239 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 238 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 237 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 236 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 235 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 234 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 233 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 232 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 231 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 230 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 229 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto da criança e do adolescente", SubjectID: ":3637", LawDescription: "Artigo 228 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 108 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 107 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 106 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 105 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 104 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 103 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 102 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 101 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 100 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 99 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 98 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 97 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Idoso", SubjectID: ":3659", LawDescription: "Artigo 96 da Lei nº 10.741 de 01 de Outubro de 2003"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 20 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 19 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 18 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 17 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 16 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 15 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 14 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 13 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 12 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 11 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 10 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 9 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 8 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 7 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 6 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 5 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 4 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 3 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crimes Resultante de Preconceito de Raça ou de Cor", SubjectID: ":3613", LawDescription: "Artigo 2 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Curandeirismo", SubjectID: ":3512", LawDescription: "Artigo 284 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Curandeirismo (Art. 284)", SubjectID: ":9793", LawDescription: "Artigo 284 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 98 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 97 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 96 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 95 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 94 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 93 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 92 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 91 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 90 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de licitações", SubjectID: ":9899", LawDescription: "Artigo 89 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 20 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 19 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 18 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 17 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 16 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 15 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes da Lei de remoção de órgãos e tecidos", SubjectID: ":9900", LawDescription: "Artigo 14 da Lei nº 9.434 de 04 de Fevereiro de 1997"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 60 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 59 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 58 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 57 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 56 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes de Poluição", SubjectID: ":9881", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Dano a Equipamento Eleitoral", SubjectID: ":11466", LawDescription: "Artigo 72 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Destruir, danificar, lesar ou maltratar, por qualquer modo ou meio, plantas de ornamentação de logradouros públicos ou em propriedade privada alheia", SubjectID: ":14792", LawDescription: "Artigo 49 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Dano atenuado", SubjectID: ":11168", LawDescription: "Artigo 260 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Dano em aparelhos e instalações", SubjectID: ":11169", LawDescription: "Artigo 264 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Dano em coisa de valor artístico, arqueológico ou histórico", SubjectID: ":3428", LawDescription: "Artigo 165 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Dano em coisa de valor artístico, arqueológico ou histórico (art. 165)", SubjectID: ":9687", LawDescription: "Artigo 165 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Dano em navio de guerra ou mercante em serviço militar", SubjectID: ":11170", LawDescription: "Artigo 263 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Dano material ou aparelhamento de guerra", SubjectID: ":11171", LawDescription: "Artigo 262 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Dano qualificado", SubjectID: ":11172", LawDescription: "Artigo 261 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Dano simples", SubjectID: ":11173", LawDescription: "Artigo 259 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Crimes de Lavagem ou Ocultação de Bens, Direitos ou Valores", SubjectID: ":9888", LawDescription: "Artigo 1 da Lei nº 9.613 de 03 de Março de 1998"},
+		{Subject: "Crime de Concorrência Desleal", SubjectID: ":9854", LawDescription: "Artigo 195 da Lei nº 9.279 de 14 de Maio de 1996"},
+		{Subject: "Crime de genocídio", SubjectID: ":9897", LawDescription: "Artigo 3 da Lei nº 2.889 de 01 de Outubro de 1956"},
+		{Subject: "Crime de genocídio", SubjectID: ":9897", LawDescription: "Artigo 2 da Lei nº 2.889 de 01 de Outubro de 1956"},
+		{Subject: "Crime de genocídio", SubjectID: ":9897", LawDescription: "Artigo 1 da Lei nº 2.889 de 01 de Outubro de 1956"},
+		{Subject: "Crime de Quebra de Sigilo Financeiro", SubjectID: ":9907", LawDescription: "Artigo 10 da Lc nº 105 de 10 de Janeiro de 2001"},
+		{Subject: "Crime de Tortura", SubjectID: ":9891", LawDescription: "Artigo 1 da Lei nº 9.455 de 07 de Abril de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 312 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 311 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 310 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 309 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 308 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 307 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 306 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 305 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 304 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 303 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Crimes de Trânsito", SubjectID: ":9892", LawDescription: "Artigo 302 da Lei nº 9.503 de 23 de Setembro de 1997"},
+		{Subject: "Violência doméstica", SubjectID: ":5560", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":5560", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":5560", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência doméstica", SubjectID: ":9647", LawDescription: "Parágrafo 9 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":9647", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":9647", LawDescription: "Artigo 11 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Defensores Dativos ou Ad Hoc", SubjectID: ":14841", LawDescription: "Artigo 5 da Inciso LXXIV do Constituição Federal de 1988"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":9709", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9709", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":5837", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":5837", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Denegação", SubjectID: ":7941", LawDescription: "Artigo 516 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Denunciação caluniosa", SubjectID: ":3576", LawDescription: "Artigo 339 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Denunciação caluniosa", SubjectID: ":9934", LawDescription: "Artigo 339 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Denunciação caluniosa", SubjectID: ":11362", LawDescription: "Artigo 343 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desabamento ou desmoronamento", SubjectID: ":11182", LawDescription: "Artigo 274 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desabamento ou desmoronamento", SubjectID: ":3496", LawDescription: "Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desabamento ou desmoronamento (art. 256)", SubjectID: ":9778", LawDescription: "Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desabamento ou desmoronamento culposo", SubjectID: ":11969", LawDescription: "Parágrafo 1 Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desabamento ou desmoronamento culposo", SubjectID: ":11970", LawDescription: "Parágrafo 1 Artigo 256 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desacato", SubjectID: ":11363", LawDescription: "Artigo 341 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desacato", SubjectID: ":3573", LawDescription: "Artigo 331 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desacato", SubjectID: ":9926", LawDescription: "Artigo 331 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desacato a assemelhado ou funcionário", SubjectID: ":11326", LawDescription: "Artigo 300 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desacato a militar", SubjectID: ":11327", LawDescription: "Artigo 299 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desacato a superior", SubjectID: ":11328", LawDescription: "Artigo 298 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desafio para duelo", SubjectID: ":11255", LawDescription: "Artigo 224 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desaparecimento,consunção ou extravio", SubjectID: ":11174", LawDescription: "Artigo 265 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desapropriação Indireta", SubjectID: ":10125", LawDescription: "Artigo 10 do Decreto Lei nº 3.365 de 21 de Junho de 1941"},
+		{Subject: "Desapropriação para Regularização de Comunidade Quilombola / Dec. 4887/2003", SubjectID: ":12031", LawDescription: "Artigo 13 do Decreto nº 4.887 de 20 de Novembro de 2003"},
+		{Subject: "Desapropriação por Interesse Social Comum / L 4.132/1962", SubjectID: ":10123", LawDescription: "Artigo 1 da Lei nº 4.132 de 10 de Setembro de 1962"},
+		{Subject: "Desapropriação por Utilidade Pública / DL 3.365/1941", SubjectID: ":10122", LawDescription: "Artigo 5 do Decreto Lei nº 3.365 de 21 de Junho de 1941"},
+		{Subject: "Desapropriação por Utilidade Pública / DL 3.365/1941", SubjectID: ":10122", LawDescription: "Artigo 2 do Decreto Lei nº 3.365 de 21 de Junho de 1941"},
+		{Subject: "Desapropriação por Utilidade Pública / DL 3.365/1941", SubjectID: ":10122", LawDescription: "Artigo 1 do Decreto Lei nº 3.365 de 21 de Junho de 1941"},
+		{Subject: "Desastre ferroviário", SubjectID: ":9781", LawDescription: "Parágrafo 3 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desastre ferroviário", SubjectID: ":9781", LawDescription: "Parágrafo 1 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desastre ferroviário / Perigo de Desastre Ferroviário", SubjectID: ":3500", LawDescription: "Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desastre ferroviário", SubjectID: ":11972", LawDescription: "Parágrafo 2 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desastre ferroviário culposo", SubjectID: ":11972", LawDescription: "Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desastre ferroviário", SubjectID: ":11973", LawDescription: "Parágrafo 2 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desastre ferroviário culposo", SubjectID: ":11973", LawDescription: "Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: ":11455", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: ":11455", LawDescription: "Artigo 10 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: ":11455", LawDescription: "Artigo 8 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Descumprimento da Proibição de Fornecimento de Transporte ou Refeições a Eleitores", SubjectID: ":11455", LawDescription: "Artigo 5 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Descumprimento de determinação de sigilo", SubjectID: ":12338", LawDescription: "Artigo 20 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Descumprimento de Medida Protetiva de Urgência", SubjectID: ":14229", LawDescription: "Artigo 24 da Lei nº 11.340 de 07 de Agosto de 2006"},
+		{Subject: "Descumprimento de missão", SubjectID: ":11136", LawDescription: "Artigo 196 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Descumprimento do Dever de Informar o Número, Espécie e Lotação de Veículos e Embarcações", SubjectID: ":11453", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Descumprimento do Dever de Informar o Número, Espécie e Lotação de Veículos e Embarcações", SubjectID: ":11453", LawDescription: "Artigo 3 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Desenho ou levantamento de plano ou planta de local militar", SubjectID: ":11210", LawDescription: "Artigo 147 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção", SubjectID: ":10839", LawDescription: "Artigo 391 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção", SubjectID: ":11127", LawDescription: "Artigo 187 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção", SubjectID: ":7940", LawDescription: "Artigo 576 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Deserção - casos assimilados", SubjectID: ":11128", LawDescription: "Artigo 188 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção especial", SubjectID: ":11129", LawDescription: "Artigo 190 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção por evasão ou fuga", SubjectID: ":11130", LawDescription: "Artigo 192 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção privilegiada", SubjectID: ":11131", LawDescription: "Artigo 189 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Deserção qualificada", SubjectID: ":11132", LawDescription: "Artigo 189 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desobediência", SubjectID: ":11329", LawDescription: "Artigo 301 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desobediência", SubjectID: ":3572", LawDescription: "Artigo 330 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desobediência", SubjectID: ":9925", LawDescription: "Artigo 330 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desobediência a decisão judicial", SubjectID: ":11364", LawDescription: "Artigo 349 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desobediência a decisão judicial sobre perda ou suspensão de direitos", SubjectID: ":3595", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desobediência a decisão judicial sobre perda ou suspensão de direitos", SubjectID: ":9953", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Desobediência a decisão sobre perda ou suspensão de atividade ou direito", SubjectID: ":11365", LawDescription: "Artigo 354 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desobediência à determinações da Justiça Eleitoral", SubjectID: ":10754", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Desobediência a Ordens ou Instruções da Justiça Eleitoral", SubjectID: ":11452", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Desordem eleitoral", SubjectID: ":10815", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Despojamento desprezível", SubjectID: ":11304", LawDescription: "Parágrafo 1 Artigo 162 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desrespeito a comandante, oficial-general ou oficial de serviço", SubjectID: ":11305", LawDescription: "Parágrafo 1 Artigo 160 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desrespeito a símbolo nacional", SubjectID: ":11306", LawDescription: "Artigo 161 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Desrespeito a superior", SubjectID: ":11307", LawDescription: "Artigo 160 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Destruição / Subração / Ocultação de Cadáver", SubjectID: ":9735", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Destruição / Subração / Ocultação de Cadáver", SubjectID: ":3458", LawDescription: "Artigo 211 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Destruição de Dados Eleitorais", SubjectID: ":11479", LawDescription: "Artigo 72 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":14786", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":14786", LawDescription: "Artigo 48 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":14786", LawDescription: "Parágrafo 3 Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":14786", LawDescription: "Artigo 40 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":14786", LawDescription: "Parágrafo 1 Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Crimes contra a Flora", SubjectID: ":14786", LawDescription: "Artigo 38 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Destruição ou Degradação Mediante Desmatamento ou Exploração Econômica", SubjectID: ":14788", LawDescription: "Artigo 50 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Destruição, Supressão ou Ocultação de Urna Contendo Votos ou Documentos Eleitorais", SubjectID: ":11510", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Desvio", SubjectID: ":11356", LawDescription: "Artigo 307 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Devolução de Cheques", SubjectID: ":14154", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Devolução de Cheques", SubjectID: ":14168", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Difamação", SubjectID: ":10749", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"},
+		{Subject: "Difamação", SubjectID: ":10843", LawDescription: "Artigo 215 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Difamação", SubjectID: ":11263", LawDescription: "Artigo 215 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Difamação", SubjectID: ":3396", LawDescription: "Artigo 139 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Difamação", SubjectID: ":9657", LawDescription: "Artigo 139 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Difamação na Propaganda Eleitoral", SubjectID: ":11486", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"},
+		{Subject: "Difusão culposa de doença ou praga", SubjectID: ":11958", LawDescription: "Parágrafo 1 Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Difusão culposa de doença ou praga", SubjectID: ":11971", LawDescription: "Parágrafo 1 Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Difusão de doença ou praga", SubjectID: ":3498", LawDescription: "Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Difusão de doença ou praga (art. 259)", SubjectID: ":9780", LawDescription: "Artigo 259 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Difusão de epizootia ou praga vegetal", SubjectID: ":11183", LawDescription: "Artigo 278 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Perda dos Direitos Políticos", SubjectID: ":11726", LawDescription: "Artigo 15 da Constituição Federal de 1988"},
+		{Subject: "Restabelecimento dos Direitos Políticos", SubjectID: ":11727", LawDescription: "Artigo 15 da Constituição Federal de 1988"},
+		{Subject: "Suspensão de Direitos Políticos", SubjectID: ":11728", LawDescription: "Artigo 15 da Constituição Federal de 1988"},
+		{Subject: "Disponibilidade / Aproveitamento", SubjectID: ":10234", LawDescription: "Artigo 41 da Constituição Federal de 1988"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":9707", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9707", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":5835", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":5835", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Dissolução de Órgão de Direção Partidária", SubjectID: ":11765", LawDescription: "Parágrafo 1 Artigo 17 da Constituição Federal de 1988"},
+		{Subject: "Importunação sexual", SubjectID: ":12385", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"},
+		{Subject: "Divulgação de Falsa Imputação", SubjectID: ":11485", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Divulgação de Fatos Inverídicos na Propaganda Eleitoral", SubjectID: ":11483", LawDescription: "Artigo 323 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Divulgação de pesquisa de fraudulenta", SubjectID: ":10820", LawDescription: "Parágrafo 4 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Divulgação de Propaganda Eleitoral no Dia da Eleição", SubjectID: ":11514", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Divulgação de segredo", SubjectID: ":11256", LawDescription: "Artigo 228 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Divulgação de segredo", SubjectID: ":3413", LawDescription: "Artigo 153 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 18 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 17 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 16 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 15 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 14 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 13 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Crimes do Sistema Nacional de Armas", SubjectID: ":9893", LawDescription: "Artigo 12 da Lei nº 10.826 de 22 de Dezembro de 2003"},
+		{Subject: "Doação de Recursos Acima do Limite Legal - Pessoa Física", SubjectID: ":11700", LawDescription: "Artigo 23 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Doação de Recursos Acima do Limite Legal - Pessoa Jurídica", SubjectID: ":11701", LawDescription: "Artigo 81 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Dormir em serviço", SubjectID: ":11137", LawDescription: "Artigo 203 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Duplicata Simulada", SubjectID: ":5841", LawDescription: "Artigo 172 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Duplicata Simulada", SubjectID: ":9713", LawDescription: "Artigo 172 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 351 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 347 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 346 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 345 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 344 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 343 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 342 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 341 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 340 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 338 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 336 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 335 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 333 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 332 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 331 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 330 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 329 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 328 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 327 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 325 da Lei nº 4.737 de 26 de Dezembro de 1996"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 324 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 323 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 322 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 321 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 320 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 319 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 318 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 317 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 316 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 315 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 314 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 313 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 312 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 311 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 310 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 309 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 308 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 307 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 306 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 305 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 304 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 303 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 302 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 300 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 298 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 297 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 295 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 294 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 293 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 292 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 291 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 352 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 349 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Crimes Eleitorais", SubjectID: ":9906", LawDescription: "Artigo 337 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Embriaguez ao volante", SubjectID: ":11184", LawDescription: "Artigo 279 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Embriaguez em serviço", SubjectID: ":11138", LawDescription: "Artigo 202 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Emissão de título ao portador sem permissão legal", SubjectID: ":3528", LawDescription: "Artigo 292 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emissão de título ao portador sem permissão legal (art. 292)", SubjectID: ":9810", LawDescription: "Artigo 292 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emissão Irregular de Conhecimento de Depósito ou Warrant", SubjectID: ":9718", LawDescription: "Artigo 178 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emissão Irregular de Conhecimento de Depósito ou Warrant", SubjectID: ":5846", LawDescription: "Artigo 178 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emprego de gás tóxico ou asfixiante", SubjectID: ":11185", LawDescription: "Artigo 270 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Emprego de Processo Proibido/Substância não permitida", SubjectID: ":3506", LawDescription: "Artigo 274 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emprego de Processo Proibido/Substância não permitida", SubjectID: ":9787", LawDescription: "Artigo 274 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emprego irregular de verbas ou rendas públicas", SubjectID: ":3552", LawDescription: "Artigo 315 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Emprego irregular de verbas ou rendas públicas (art. 315)", SubjectID: ":9832", LawDescription: "Artigo 315 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Entendimento para empenhar o Brasil à neutralidade ou à guerra", SubjectID: ":11211", LawDescription: "Artigo 140 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Entendimento para gerar conflito ou divergência com o Brasil", SubjectID: ":11212", LawDescription: "Artigo 141 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Entrada de aparelho telefônico de comunicação móvel em estabelecimento prisional", SubjectID: ":11797", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Entrada de aparelho telefônico de comunicação móvel em estabelecimento prisional", SubjectID: ":11939", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Entrada e Permanência de Menores", SubjectID: ":9977", LawDescription: "Artigo 149 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Entrega de Filho Menor a Pessoa Inidônea", SubjectID: ":9759", LawDescription: "Artigo 245 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Entrega de Filho Menor a Pessoa Inidônea", SubjectID: ":3476", LawDescription: "Artigo 245 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Envenenamento com perigo extensivo", SubjectID: ":11201", LawDescription: "Artigo 293 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Envenenamento de Água Potável / Substância Alimentícia ou Medicinal", SubjectID: ":3513", LawDescription: "Artigo 270 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Envenenamento de Água Potável / Substância Alimentícia ou Medicinal (Art. 270)", SubjectID: ":9794", LawDescription: "Artigo 270 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Causar Epidemia", SubjectID: ":3505", LawDescription: "Artigo 267 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Causar Epidemia", SubjectID: ":11202", LawDescription: "Artigo 292 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Causar Epidemia", SubjectID: ":9786", LawDescription: "Artigo 267 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Escrito ou objeto obsceno", SubjectID: ":11232", LawDescription: "Artigo 239 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Escrito ou objeto obsceno", SubjectID: ":14706", LawDescription: "Artigo 234 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9690", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":10833", LawDescription: "Artigo 251 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Estelionato", SubjectID: ":11167", LawDescription: "Artigo 251 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Estelionato", SubjectID: ":3431", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":14692", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato contra idoso", SubjectID: ":14692", LawDescription: "Parágrafo 4 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":14693", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato contra idoso", SubjectID: ":14693", LawDescription: "Parágrafo 4 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":3432", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9691", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estupro", SubjectID: ":11251", LawDescription: "Artigo 232 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Estupro", SubjectID: ":3465", LawDescription: "Artigo 213 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estupro", SubjectID: ":9742", LawDescription: "Artigo 213 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estupro de Vulnerável", SubjectID: ":11417", LawDescription: "Artigo 217 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estupro de Vulnerável", SubjectID: ":11456", LawDescription: "Artigo 217 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Evasão de preso ou internado", SubjectID: ":11299", LawDescription: "Artigo 180 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Evasão mediante violência contra a pessoa", SubjectID: ":9945", LawDescription: "Artigo 352 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Evasão mediante violência contra a pessoa", SubjectID: ":3587", LawDescription: "Artigo 352 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Excesso de exação", SubjectID: ":11357", LawDescription: "Artigo 306 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Excesso de exação", SubjectID: ":3554", LawDescription: "Parágrafo 2 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Excesso de exação", SubjectID: ":3554", LawDescription: "Parágrafo 1 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Concussão", SubjectID: ":3554", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Excesso de exação", SubjectID: ":9834", LawDescription: "Parágrafo 2 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Excesso de exação", SubjectID: ":9834", LawDescription: "Parágrafo 1 Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Concussão", SubjectID: ":9834", LawDescription: "Artigo 316 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exclusão - Receitas Provenientes de Exportação", SubjectID: ":10558", LawDescription: "Parágrafo 2 Artigo 149 da Constituição Federal de 1988"},
+		{Subject: "Exclusão das Forças Armadas", SubjectID: ":11091", LawDescription: "Artigo 102 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Exclusão de filiado", SubjectID: ":9549", LawDescription: "Artigo 25 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Exclusão de filiado", SubjectID: ":9549", LawDescription: "Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Exclusão de filiado", SubjectID: ":9549", LawDescription: "Artigo 21 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Exclusão de filiado", SubjectID: ":9549", LawDescription: "Artigo 15 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Execução - De Multa Eleitoral", SubjectID: ":11731", LawDescription: "Artigo 367 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 76 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 75 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 74 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 73 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 72 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 71 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 70 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 69 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 68 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 67 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Execução Contratual", SubjectID: ":10429", LawDescription: "Artigo 66 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Exercício arbitrário das próprias razões", SubjectID: ":9939", LawDescription: "Artigo 345 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício arbitrário das próprias razões", SubjectID: ":3581", LawDescription: "Artigo 346 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício arbitrário das próprias razões", SubjectID: ":3581", LawDescription: "Artigo 345 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício arbitrário ou abuso de poder", SubjectID: ":3585", LawDescription: "Artigo 350 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício arbitrário ou abuso de poder", SubjectID: ":9943", LawDescription: "Artigo 350 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício de atividade com infração de decisão administrativa", SubjectID: ":3453", LawDescription: "Artigo 205 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício de atividade com infração de decisão administrativa", SubjectID: ":9730", LawDescription: "Artigo 205 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício de comércio por oficial", SubjectID: ":11125", LawDescription: "Artigo 204 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Exercício funcional ilegal", SubjectID: ":11340", LawDescription: "Artigo 329 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Exercício funcional ilegalmente antecipado ou prolongado", SubjectID: ":3562", LawDescription: "Artigo 324 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício funcional ilegalmente antecipado ou prolongado (art. 324)", SubjectID: ":9842", LawDescription: "Artigo 324 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício Ilegal da Medicina, Arte Dentária ou Farmacêutica", SubjectID: ":3509", LawDescription: "Artigo 282 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exercício Ilegal da Medicina, Arte Dentária ou Farmacêutica (art. 282)", SubjectID: ":9790", LawDescription: "Artigo 282 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exploração de prestígio", SubjectID: ":11366", LawDescription: "Artigo 353 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Exploração de prestígio", SubjectID: ":9951", LawDescription: "Artigo 357 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exploração de prestígio", SubjectID: ":3593", LawDescription: "Artigo 357 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exploração do Trabalho Infantil", SubjectID: ":9969", LawDescription: "Artigo 60 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Exploração Sexual", SubjectID: ":14664", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exploração Sexual", SubjectID: ":14666", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Explosão", SubjectID: ":11186", LawDescription: "Artigo 269 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Explosão", SubjectID: ":9775", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Explosão", SubjectID: ":3493", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Explosão culposa", SubjectID: ":11963", LawDescription: "Parágrafo 3 Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Explosão culposa", SubjectID: ":11963", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Explosão culposa", SubjectID: ":11964", LawDescription: "Parágrafo 3 Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Explosão culposa", SubjectID: ":11964", LawDescription: "Artigo 251 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Exposição a Substâncias Tóxicas (Dicloro-Difenil-Tricloroetano (DDT / Mercúrio / Outras)", SubjectID: ":14163", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Exposição a Substâncias Tóxicas - Dicloro-Difenil-Tricloroetano (DDT/Mercúrio/Outras)", SubjectID: ":14149", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Exposição ou Abandono de Recém Nascido", SubjectID: ":10509", LawDescription: "Artigo 134 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Expurgos inflacionários sobre os benefícios", SubjectID: ":6143", LawDescription: "Artigo 1 da Lei nº 6.899 de 08 de Abril de 1981"},
+		{Subject: "Extorsão", SubjectID: ":11156", LawDescription: "Artigo 243 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Extorsão", SubjectID: ":3420", LawDescription: "Artigo 158 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão", SubjectID: ":9679", LawDescription: "Artigo 158 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão indireta", SubjectID: ":3422", LawDescription: "Artigo 160 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão indireta", SubjectID: ":11157", LawDescription: "Artigo 246 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Extorsão indireta (art. 160)", SubjectID: ":9681", LawDescription: "Artigo 160 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":11158", LawDescription: "Artigo 244 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":3421", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":9680", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante Sequestro Seguida de Lesão Corporal Grave", SubjectID: ":9702", LawDescription: "Parágrafo 2 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":9702", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante Sequestro Seguida de Lesão Corporal Grave", SubjectID: ":5569", LawDescription: "Parágrafo 2 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":5569", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante Seqüestro Seguida de Morte", SubjectID: ":5568", LawDescription: "Parágrafo 3 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":5568", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante Seqüestro Seguida de Morte", SubjectID: ":9701", LawDescription: "Parágrafo 3 Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão mediante seqüestro", SubjectID: ":9701", LawDescription: "Artigo 159 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extração ou Exploração Ilegal de Madeira e Condutas Equiparadas", SubjectID: ":14789", LawDescription: "Artigo 51 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Extração ou Exploração Ilegal de Madeira e Condutas Equiparadas", SubjectID: ":14789", LawDescription: "Artigo 45 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Extração ou Exploração Ilegal de Madeira e Condutas Equiparadas", SubjectID: ":14789", LawDescription: "Artigo 39 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Extravio de bagagem", SubjectID: ":4832", LawDescription: "Artigo 14 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Extravio, sonegação ou inutilização de livro ou documento", SubjectID: ":3551", LawDescription: "Artigo 314 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extravio, sonegação ou inutilização de livro ou documento", SubjectID: ":11341", LawDescription: "Artigo 321 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Extravio, sonegação ou inutilização de livro ou documento (art. 314)", SubjectID: ":9831", LawDescription: "Artigo 314 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fabricação de Objeto Destinado a Produção de Drogas e Condutas Afins", SubjectID: ":9861", LawDescription: "Artigo 34 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Fabricação de Objeto Destinado a Produção de Drogas e Condutas Afins", SubjectID: ":5894", LawDescription: "Artigo 34 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Fabricação, Aquisição, Fornecimento, Subtração ou Guarda de Materiais de Uso da Justiça Eleitoral", SubjectID: ":11436", LawDescription: "Artigo 340 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Fabrico / Fornecimento / Aquisição / Posse ou Transporte de Explosivos ou Gás Tóxico ou Asfixiante", SubjectID: ":9800", LawDescription: "Artigo 253 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fabrico / Fornecimento / Aquisição / Posse ou Transporte de Explosivos ou Gás Tóxico ou Asfixiante", SubjectID: ":5862", LawDescription: "Artigo 253 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Facilitação de contrabando ou descaminho", SubjectID: ":3556", LawDescription: "Artigo 318 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Facilitação de contrabando ou descaminho (art. 318)", SubjectID: ":9836", LawDescription: "Artigo 318 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 188 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 187 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 186 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 185 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 184 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 183 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 182 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 181 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 180 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 179 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 178 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 177 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 176 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 175 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 174 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 173 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 172 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 171 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 170 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 169 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Crimes Falimentares", SubjectID: ":9911", LawDescription: "Artigo 168 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Falsa identidade", SubjectID: ":9824", LawDescription: "Artigo 308 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsa identidade", SubjectID: ":9824", LawDescription: "Artigo 307 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsa identidade", SubjectID: ":11320", LawDescription: "Artigo 318 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Falsa identidade", SubjectID: ":3542", LawDescription: "Artigo 308 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsa identidade", SubjectID: ":3542", LawDescription: "Artigo 307 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes contra a Administração Ambiental", SubjectID: ":14802", LawDescription: "Artigo 69 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Falsidade de atestado médico", SubjectID: ":3537", LawDescription: "Artigo 302 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsidade de atestado médico (art. 302)", SubjectID: ":9819", LawDescription: "Artigo 302 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsidade ideológica", SubjectID: ":11321", LawDescription: "Artigo 312 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Falsidade ideológica", SubjectID: ":11473", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Falsidade ideológica", SubjectID: ":3533", LawDescription: "Artigo 299 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsidade ideológica", SubjectID: ":9815", LawDescription: "Artigo 299 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsidade ideológica", SubjectID: ":10995", LawDescription: "Artigo 299 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsidade material de atestado ou certidão", SubjectID: ":3536", LawDescription: "Parágrafo 1 Artigo 301 do Decreto Lei nº 2.848 de 12 de Dezembro de 1980"},
+		{Subject: "Falsidade material de atestado ou certidão", SubjectID: ":3536", LawDescription: "Artigo 301 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsidade material de atestado ou certidão (art. 301, § 1º)", SubjectID: ":9818", LawDescription: "Parágrafo 1 Artigo 301 do Decreto Lei nº 2.848 de 12 de Dezembro de 1980"},
+		{Subject: "Falsificação / Corrupção / Adulteração / Alteração de produto destinado a fins terapêuticos ou medicinais", SubjectID: ":9789", LawDescription: "Artigo 273 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação / Corrupção / Adulteração / Alteração de produto destinado a fins terapêuticos ou medicinais", SubjectID: ":3508", LawDescription: "Artigo 273 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação / Corrupção / Adulteração / Alteração de Substância ou Produtos Alimentícios", SubjectID: ":3514", LawDescription: "Artigo 272 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação / Corrupção / Adulteração / Alteração de Substância ou Produtos Alimentícios", SubjectID: ":9795", LawDescription: "Artigo 272 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de documento", SubjectID: ":11322", LawDescription: "Artigo 311 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Falsificação de documento particular", SubjectID: ":3532", LawDescription: "Artigo 298 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de documento particular (art. 298)", SubjectID: ":9814", LawDescription: "Artigo 298 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de documento público", SubjectID: ":9813", LawDescription: "Artigo 297 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de documento público", SubjectID: ":3531", LawDescription: "Artigo 297 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de documento público para fins eleitorais", SubjectID: ":10816", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Falsificação de documento público", SubjectID: ":10998", LawDescription: "Artigo 297 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de papéis públicos", SubjectID: ":3529", LawDescription: "Artigo 293 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de papéis públicos (art. 293)", SubjectID: ":9811", LawDescription: "Artigo 293 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de Papéis Públicos Praticado por Funcionário Público", SubjectID: ":11005", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação de Papéis Públicos Praticado por Funcionário Público", SubjectID: ":11005", LawDescription: "Artigo 293 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação do selo ou sinal público", SubjectID: ":3530", LawDescription: "Artigo 296 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação do selo ou sinal público (art. 296)", SubjectID: ":9812", LawDescription: "Artigo 296 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação do Selo ou Sinal Público Praticado por Funcionário Público", SubjectID: ":11004", LawDescription: "Artigo 296 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação do sinal empregado no contraste de metal precioso ou na fiscalização alfandegária, ou para outros fins", SubjectID: ":3541", LawDescription: "Artigo 306 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação do sinal empregado no contraste de metal precioso ou na fiscalização alfandegária, ou para outros fins", SubjectID: ":9823", LawDescription: "Artigo 306 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falsificação ou Alteração de Documento Particular para Fins Eleitorais", SubjectID: ":14221", LawDescription: "Artigo 349 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Falsificação ou Alteração de Documento Público para Fins Eleitorais", SubjectID: ":11472", LawDescription: "Artigo 348 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Falso eleitoral", SubjectID: ":10753", LawDescription: "Artigo 350 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Falso reconhecimento de firma ou letra", SubjectID: ":3534", LawDescription: "Artigo 300 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falso reconhecimento de firma ou letra (art. 300)", SubjectID: ":9816", LawDescription: "Artigo 300 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falso testemunho ou falsa perícia", SubjectID: ":9937", LawDescription: "Artigo 343 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falso testemunho ou falsa perícia", SubjectID: ":11367", LawDescription: "Artigo 346 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Falso testemunho ou falsa perícia", SubjectID: ":3579", LawDescription: "Artigo 343 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Falso testemunho ou falsa perícia", SubjectID: ":3579", LawDescription: "Artigo 342 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fauna Aquática Afetada por Traslado ou Descarte de Resíduos/Efluentes, ou Poluição ou Degradação da Água", SubjectID: ":14783", LawDescription: "Parágrafo 1 Artigo 33 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Favorecimento a convocado", SubjectID: ":11121", LawDescription: "Artigo 186 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Favorecimento a desertor", SubjectID: ":11133", LawDescription: "Artigo 193 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Favorecimento da Prostituição", SubjectID: ":9750", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento da Prostituição", SubjectID: ":5852", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento da prostituição ou outra forma de exploração sexual", SubjectID: ":11420", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento da prostituição ou outra forma de exploração sexual de vulnerável", SubjectID: ":11419", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento de Prostituição ou Outra Forma de Exploração Sexual", SubjectID: ":11457", LawDescription: "Artigo 228 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento de Prostituição ou Outra Forma de Exploração Sexual de Vulnerável", SubjectID: ":11458", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento pessoal", SubjectID: ":11368", LawDescription: "Artigo 350 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Favorecimento pessoal", SubjectID: ":3583", LawDescription: "Artigo 348 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento pessoal", SubjectID: ":9941", LawDescription: "Artigo 348 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento real", SubjectID: ":9942", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Favorecimento real", SubjectID: ":11369", LawDescription: "Artigo 351 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Favorecimento real", SubjectID: ":3584", LawDescription: "Artigo 349 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio qualificado", SubjectID: ":12091", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":12091", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Férias", SubjectID: ":10339", LawDescription: "Artigo 50 da Lei nº 6.880 de 09 de Dezembro de 1980"},
+		{Subject: "Fiança", SubjectID: ":9592", LawDescription: "Artigo 828 da Lei nº 10.406 de Outubro de 2001"},
+		{Subject: "Fies", SubjectID: ":12844", LawDescription: "Artigo 1 da Lei nº 13.570 de 21 de Dezembro de 2017"},
+		{Subject: "Filiação Partidária - Cancelamento", SubjectID: ":11756", LawDescription: "Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Filiação Partidária - Coexistência", SubjectID: ":11757", LawDescription: "Parágrafo 1 Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Filiação Partidária - Exclusão", SubjectID: ":11758", LawDescription: "Parágrafo 1 Artigo 22 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Fornecimento ao Eleitor de Cédula Oficial Já Assinalada ou Marcada", SubjectID: ":11505", LawDescription: "Artigo 307 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Fornecimento de Cédula Eleitoral Rubricada a Destempo", SubjectID: ":11506", LawDescription: "Artigo 308 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Fraude / Quebra de ordem cronológica", SubjectID: ":11923", LawDescription: "Parágrafo 6 Artigo 100 da Constituição Federal de 1988"},
+		{Subject: "Fraude / Quebra de ordem cronológica", SubjectID: ":11923", LawDescription: "Parágrafo 2 Artigo 100 da Constituição Federal de 1988"},
+		{Subject: "Fraude / Quebra de ordem cronológica", SubjectID: ":11923", LawDescription: "Parágrafo 1 Artigo 100 da Constituição Federal de 1988"},
+		{Subject: "Fraude à execução", SubjectID: ":3434", LawDescription: "Artigo 179 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude à execução (art. 179)", SubjectID: ":9693", LawDescription: "Artigo 179 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude de lei sobre estrangeiros", SubjectID: ":9825", LawDescription: "Artigo 310 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude de lei sobre estrangeiros", SubjectID: ":9825", LawDescription: "Artigo 309 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude de lei sobre estrangeiros", SubjectID: ":3543", LawDescription: "Artigo 310 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude de lei sobre estrangeiros", SubjectID: ":3543", LawDescription: "Artigo 309 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":5838", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":5838", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":9710", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9710", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude no Comércio", SubjectID: ":9716", LawDescription: "Artigo 175 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude no Comércio", SubjectID: ":5844", LawDescription: "Artigo 175 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":5840", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":5840", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":9712", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9712", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":9711", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":9711", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Alienação ou oneração fraudulenta de coisa própria", SubjectID: ":5839", LawDescription: "Parágrafo 2 Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Estelionato", SubjectID: ":5839", LawDescription: "Artigo 171 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude processual", SubjectID: ":3582", LawDescription: "Artigo 347 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraude processual", SubjectID: ":9940", LawDescription: "Artigo 347 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraudes e Abusos na Fundação ou Administração de Sociedade por Ações", SubjectID: ":9717", LawDescription: "Artigo 177 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fraudes e Abusos na Fundação ou Administração de Sociedade por Ações", SubjectID: ":5845", LawDescription: "Artigo 177 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Adulteração de sinal identificador de veículo automotor", SubjectID: ":14731", LawDescription: "Artigo 311 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Frustração de direitos assegurados por lei trabalhista", SubjectID: ":3452", LawDescription: "Artigo 203 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Frustração de direitos assegurados por lei trabalhista (art. 203)", SubjectID: ":9729", LawDescription: "Artigo 203 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Frustração de lei sobre a nacionalização do trabalho", SubjectID: ":3456", LawDescription: "Artigo 204 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Frustração de lei sobre a nacionalização do trabalho (art. 204)", SubjectID: ":9733", LawDescription: "Artigo 204 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fuga após acidente de trânsito", SubjectID: ":11188", LawDescription: "Artigo 281 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Fuga de pessoa presa ou submetida a medida de segurança", SubjectID: ":9944", LawDescription: "Artigo 351 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fuga de pessoa presa ou submetida a medida de segurança", SubjectID: ":3586", LawDescription: "Artigo 351 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fuga de preso ou internado", SubjectID: ":11300", LawDescription: "Artigo 178 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Funrural", SubjectID: ":6040", LawDescription: "Artigo 15 da Lc nº 11 de 25 de Maio de 1971"},
+		{Subject: "Furto", SubjectID: ":3416", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto simples", SubjectID: ":11163", LawDescription: "Artigo 240 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Furto", SubjectID: ":9675", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto de coisa comum", SubjectID: ":3418", LawDescription: "Artigo 156 do Decreto Lei nº 2.848 de 01 de Dezembro de 1940"},
+		{Subject: "Furto de coisa comum (art. 156)", SubjectID: ":9677", LawDescription: "Artigo 156 do Decreto Lei nº 2.848 de 01 de Dezembro de 1940"},
+		{Subject: "Furto de uso", SubjectID: ":11164", LawDescription: "Artigo 241 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Furto qualificado", SubjectID: ":5565", LawDescription: "Parágrafo 5 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto", SubjectID: ":5565", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto qualificado", SubjectID: ":9698", LawDescription: "Parágrafo 5 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto", SubjectID: ":9698", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto Privilegiado", SubjectID: ":9697", LawDescription: "Parágrafo 2 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto", SubjectID: ":9697", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto Privilegiado", SubjectID: ":5564", LawDescription: "Parágrafo 2 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto", SubjectID: ":5564", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto qualificado", SubjectID: ":3417", LawDescription: "Parágrafo 4 Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Furto simples", SubjectID: ":11165", LawDescription: "Artigo 240 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Furto simples", SubjectID: ":11165", LawDescription: "Artigo 6 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Furto simples", SubjectID: ":11165", LawDescription: "Artigo 5 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Furto qualificado", SubjectID: ":11165", LawDescription: "Parágrafo 4 Artigo 240 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Furto", SubjectID: ":9676", LawDescription: "Artigo 155 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fusão", SubjectID: ":9550", LawDescription: "Parágrafo 1 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Fusão", SubjectID: ":9550", LawDescription: "Artigo 27 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Fusão", SubjectID: ":9550", LawDescription: "Artigo 2 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Genocídio", SubjectID: ":11248", LawDescription: "Artigo 208 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão corporal grave", SubjectID: ":10848", LawDescription: "Parágrafo 1 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão corporal de natureza grave", SubjectID: ":5556", LawDescription: "Parágrafo 1 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":5556", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal de natureza grave", SubjectID: ":9644", LawDescription: "Parágrafo 1 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":9644", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal de natureza grave", SubjectID: ":9645", LawDescription: "Parágrafo 2 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":9645", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal de natureza grave", SubjectID: ":5557", LawDescription: "Parágrafo 2 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":5557", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":10840", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicídio", SubjectID: ":11243", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicídio", SubjectID: ":12130", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":12131", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":3371", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":9637", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio qualificado", SubjectID: ":9638", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":9638", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio qualificado", SubjectID: ":10846", LawDescription: "Parágrafo 2 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicídio qualificado", SubjectID: ":10846", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicídio qualificado", SubjectID: ":11244", LawDescription: "Parágrafo 2 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicídio qualificado", SubjectID: ":11244", LawDescription: "Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicídio qualificado", SubjectID: ":3372", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":3370", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":9636", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio simples", SubjectID: ":10845", LawDescription: "Parágrafo 1 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Homicido privilegiado", SubjectID: ":11245", LawDescription: "Parágrafo 1 Artigo 205 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Hostilidade contra país estrangeiro", SubjectID: ":11213", LawDescription: "Artigo 136 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Hostilidade qualificada pelo resultado", SubjectID: ":11214", LawDescription: "Parágrafo 1 Artigo 136 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Identificação Numérica de Candidato", SubjectID: ":11594", LawDescription: "Artigo 15 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Casos de nulidade", SubjectID: ":10600", LawDescription: "Artigo 500 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Impedimento", SubjectID: ":10600", LawDescription: "Artigo 255 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Impedimento / Detenção / Prisão", SubjectID: ":10365", LawDescription: "Artigo 47 da Lei nº 6.880 de 09 de Dezembro de 1980"},
+		{Subject: "Impedimento à fiscalização das pesquisas", SubjectID: ":10821", LawDescription: "Parágrafo 2 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Impedimento do Exercício da Propaganda", SubjectID: ":11490", LawDescription: "Artigo 332 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impedimento ou Embaraço ao Exercício do Sufrágio", SubjectID: ":11499", LawDescription: "Artigo 297 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impedimento ou Perturbação de Cerimônia Funerária", SubjectID: ":3459", LawDescription: "Artigo 209 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Impedimento ou Perturbação de Cerimônia Funerária (Art. 209)", SubjectID: ":9736", LawDescription: "Artigo 209 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Impedimento, perturbação ou fraude de concorrência", SubjectID: ":3569", LawDescription: "Artigo 335 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Impedimento, perturbação ou fraude de concorrência", SubjectID: ":11331", LawDescription: "Artigo 339 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Impedimento, perturbação ou fraude de concorrência (art. 335)", SubjectID: ":9922", LawDescription: "Artigo 335 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Introduzir espécime animal no País, sem parecer técnico oficial favorável e licença expedida por autoridade competente", SubjectID: ":14781", LawDescription: "Artigo 31 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Impostos", SubjectID: ":5916", LawDescription: "Artigo 154 da Constituição Federal de 1988"},
+		{Subject: "Improbidade Administrativa", SubjectID: ":11559", LawDescription: "Artigo 1 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Impugnação - Identidade de Eleitor Admitido a Votar", SubjectID: ":11707", LawDescription: "Parágrafo 1 Artigo 147 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impugnação - Inscrição Eleitoral", SubjectID: ":11581", LawDescription: "Parágrafo 7 Artigo 45 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impugnação - Nomeação de Membro da Junta Eleitoral", SubjectID: ":11709", LawDescription: "Parágrafo 2 Artigo 36 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impugnação - Nomeação de Membro da Mesa Receptora", SubjectID: ":11708", LawDescription: "Artigo 63 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Impugnação - Sistema Eletrônico de Votação", SubjectID: ":11710", LawDescription: "Parágrafo 3 Artigo 66 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Impugnação - Sistema Eletrônico de Votação", SubjectID: ":11710", LawDescription: "Parágrafo 2 Artigo 66 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Impugnação - Sistema Eletrônico de Votação", SubjectID: ":11710", LawDescription: "Parágrafo 1 Artigo 66 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Impugnação - Transferência de Domicílio Eleitoral", SubjectID: ":11582", LawDescription: "Artigo 57 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impugnação - Voto por Cédula", SubjectID: ":11711", LawDescription: "Parágrafo 1 Artigo 69 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Impugnação ao Registro de Candidatura", SubjectID: ":11616", LawDescription: "Artigo 3 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Imputação falsa de prática de infração penal ou revelação inverídica sobre estrutura de organização criminal", SubjectID: ":12337", LawDescription: "Artigo 19 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Imunidade", SubjectID: ":5914", LawDescription: "Artigo 150 da Constituição Federal de 1988"},
+		{Subject: "Imunidade Recíproca", SubjectID: ":10530", LawDescription: "Artigo 150 da Constituição Federal de 1988"},
+		{Subject: "Inabilitação para o exercício de Função Pública", SubjectID: ":11092", LawDescription: "Artigo 104 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Incapacidade Laborativa Parcial", SubjectID: ":6108", LawDescription: "Artigo 6 da Lei nº 6.367 de 19 de Outubro de 1976"},
+		{Subject: "Incapacidade Laborativa Temporária", SubjectID: ":6110", LawDescription: "Artigo 6 da Lei nº 6.367 de 19 de Outubro de 1976"},
+		{Subject: "Incêndio", SubjectID: ":3492", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incêndio", SubjectID: ":9774", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incêndio", SubjectID: ":10834", LawDescription: "Artigo 268 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Incêndio", SubjectID: ":11189", LawDescription: "Artigo 268 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Incêndio culposo", SubjectID: ":11961", LawDescription: "Parágrafo 2 Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incêndio", SubjectID: ":11961", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incêndio culposo", SubjectID: ":11962", LawDescription: "Parágrafo 2 Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incêndio", SubjectID: ":11962", LawDescription: "Artigo 250 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incentivos fiscais", SubjectID: ":6003", LawDescription: "Parágrafo 3 Artigo 227 da Constituição Federal de 1988"},
+		{Subject: "Incentivos fiscais", SubjectID: ":6003", LawDescription: "Parágrafo 3 Artigo 195 da Constituição Federal de 1988"},
+		{Subject: "Incentivos fiscais", SubjectID: ":6003", LawDescription: "Parágrafo 3 Artigo 156 da Constituição Federal de 1988"},
+		{Subject: "Incentivos fiscais", SubjectID: ":6003", LawDescription: "Artigo 151 da Constituição Federal de 1988"},
+		{Subject: "Incentivos fiscais", SubjectID: ":6003", LawDescription: "Parágrafo 2 Artigo 43 da Constituição Federal de 1988"},
+		{Subject: "Incidência na Execução Não Embargada", SubjectID: ":14845", LawDescription: "Artigo 1D da Lei nº 9.494 de 10 de Setembro de 1997"},
+		{Subject: "Incidência sobre Ações de Companhias Abertas", SubjectID: ":5949", LawDescription: "Artigo 1 da Lei nº 8.033 de 12 de Abril de 1990"},
+		{Subject: "Incidência sobre Benefícios Pagos Acumuladamente", SubjectID: ":14992", LawDescription: "Artigo 12 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: ":5926", LawDescription: "Artigo 22 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: ":5926", LawDescription: "Artigo 21 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: ":5926", LawDescription: "Artigo 20 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: ":5926", LawDescription: "Artigo 19 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Lucro Imobiliário", SubjectID: ":5926", LawDescription: "Artigo 18 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Participação nos Lucros", SubjectID: ":5925", LawDescription: "Artigo 35 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incitação ao Crime", SubjectID: ":5869", LawDescription: "Artigo 286 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incitação ao Crime", SubjectID: ":9805", LawDescription: "Artigo 286 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Incitamento", SubjectID: ":11303", LawDescription: "Artigo 155 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Inclusão de Dependente", SubjectID: ":6171", LawDescription: "Artigo 22 do Decreto nº 3.048 de 06 de Maio de 1999"},
+		{Subject: "Inclusão Indevida em Cadastro de Inadimplentes", SubjectID: ":6226", LawDescription: "Artigo 43 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Incompatibilidade para o Oficialato", SubjectID: ":11093", LawDescription: "Artigo 101 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Incorporação de Partidos Políticos", SubjectID: ":11763", LawDescription: "Parágrafo 7 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Incorporação de Partidos Políticos", SubjectID: ":11763", LawDescription: "Parágrafo 6 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Incorporação de Partidos Políticos", SubjectID: ":11763", LawDescription: "Parágrafo 3 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Incorporação de Partidos Políticos", SubjectID: ":11763", LawDescription: "Parágrafo 2 Artigo 29 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Incorporação Imobiliária", SubjectID: ":10470", LawDescription: "Artigo 1 da Lei nº 4.591 de 16 de Dezembro de 1964"},
+		{Subject: "Indenização por Dano Material", SubjectID: ":10502", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Indenização por Dano Material", SubjectID: ":7780", LawDescription: "Artigo 20 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Indenização por Dano Material", SubjectID: ":7780", LawDescription: "Parágrafo 1 Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Indenização por Dano Material", SubjectID: ":7780", LawDescription: "Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Indenização por Dano Material", SubjectID: ":7780", LawDescription: "Artigo 14 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Indenização por Dano Material", SubjectID: ":7780", LawDescription: "Artigo 12 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Indenização Trabalhista", SubjectID: ":6058", LawDescription: "Artigo 195 da Alínea \"b\" do Constituição Federal de 1988"},
+		{Subject: "Indenizações Regulares", SubjectID: ":10340", LawDescription: "Artigo 53 da Lei nº 6.880 de 09 de Dezembro de 1980"},
+		{Subject: "Índice de 4,02% da Lei 8.222/91", SubjectID: ":6154", LawDescription: "Artigo 10 da Lei nº 8.222 de 05 de Setembro de 1991"},
+		{Subject: "Indignidade para o Oficialato", SubjectID: ":11094", LawDescription: "Artigo 100 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Indisponibilidade / Seqüestro de Bens", SubjectID: ":10913", LawDescription: "Artigo 199 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Indisponibilidade / Seqüestro de Bens", SubjectID: ":10913", LawDescription: "Artigo 125 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Indisponibilidade de Bens", SubjectID: ":10206", LawDescription: "Artigo 7 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Indisponibilidade de Bens", SubjectID: ":10212", LawDescription: "Artigo 7 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Indisponibilidade de Bens", SubjectID: ":10218", LawDescription: "Artigo 7 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Indivisibilidade da Chapa", SubjectID: ":15012", LawDescription: "Artigo 91 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Indução à inscrição indevida", SubjectID: ":10756", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Indução, Instigação ou Auxílio ao Uso de Drogas", SubjectID: ":5895", LawDescription: "Parágrafo 2 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":5895", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Induzimento a erro essencial e ocultação de impedimento", SubjectID: ":9763", LawDescription: "Artigo 236 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento a erro essencial e ocultação de impedimento", SubjectID: ":3481", LawDescription: "Artigo 236 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento à Especulação", SubjectID: ":5843", LawDescription: "Artigo 174 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento à Especulação", SubjectID: ":9715", LawDescription: "Artigo 174 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento a Fuga, Entrega Arbitrária ou Sonegação de Incapazes", SubjectID: ":3489", LawDescription: "Artigo 248 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento a Fuga, Entrega Arbitrária ou Sonegação de Incapazes (Art. 248)", SubjectID: ":9771", LawDescription: "Artigo 248 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento à Inscrição de Eleitor em Infração às Normas Legais", SubjectID: ":11439", LawDescription: "Artigo 290 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Induzimento, Instigação ou Auxílio a Suicídio", SubjectID: ":9639", LawDescription: "Artigo 122 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Induzimento, Instigação ou Auxílio a Suicídio", SubjectID: ":3373", LawDescription: "Artigo 122 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 138 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 137 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 136 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 135 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 134 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 133 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 132 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 131 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 130 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Ineficácia de atos  em relação à massa", SubjectID: ":9555", LawDescription: "Artigo 129 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Inelegibilidade - Abuso do Poder Econômico ou Político", SubjectID: ":11596", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Abuso do Poder Econômico ou Político", SubjectID: ":11596", LawDescription: "Artigo 1 da Alínea \"d\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Analfabetismo", SubjectID: ":11597", LawDescription: "Parágrafo 4 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Analfabetismo", SubjectID: ":11597", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Analfabetismo", SubjectID: ":11597", LawDescription: "Artigo 1 da Alínea \"a\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Aposentadoria Compulsória ou PAD (magistrados e membros do MP)", SubjectID: ":12395", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Aposentadoria Compulsória ou PAD (magistrados e membros do MP)", SubjectID: ":12395", LawDescription: "Artigo 1 da Alínea \"q\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Condenação Criminal por órgão colegiado ou Transitada em Julgado", SubjectID: ":11598", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Declaração de Indignidade ou de Incompatibilidade com o Oficialato", SubjectID: ":11599", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Declaração de Indignidade ou de Incompatibilidade com o Oficialato", SubjectID: ":11599", LawDescription: "Artigo 1 da Alínea \"f\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Demissão do serviço público", SubjectID: ":12396", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Demissão do serviço público", SubjectID: ":12396", LawDescription: "Artigo 1 da Alínea \"o\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Desincompatibilização", SubjectID: ":11600", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Exclusão do exercício de profissão", SubjectID: ":12393", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Exclusão do exercício de profissão", SubjectID: ":12393", LawDescription: "Artigo 1 da Alínea \"m\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Parentesco", SubjectID: ":11602", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Parentesco", SubjectID: ":11602", LawDescription: "Parágrafo 3 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Parentesco", SubjectID: ":11602", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Perda de Mandato", SubjectID: ":14936", LawDescription: "Artigo 1 da Alínea \"b\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Perda de Mandato", SubjectID: ":14936", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Perda de Mandato", SubjectID: ":14936", LawDescription: "Artigo 1 da Alínea \"c\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Reeleição", SubjectID: ":11603", LawDescription: "Parágrafo 5 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Rejeição de Contas Públicas", SubjectID: ":11604", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Rejeição de Contas Públicas", SubjectID: ":11604", LawDescription: "Artigo 1 da Alínea \"g\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Renúncia a cargo político na pendência de representação ou petição que possa levar a outra causa de inelegibilidade", SubjectID: ":12392", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Renúncia a cargo político na pendência de representação ou petição que possa levar a outra causa de inelegibilidade", SubjectID: ":12392", LawDescription: "Artigo 1 da Alínea \"k\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Representação ou Ação de Investigação Judicial Eleitoral Jugada Procedente pela Justiça Eleitoral", SubjectID: ":11605", LawDescription: "Artigo 22 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Responsável por Doação Tida com Ilegal", SubjectID: ":14939", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Responsável por Doação Tida com Ilegal", SubjectID: ":14939", LawDescription: "Artigo 1 da Alínea \"p\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Suspensão dos Direitos Políticos por Ato Doloso de Improbidade Administrativa", SubjectID: ":14938", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Suspensão dos Direitos Políticos por Ato Doloso de Improbidade Administrativa", SubjectID: ":14938", LawDescription: "Artigo 1 da Alínea \"l\" do Artigo 1 Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Terceiro Mandato", SubjectID: ":11606", LawDescription: "Parágrafo 5 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Vida Pregressa", SubjectID: ":11607", LawDescription: "Parágrafo 9 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Vínculo Afetivo", SubjectID: ":11608", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Vínculo Conjugal", SubjectID: ":11609", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Vínculo Conjugal", SubjectID: ":11609", LawDescription: "Parágrafo 3 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Vínculo em União Estável", SubjectID: ":11610", LawDescription: "Parágrafo 7 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inexigibilidade", SubjectID: ":14132", LawDescription: "Artigo 25 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Inexigibilidade de Conduta Diversa", SubjectID: ":11110", LawDescription: "Artigo 38 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Inexigibilidade de Conduta Diversa", SubjectID: ":10619", LawDescription: "Artigo 22 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Infanticídio", SubjectID: ":9640", LawDescription: "Artigo 123 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Infanticídio", SubjectID: ":3375", LawDescription: "Artigo 123 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Infiltração de Agentes", SubjectID: ":14879", LawDescription: "Artigo 3 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Infração de medida sanitária preventiva", SubjectID: ":3515", LawDescription: "Artigo 268 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Infração de medida sanitária preventiva", SubjectID: ":9796", LawDescription: "Artigo 268 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":9658", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":11264", LawDescription: "Artigo 216 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Injúria", SubjectID: ":10844", LawDescription: "Artigo 216 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Injuria eleitoral violenta", SubjectID: ":11488", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Injuria na Propaganda Eleitoral", SubjectID: ":11487", LawDescription: "Artigo 326 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Injuria real", SubjectID: ":11265", LawDescription: "Artigo 217 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Inobservancia de lei, regulamento ou instrução", SubjectID: ":11342", LawDescription: "Artigo 324 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Inscrição de Despesas Não Empenhadas", SubjectID: ":5904", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inscrição de Despesas Não Empenhadas", SubjectID: ":9957", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inscrição em Cadastro Restritivo de Crédito", SubjectID: ":14169", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Inscrição em Cadastro Restrito de Crédito", SubjectID: ":14155", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Inscrição Fraudulenta", SubjectID: ":11438", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Inscrição Fraudulenta", SubjectID: ":10747", LawDescription: "Artigo 289 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Inscrição Fraudulenta Efetivada pelo Juiz", SubjectID: ":11440", LawDescription: "Artigo 291 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Inscrição na Matrícula de Registro Torrens", SubjectID: ":7897", LawDescription: "Artigo 277 da Lei nº 6.015 de 31 de Dezembro de 1973"},
+		{Subject: "Inscrição Simultânea em Dois ou Mais Partidos", SubjectID: ":11519", LawDescription: "Artigo 320 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Inserção de dados falsos em sistema de informações", SubjectID: ":3596", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inserção de dados falsos em sistema de informações (art. 313-A)", SubjectID: ":9845", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Insubmissão", SubjectID: ":11122", LawDescription: "Artigo 183 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Insubmissão privilegiada", SubjectID: ":11123", LawDescription: "Parágrafo 2 Artigo 183 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Interdição de estabecimento  ou associação", SubjectID: ":11061", LawDescription: "Artigo 118 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Interdição de estabecimento  ou associação", SubjectID: ":11061", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Introdução ou abandono de animais em propriedade alheia", SubjectID: ":3427", LawDescription: "Artigo 164 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Introdução ou abandono de animais em propriedade alheia (art. 164)", SubjectID: ":9686", LawDescription: "Artigo 164 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inundação", SubjectID: ":11190", LawDescription: "Artigo 272 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Inundação / Perigo de Inundação", SubjectID: ":3495", LawDescription: "Artigo 255 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inundação / Perigo de Inundação", SubjectID: ":3495", LawDescription: "Artigo 254 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inundação / Perigo de Inundação", SubjectID: ":9777", LawDescription: "Artigo 255 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inundação / Perigo de Inundação", SubjectID: ":9777", LawDescription: "Artigo 254 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inundação culposa", SubjectID: ":11967", LawDescription: "Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inundação culposa", SubjectID: ":11968", LawDescription: "Artigo 254 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Inutilização, Alteração ou Perturbação de Propaganda", SubjectID: ":11489", LawDescription: "Artigo 331 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Inutilização,sonegação ou descaminho de material probante", SubjectID: ":11370", LawDescription: "Artigo 352 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Invasão de Dispositivo Informático", SubjectID: ":11978", LawDescription: "Artigo 154 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Invasão de estabelecimento industrial, comercial ou agrícola. Sabotagem", SubjectID: ":3451", LawDescription: "Artigo 202 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Invasão de estabelecimento industrial, comercial ou agrícola. Sabotagem (art. 202)", SubjectID: ":9728", LawDescription: "Artigo 202 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Investigação de Paternidade", SubjectID: ":5804", LawDescription: "Artigo 1601 da Lei nº 10.406 de 11 de Janeiro de 2002"},
+		{Subject: "Invólucro ou recipiente com falsa indicação", SubjectID: ":3507", LawDescription: "Artigo 275 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Invólucro ou recipiente com falsa indicação (art. 275)", SubjectID: ":9788", LawDescription: "Artigo 275 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "IPMF - Imposto Provisório sobre Movimentação Financeira", SubjectID: ":10690", LawDescription: "Artigo 2 da Lc nº 77 de 13 de Julho de 1993"},
+		{Subject: "Irregularidades dos Dados Publicados em Pesquisas Eleitorais", SubjectID: ":11524", LawDescription: "Parágrafo 3 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Irregularidades dos Dados Publicados em Pesquisas Eleitorais", SubjectID: ":11524", LawDescription: "Parágrafo 2 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Irregularidades dos Dados Publicados em Pesquisas Eleitorais", SubjectID: ":11524", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Estabelecer ou explorar jogo de azar em lugar público ou acessivel ao público, mediante o pagamento de entrada ou sem ele", SubjectID: ":12350", LawDescription: "Artigo 50 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Latrocínio", SubjectID: ":5567", LawDescription: "Parágrafo 3 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo", SubjectID: ":5567", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Latrocínio", SubjectID: ":5567", LawDescription: "Artigo 2 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Latrocínio", SubjectID: ":10852", LawDescription: "Parágrafo 3 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Latrocínio", SubjectID: ":11159", LawDescription: "Parágrafo 3 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Latrocínio", SubjectID: ":9700", LawDescription: "Parágrafo 3 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo", SubjectID: ":9700", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Legítima Defesa", SubjectID: ":10616", LawDescription: "Artigo 25 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Legítima Defesa", SubjectID: ":11111", LawDescription: "Artigo 42 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lei Geral de Proteção de Dados (LGPD)", SubjectID: ":14205", LawDescription: "Artigo 1 da Lei nº 13.709 de 14 de Agosto de 2018"},
+		{Subject: "Leilão", SubjectID: ":14137", LawDescription: "Artigo 22 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Lesão corporal", SubjectID: ":14943", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão Cometida em Razão da Condição de Mulher", SubjectID: ":14943", LawDescription: "Parágrafo 13 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão grave", SubjectID: ":11237", LawDescription: "Parágrafo 1 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão grave", SubjectID: ":11237", LawDescription: "Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão leve", SubjectID: ":11238", LawDescription: "Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão levíssima", SubjectID: ":11239", LawDescription: "Parágrafo 6 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão levíssima", SubjectID: ":10842", LawDescription: "Parágrafo 6 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão privilegiada", SubjectID: ":11240", LawDescription: "Parágrafo 4 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão seguida de morte", SubjectID: ":11241", LawDescription: "Parágrafo 3 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesões qualificadas pelo resultado", SubjectID: ":10849", LawDescription: "Parágrafo 3 Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Lesão corporal", SubjectID: ":9642", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":3385", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":3386", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":10847", LawDescription: "Artigo 209 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Liberação ou Descarte de OGM (Organismo Geneticamente Modificado) - Biossegurança", SubjectID: ":3626", LawDescription: "Artigo 27 da Lei nº 11.105 de 24 de Março de 2005"},
+		{Subject: "Liberdade assistida", SubjectID: ":11389", LawDescription: "Artigo 118 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Limitação Administrativa", SubjectID: ":10130", LawDescription: "Artigo 170 da Constituição Federal de 1988"},
+		{Subject: "Limitações ao Poder de Tributar", SubjectID: ":5913", LawDescription: "Artigo 150 da Constituição Federal de 1988"},
+		{Subject: "Má-gestão praticada por Prefeitos e Vereadores", SubjectID: ":10990", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Majoração de Preços de Utilidade e Serviços Necessários à Realização das Eleições", SubjectID: ":11444", LawDescription: "Artigo 303 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Manutenção ou financiamento do terrorismo", SubjectID: ":12221", LawDescription: "Artigo 6 da Lei nº 13.260 de 16 de Março de 2016"},
+		{Subject: "Maus tratos", SubjectID: ":14782", LawDescription: "Artigo 32 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Maus tratos", SubjectID: ":11235", LawDescription: "Artigo 213 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Maus tratos", SubjectID: ":10508", LawDescription: "Artigo 136 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Maus tratos seguido de morte ou lesão grave", SubjectID: ":11236", LawDescription: "Parágrafo 2 Artigo 213 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Maus tratos seguido de morte ou lesão grave", SubjectID: ":11236", LawDescription: "Parágrafo 1 Artigo 213 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Mediação para Servir a Lascívia de Outrem", SubjectID: ":3471", LawDescription: "Artigo 227 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Mediação para Servir a Lascívia de Outrem", SubjectID: ":9747", LawDescription: "Artigo 227 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Medicamento em Desacordo com Receita Médica", SubjectID: ":9802", LawDescription: "Artigo 280 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Medicamento em Desacordo com Receita Médica", SubjectID: ":5867", LawDescription: "Artigo 280 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Menagem", SubjectID: ":11054", LawDescription: "Artigo 263 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Mineração Ilegal", SubjectID: ":14795", LawDescription: "Artigo 55 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Mineração Ilegal em Floresta", SubjectID: ":14791", LawDescription: "Artigo 44 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Modificação ou alteração não autorizada de sistema de informações", SubjectID: ":3597", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Modificação ou alteração não autorizada de sistema de informações (art. 313-B)", SubjectID: ":9846", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes assimilados ao de moeda falsa", SubjectID: ":9808", LawDescription: "Artigo 290 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes assimilados ao de moeda falsa", SubjectID: ":3524", LawDescription: "Artigo 290 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Monitoração Eletrônica", SubjectID: ":14932", LawDescription: "Artigo 146 da Lei nº 7.210 de 11 de Julho de 1984"},
+		{Subject: "Motim", SubjectID: ":10830", LawDescription: "Artigo 149 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Motim", SubjectID: ":11289", LawDescription: "Artigo 149 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Motim de presos", SubjectID: ":9947", LawDescription: "Artigo 354 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Motim de presos", SubjectID: ":3589", LawDescription: "Artigo 354 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Multas e demais Sanções", SubjectID: ":10395", LawDescription: "Parágrafo 4 Artigo 39 da Lei nº 4.320 de 17 de Março de 1964"},
+		{Subject: "Multas e demais Sanções", SubjectID: ":10395", LawDescription: "Parágrafo 3 Artigo 39 da Lei nº 4.320 de 17 de Março de 1964"},
+		{Subject: "Não Cancelamento de Restos a Pagar", SubjectID: ":5908", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Não Cancelamento de Restos a Pagar", SubjectID: ":9961", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Não Cumprimento dos Deveres Impostos pelo Código Eleitoral à Autoridade Judiciária e aos Funcionários da Justiça Eleitoral", SubjectID: ":11450", LawDescription: "Artigo 345 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Não Observância de Chamamento de Eleitores para Votar", SubjectID: ":11432", LawDescription: "Artigo 306 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Não-Acesso dos Partidos aos Dados Relativos às Pesquisas Eleitorais", SubjectID: ":11523", LawDescription: "Parágrafo 2 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Não-Acesso dos Partidos aos Dados Relativos às Pesquisas Eleitorais", SubjectID: ":11523", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Não-Apresentação de Denúncia ou Não Execução de Sentença Penal Condenatória no Prazo Legal", SubjectID: ":11447", LawDescription: "Artigo 342 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Obrigação de reparar o dano", SubjectID: ":11390", LawDescription: "Artigo 116 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Obstáculo à hasta pública, concorrência ou tomada de preços", SubjectID: ":11344", LawDescription: "Artigo 328 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Obstamento do Transporte e Fornecimento de Alimentos a Eleitores pela Justiça Eleitoral", SubjectID: ":11464", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Obstamento do Transporte e Fornecimento de Alimentos a Eleitores pela Justiça Eleitoral", SubjectID: ":11464", LawDescription: "Artigo 8 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Obstamento do Transporte e Fornecimento de Alimentos a Eleitores pela Justiça Eleitoral", SubjectID: ":11464", LawDescription: "Artigo 4 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Obtenção de Acesso a Sistema de Dados Eleitorais", SubjectID: ":11478", LawDescription: "Artigo 72 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Obtenção de documento falso", SubjectID: ":10818", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Obtenção de Documento Falso para Fins Eleitorais", SubjectID: ":11476", LawDescription: "Artigo 354 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Ocultação de urna", SubjectID: ":10827", LawDescription: "Artigo 339 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Ocultação, Sonegação ou Recusa de Fornecimento de Utilidades, Alimentos e Transporte no Dia da Eleição", SubjectID: ":11445", LawDescription: "Artigo 304 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Ocupação Temporária", SubjectID: ":10129", LawDescription: "Artigo 35 do Decreto Lei nº 3.365 de 21 de Junho de 1941"},
+		{Subject: "Ofensa às forças armadas", SubjectID: ":11266", LawDescription: "Artigo 219 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ofensa aviltante a inferior", SubjectID: ":11280", LawDescription: "Parágrafo 1 Artigo 176 do Decreto Lei nº 1.001 de 08 de Outubro de 1969"},
+		{Subject: "Oferecimento de Drogas para Consumo Conjunto", SubjectID: ":5896", LawDescription: "Parágrafo 3 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":5896", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Omissão da Entrega do Boletim de Urna", SubjectID: ":11477", LawDescription: "Artigo 68 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Omissão de eficiência da força", SubjectID: ":11139", LawDescription: "Artigo 198 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de lealdade militar", SubjectID: ":11290", LawDescription: "Artigo 151 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de Notificação de Doença", SubjectID: ":11205", LawDescription: "Artigo 297 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de Notificação de Doença", SubjectID: ":3516", LawDescription: "Artigo 269 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Omissão de Notificação de Doença (Art. 269)", SubjectID: ":9797", LawDescription: "Artigo 269 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Omissão de Oficial", SubjectID: ":11134", LawDescription: "Artigo 194 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de providências para evitar danos", SubjectID: ":11140", LawDescription: "Artigo 199 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de providências para salvar comandados", SubjectID: ":11141", LawDescription: "Artigo 200 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de socorro", SubjectID: ":11142", LawDescription: "Artigo 201 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Omissão de socorro", SubjectID: ":3392", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Omissão de socorro", SubjectID: ":9652", LawDescription: "Artigo 135 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Omissão na Expedição de Boletim de Apuração", SubjectID: ":11468", LawDescription: "Artigo 313 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Omissão no Recolhimento das Cédulas Apuradas, no Fechamento e Lacração da Urna", SubjectID: ":11469", LawDescription: "Artigo 314 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Operação militar sem ordem superior", SubjectID: ":11281", LawDescription: "Parágrafo 1 Artigo 169 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Oposição a ordem de sentinela", SubjectID: ":11293", LawDescription: "Artigo 164 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ordem arbitrária de invasão", SubjectID: ":11282", LawDescription: "Artigo 170 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ordenação de Despesa Não Autorizada", SubjectID: ":5906", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ordenação de Despesa Não Autorizada", SubjectID: ":9959", LawDescription: "Artigo 359 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Organização de grupo para prática de violência", SubjectID: ":11291", LawDescription: "Artigo 150 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Organização Terrorista", SubjectID: ":12219", LawDescription: "Artigo 3 da Lei nº 13.260 de 16 de Março de 2016"},
+		{Subject: "Outras fraudes", SubjectID: ":9692", LawDescription: "Artigo 176 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Outras fraudes", SubjectID: ":3433", LawDescription: "Artigo 176 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Outras Substâncias Nocivas a Saúde Pública", SubjectID: ":3517", LawDescription: "Artigo 278 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Outras Substâncias Nocivas a Saúde Pública (Art. 278)", SubjectID: ":9798", LawDescription: "Artigo 278 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Outros Atos Contra o Meio-Ambient", SubjectID: ":14793", LawDescription: "Artigo 52 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Pagamento Atrasado / Correção Monetária", SubjectID: ":10422", LawDescription: "Artigo 78 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Paralisação de trabalho de interesse coletivo", SubjectID: ":3450", LawDescription: "Artigo 201 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Paralisação de trabalho de interesse coletivo (art. 201)", SubjectID: ":9727", LawDescription: "Artigo 201 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Participação de Pessoa Não Detentora de Direitos Políticos em Atividades Partidárias e de Propaganda Eleitoral", SubjectID: ":11493", LawDescription: "Artigo 337 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Participação em rixa", SubjectID: ":11242", LawDescription: "Artigo 211 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Parto Suposto", SubjectID: ":3485", LawDescription: "Artigo 242 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Parto Suposto (Art. 242)", SubjectID: ":9767", LawDescription: "Artigo 242 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Patrocínio indébito", SubjectID: ":11345", LawDescription: "Artigo 334 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Patrocínio infiel", SubjectID: ":9948", LawDescription: "Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Patrocínio infiel", SubjectID: ":3590", LawDescription: "Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Patrocínio simultâneo ou tergiversação", SubjectID: ":3591", LawDescription: "Parágrafo 1 Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Patrocínio simultâneo ou tergiversação", SubjectID: ":9949", LawDescription: "Parágrafo 1 Artigo 355 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Peculato", SubjectID: ":11315", LawDescription: "Artigo 303 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Peculato", SubjectID: ":10835", LawDescription: "Artigo 303 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Peculato", SubjectID: ":3548", LawDescription: "Parágrafo 1 Artigo 312 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Peculato", SubjectID: ":9829", LawDescription: "Parágrafo 1 Artigo 312 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Peculato mediante aproveitamento ou erro de outrem", SubjectID: ":11316", LawDescription: "Artigo 304 do Decreto Lei nº 1.001 de 19 de Outubro de 1969"},
+		{Subject: "Peculato mediante erro de outrem", SubjectID: ":3550", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Peculato mediante erro de outrem (art. 313)", SubjectID: ":9830", LawDescription: "Artigo 313 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Peculato-furto", SubjectID: ":11317", LawDescription: "Parágrafo 2 Artigo 303 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Pederastia ou outro ato de libidinagem", SubjectID: ":10831", LawDescription: "Artigo 235 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Penetração com o fim de espionagem", SubjectID: ":11215", LawDescription: "Artigo 146 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Perigo de contágio de moléstia grave", SubjectID: ":3389", LawDescription: "Artigo 131 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perigo de contágio de moléstia grave", SubjectID: ":9649", LawDescription: "Artigo 131 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perigo de Contágio Venéreo", SubjectID: ":9654", LawDescription: "Artigo 130 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perigo de Contágio Venéreo", SubjectID: ":5911", LawDescription: "Artigo 130 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perigo de desastre ferroviário", SubjectID: ":11199", LawDescription: "Artigo 282 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Perigo de inundação", SubjectID: ":11191", LawDescription: "Artigo 273 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Perigo para a vida ou saúde de outrem", SubjectID: ":3390", LawDescription: "Artigo 132 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perigo para a vida ou saúde de outrem (art. 132)", SubjectID: ":9650", LawDescription: "Artigo 132 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perigo resultante de violação de regra de trânsito", SubjectID: ":11192", LawDescription: "Artigo 280 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ameaça", SubjectID: ":14684", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ameaça", SubjectID: ":14686", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Perturbar alguem o trabalho ou o sossego alheios", SubjectID: ":12347", LawDescription: "Artigo 42 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Perturbação ou Impedimento de Alistamento", SubjectID: ":11442", LawDescription: "Artigo 293 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Pescar mediante a utilização de", SubjectID: ":14784", LawDescription: "Artigo 35 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Pesca Ilegal", SubjectID: ":14784", LawDescription: "Parágrafo 1 Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Pescar em período no qual a pesca seja proibida ou em lugares interditados por órgão competente", SubjectID: ":14784", LawDescription: "Artigo 34 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Pesquisa Eleitoral - Divulgação de Pesquisa Eleitoral Fraudulenta", SubjectID: ":11649", LawDescription: "Parágrafo 4 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Pesquisa Eleitoral - Divulgação de Pesquisa Eleitoral Fraudulenta", SubjectID: ":11649", LawDescription: "Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Pesquisa Eleitoral - Registro de Pesquisa Eleitoral", SubjectID: ":11651", LawDescription: "Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Pesquisa Eleitoral - Registro de Pesquisa Eleitoral", SubjectID: ":11651", LawDescription: "Parágrafo 1 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Pesquisa Fraudulenta", SubjectID: ":11495", LawDescription: "Parágrafo 4 Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Pesquisa Fraudulenta", SubjectID: ":11495", LawDescription: "Artigo 33 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: ":3545", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: ":3545", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: ":9826", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos de Falsificação de Papéis Públicos", SubjectID: ":9826", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos de Falsificação de Papéis Públicos por Funcionário Público", SubjectID: ":10993", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos de Falsificação de Papéis Públicos por Funcionário Público", SubjectID: ":10993", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos para falsificação de moeda", SubjectID: ":3527", LawDescription: "Artigo 291 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos para falsificação de moeda (art. 291)", SubjectID: ":9809", LawDescription: "Artigo 291 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos para falsificação de moeda por Funcionário Público", SubjectID: ":10994", LawDescription: "Artigo 295 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Petrechos para falsificação de moeda por Funcionário Público", SubjectID: ":10994", LawDescription: "Artigo 294 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Posse de Drogas", SubjectID: ":5885", LawDescription: "Artigo 28 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Posse de Drogas", SubjectID: ":9860", LawDescription: "Artigo 28 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Posse Sexual Mediante Fraude", SubjectID: ":9748", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Posse Sexual Mediante Fraude", SubjectID: ":5850", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Prática de engenharia genética em célula germinal, zigoto ou embrião humanos - Biossegurança", SubjectID: ":10515", LawDescription: "Artigo 25 da Lei nº 11.105 de 24 de Março de 2005"},
+		{Subject: "Crimes praticados contra os índios e a cultura indígena", SubjectID: ":9901", LawDescription: "Artigo 58 da Lei nº 6.001 de 19 de Dezembro de 1973"},
+		{Subject: "Práticas Irregulares que Determinam a Anulação da Votação", SubjectID: ":11433", LawDescription: "Artigo 310 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Injúria Preconceituosa", SubjectID: ":12543", LawDescription: "Parágrafo 3 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":12543", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria Preconceituosa", SubjectID: ":12547", LawDescription: "Parágrafo 3 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":12547", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Preparação de ato terrorista", SubjectID: ":12220", LawDescription: "Artigo 5 da Lei nº 13.260 de 16 de Março de 2016"},
+		{Subject: "Preterição à Prioridade Postal", SubjectID: ":11521", LawDescription: "Artigo 338 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Prevaricação", SubjectID: ":11346", LawDescription: "Artigo 319 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Prevaricação", SubjectID: ":10838", LawDescription: "Artigo 319 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Prevaricação", SubjectID: ":9837", LawDescription: "Artigo 319 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Prevaricação", SubjectID: ":3557", LawDescription: "Artigo 319 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":9646", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":5558", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Processamento de Recurso Contra Expedição de Diploma", SubjectID: ":12642", LawDescription: "Artigo 262 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Processo Disciplinar / Sindicância", SubjectID: ":10190", LawDescription: "Artigo 42 da Lc nº 35 de 14 de Março de 1979"},
+		{Subject: "Processo Disciplinar / Sindicância", SubjectID: ":10197", LawDescription: "Parágrafo 2 Artigo 130 da do Artigo 130A da Constituição Federal de 1988"},
+		{Subject: "Processo Disciplinar / Sindicância", SubjectID: ":10197", LawDescription: "Parágrafo 2 Artigo 130A da Constituição Federal de 1988"},
+		{Subject: "Processo Disciplinar / Sindicância", SubjectID: ":10197", LawDescription: "Artigo 130A da Constituição Federal de 1988"},
+		{Subject: "Programa de Computador", SubjectID: ":10499", LawDescription: "Artigo 1 da Lei nº 9.610 de 19 de Fevereiro de 1998"},
+		{Subject: "Proibição de frequentar determinados locais", SubjectID: ":11062", LawDescription: "Artigo 117 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Proibição de frequentar determinados locais", SubjectID: ":11062", LawDescription: "Artigo 110 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Promoção de Desordem nos Trabalhos Eleitorais", SubjectID: ":11443", LawDescription: "Artigo 296 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Promoção de migração ilegal", SubjectID: ":14704", LawDescription: "Artigo 232 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Associação Criminosa", SubjectID: ":12333", LawDescription: "Artigo 2 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Associação Criminosa", SubjectID: ":12334", LawDescription: "Artigo 2 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Indenização por dano material em virtude de protesto indevido de título de crédito", SubjectID: ":14156", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Indenização por dano moral em virtude de protesto indevido de título de crédito", SubjectID: ":14170", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Provocação a país estrangeiro", SubjectID: ":11216", LawDescription: "Artigo 137 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Provocação de tumulto ou conduta inconveniente", SubjectID: ":12340", LawDescription: "Artigo 40 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Provocação direta ou auxílio a suicídio", SubjectID: ":11246", LawDescription: "Artigo 207 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Provocação indireta ao suicídio", SubjectID: ":11247", LawDescription: "Artigo 207 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Provocação indireta ao suicídio", SubjectID: ":11247", LawDescription: "Parágrafo 2 Artigo 207 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Publicação de pesquisa irregular", SubjectID: ":10822", LawDescription: "Parágrafo 3 Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Publicação de pesquisa irregular", SubjectID: ":10822", LawDescription: "Artigo 34 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Publicação ou crítica indevida", SubjectID: ":11294", LawDescription: "Artigo 166 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Publicidade opressiva", SubjectID: ":11371", LawDescription: "Artigo 348 do Decreto Lei nº 1.001 de 19 de Outubro de 1969"},
+		{Subject: "Associação Criminosa", SubjectID: ":3521", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Associação Criminosa", SubjectID: ":9804", LawDescription: "Artigo 288 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Quebra do Sigilo Telefônico", SubjectID: ":10609", LawDescription: "Artigo 1 da Lei nº 9.296 de 24 de Julho de 1996"},
+		{Subject: "Racismo", SubjectID: ":14697", LawDescription: "Artigo 1 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Racismo", SubjectID: ":14699", LawDescription: "Artigo 1 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Reabilitação", SubjectID: ":11104", LawDescription: "Artigo 123 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Injúria Real", SubjectID: ":12542", LawDescription: "Parágrafo 2 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":12542", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria Real", SubjectID: ":12546", LawDescription: "Parágrafo 2 Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":12546", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Realização de Propaganda Eleitoral em Língua Estrangeira", SubjectID: ":11492", LawDescription: "Artigo 335 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Receita Ilegal", SubjectID: ":11206", LawDescription: "Artigo 291 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Receptação", SubjectID: ":11162", LawDescription: "Artigo 254 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Receptação", SubjectID: ":9694", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação", SubjectID: ":3435", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação qualificada", SubjectID: ":11959", LawDescription: "Parágrafo 3 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação", SubjectID: ":11959", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação qualificada", SubjectID: ":5847", LawDescription: "Parágrafo 2 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação", SubjectID: ":5847", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação qualificada", SubjectID: ":9719", LawDescription: "Parágrafo 2 Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Receptação", SubjectID: ":9719", LawDescription: "Artigo 180 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Recondução", SubjectID: ":10204", LawDescription: "Artigo 6 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Recondução", SubjectID: ":10204", LawDescription: "Artigo 5 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Recondução", SubjectID: ":10204", LawDescription: "Artigo 4 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Reconhecimento Indevido de Firma ou Letras para Fins Eleitorais", SubjectID: ":11474", LawDescription: "Artigo 352 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 167 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 166 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 165 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 164 da Lei nº 11.101 de 01 de Janeiro de 2173"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 163 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 162 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Recuperação extrajudicial", SubjectID: ":4994", LawDescription: "Artigo 161 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Recursos Administrativos", SubjectID: ":10391", LawDescription: "Artigo 109 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Recusa a obediência", SubjectID: ":11295", LawDescription: "Artigo 163 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Recusa de Entrega de Boletim", SubjectID: ":11481", LawDescription: "Parágrafo 4 Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Recusa de Entrega de Boletim", SubjectID: ":11481", LawDescription: "Parágrafo 2 Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Recusa de Entrega de Boletim", SubjectID: ":11481", LawDescription: "Artigo 87 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Recusa de função na Justiça Militar", SubjectID: ":11372", LawDescription: "Artigo 340 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Recusa ou Abandono do Serviço Eleitoral", SubjectID: ":11449", LawDescription: "Artigo 344 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Recusa ou omissão de dados cadastrais, registros, documentos e informações", SubjectID: ":12339", LawDescription: "Artigo 21 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Recusa, retardamento ou omissão de dados técnicos indispensáveis à propositura de Ação Civil Pública", SubjectID: ":3650", LawDescription: "Artigo 10 da Lei nº 7.347 de 24 de Julho de 1985"},
+		{Subject: "Recusa, retardamento ou omissão de dados técnicos indispensáveis à propositura de Ação Civil Pública", SubjectID: ":9903", LawDescription: "Artigo 10 da Lei nº 7.347 de 24 de Julho de 1985"},
+		{Subject: "Redução a condição análoga à de escravo", SubjectID: ":3404", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Redução a condição análoga à de escravo (art. 149)", SubjectID: ":9663", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Redução da Capacidade Auditiva", SubjectID: ":6112", LawDescription: "Parágrafo 5 Artigo 104 do Decreto nº 3.048 de 06 de Maio de 1999"},
+		{Subject: "Redução da Capacidade Auditiva", SubjectID: ":6112", LawDescription: "Artigo 104 do Decreto nº 3.048 de 06 de Maio de 1999"},
+		{Subject: "Redução dos Honorários Contratuais", SubjectID: ":14844", LawDescription: "Artigo 34 da Lei nº 8.906 de 04 de Julho de 1994"},
+		{Subject: "Registro de Óbito após prazo legal", SubjectID: ":7925", LawDescription: "Artigo 83 da Lei nº 6.015 de 31 de Dezembro de 1973"},
+		{Subject: "Assédio sexual", SubjectID: ":14703", LawDescription: "Artigo 216 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Remição", SubjectID: ":10637", LawDescription: "Artigo 126 da Lei nº 7.210 de 11 de Julho de 1984"},
+		{Subject: "Remoção", SubjectID: ":10200", LawDescription: "Artigo 61 da Lei nº 8.625 de 12 de Fevereiro de 1993"},
+		{Subject: "Remoção Compulsória", SubjectID: ":12379", LawDescription: "Artigo 42 da Lc nº 35 de 14 de Março de 1979"},
+		{Subject: "Remoção de Órgão", SubjectID: ":14660", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Remoção de Órgão", SubjectID: ":14670", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Reparação do Dano", SubjectID: ":11113", LawDescription: "Artigo 109 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Repasse de Verbas Públicas", SubjectID: ":10957", LawDescription: "Parágrafo 2 Artigo 169 da Constituição Federal de 1988"},
+		{Subject: "Repasse de Verbas Públicas", SubjectID: ":10957", LawDescription: "Artigo 169 da Constituição Federal de 1988"},
+		{Subject: "Representação caluniosa", SubjectID: ":3617", LawDescription: "Artigo 19 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Representação caluniosa", SubjectID: ":9877", LawDescription: "Artigo 19 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Representação do Corregedor", SubjectID: ":11064", LawDescription: "Artigo 498 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Reprodução ou adulteração de selo ou peça filatélica", SubjectID: ":3538", LawDescription: "Artigo 303 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Reprodução ou adulteração de selo ou peça filatélica (art. 303)", SubjectID: ":9820", LawDescription: "Artigo 303 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Requerimento de Apreensão de Veículo", SubjectID: ":12161", LawDescription: "Artigo 3 do Decreto Lei nº 911 de 01 de Outubro de 1969"},
+		{Subject: "Requerimento de Apreensão de Veículo", SubjectID: ":12161", LawDescription: "Parágrafo 9 Artigo 3 do Decreto Lei nº 911 de 01 de Outubro de 1969"},
+		{Subject: "Rescisão", SubjectID: ":10425", LawDescription: "Artigo 79 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Rescisão", SubjectID: ":10425", LawDescription: "Artigo 78 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Resistência", SubjectID: ":3566", LawDescription: "Artigo 329 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Usurpação de função pública", SubjectID: ":9919", LawDescription: "Artigo 328 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Resistência mediante ameaça ou violência", SubjectID: ":11287", LawDescription: "Artigo 177 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 20 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 19 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 18 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 17 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 16 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 15 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 14 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 13 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 12 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 11 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 10 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 9 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 8 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 7 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 6 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 5 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 4 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 3 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Crime Resultante de Preconceito de Raça ou de Cor", SubjectID: ":9873", LawDescription: "Artigo 2 da Lei nº 7.716 de 05 de Janeiro de 1989"},
+		{Subject: "Retificação de Sexo", SubjectID: ":7835", LawDescription: "Artigo 3 do Decreto nº 678 de 06 de Novembro de 1992"},
+		{Subject: "Reunião ilícita", SubjectID: ":11296", LawDescription: "Artigo 165 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Revelação de identidade, fotografia ou filmagem do colaborador", SubjectID: ":12336", LawDescription: "Artigo 18 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Revelação de notícia, informação ou documento", SubjectID: ":11217", LawDescription: "Artigo 144 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Revelação de notícia, informação ou documento, com o fim de espionagem militar", SubjectID: ":11218", LawDescription: "Artigo 144 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Revogação de atos praticados em prejuízo de credores e da massa", SubjectID: ":5003", LawDescription: "Artigo 130 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Revolta", SubjectID: ":11292", LawDescription: "Parágrafo 1 Artigo 149 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Roubo", SubjectID: ":3419", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo", SubjectID: ":11160", LawDescription: "Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Roubo", SubjectID: ":9678", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo Majorado", SubjectID: ":9699", LawDescription: "Parágrafo 2 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo", SubjectID: ":9699", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo Majorado", SubjectID: ":5566", LawDescription: "Parágrafo 2 Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo", SubjectID: ":5566", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Roubo qualificado", SubjectID: ":11161", LawDescription: "Parágrafo 2 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Roubo qualificado", SubjectID: ":10851", LawDescription: "Parágrafo 2 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Roubo simples", SubjectID: ":10850", LawDescription: "Parágrafo 1 Artigo 242 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Roubo/Leilão Indevido de Bem Empenhado", SubjectID: ":14171", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Rufianismo", SubjectID: ":9752", LawDescription: "Artigo 230 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Rufianismo", SubjectID: ":5854", LawDescription: "Artigo 230 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sanções Administrativas", SubjectID: ":10390", LawDescription: "Artigo 88 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Sanções Administrativas", SubjectID: ":10390", LawDescription: "Artigo 87 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Sanções Administrativas", SubjectID: ":10390", LawDescription: "Artigo 86 da Lei nº 8.666 de 21 de Junho de 1993"},
+		{Subject: "Saque Fraudulento", SubjectID: ":14158", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Saque Fraudulento", SubjectID: ":14172", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Satisfação de lascívia mediante presença de criança ou adolescente", SubjectID: ":11418", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Satisfação de lascívia mediante presença de criança ou adolescente", SubjectID: ":11459", LawDescription: "Artigo 218 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Saúde", SubjectID: ":10064", LawDescription: "Artigo 196 da Constituição Federal de 1988"},
+		{Subject: "Saúde", SubjectID: ":10064", LawDescription: "Artigo 200 da Constituição Federal de 1988"},
+		{Subject: "Saúde", SubjectID: ":10064", LawDescription: "Artigo 199 da Constituição Federal de 1988"},
+		{Subject: "Saúde", SubjectID: ":10064", LawDescription: "Artigo 198 da Constituição Federal de 1988"},
+		{Subject: "Saúde", SubjectID: ":10064", LawDescription: "Artigo 197 da Constituição Federal de 1988"},
+		{Subject: "Lesão corporal seguida de morte", SubjectID: ":9643", LawDescription: "Parágrafo 3 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal", SubjectID: ":9643", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Lesão corporal seguida de morte", SubjectID: ":3387", LawDescription: "Parágrafo 3 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Semiliberdade", SubjectID: ":11392", LawDescription: "Artigo 120 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Separação de Corpos", SubjectID: ":11982", LawDescription: "Parágrafo 1 Artigo 7 da Lei nº 6.515 de 26 de Dezembro de 1977"},
+		{Subject: "Seqüestro e cárcere privado", SubjectID: ":3403", LawDescription: "Artigo 148 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Seqüestro e cárcere privado", SubjectID: ":9662", LawDescription: "Artigo 148 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sequestro ou cárcere privado", SubjectID: ":11257", LawDescription: "Artigo 225 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Servidão", SubjectID: ":14662", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Servidão", SubjectID: ":14668", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Servidão Administrativa", SubjectID: ":10128", LawDescription: "Artigo 40 do Decreto Lei nº 3.365 de 21 de Junho de 1941"},
+		{Subject: "Injúria", SubjectID: ":3397", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":12544", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Injúria", SubjectID: ":12545", LawDescription: "Artigo 140 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Simulação de Autoridade para Celebração de Casamento", SubjectID: ":9765", LawDescription: "Artigo 238 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Simulação de Autoridade para Celebração de Casamento", SubjectID: ":3483", LawDescription: "Artigo 238 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Simulação de Casamento", SubjectID: ":3482", LawDescription: "Artigo 239 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Simulação de Casamento", SubjectID: ":9764", LawDescription: "Artigo 239 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Fingir-se funcionário público", SubjectID: ":12348", LawDescription: "Artigo 45 do Decreto Lei nº 3.688 de 03 de Outubro de 1941"},
+		{Subject: "Sobre a Receita Bruta (Substitutiva)", SubjectID: ":14889", LawDescription: "Artigo 8 da Lei nº 12.546 de 14 de Dezembro de 2011"},
+		{Subject: "Sobre a Receita Bruta (Substitutiva)", SubjectID: ":14889", LawDescription: "Artigo 7 da Lei nº 12.546 de 14 de Dezembro de 2011"},
+		{Subject: "Sobrestamento", SubjectID: ":10738", LawDescription: "Artigo 528 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Sobrevôo em local interdito", SubjectID: ":11219", LawDescription: "Artigo 148 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Sonegação de contribuição previdenciária (art. 337-A e Lei 8.212/91)", SubjectID: ":9928", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação de papel ou objeto de valor probatório", SubjectID: ":9950", LawDescription: "Artigo 356 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação de papel ou objeto de valor probatório", SubjectID: ":3592", LawDescription: "Artigo 356 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação do Estado de Filiação", SubjectID: ":3487", LawDescription: "Artigo 241 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação do Estado de Filiação (Art. 243)", SubjectID: ":9769", LawDescription: "Artigo 243 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação ou destruição de correspondência", SubjectID: ":3409", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação ou destruição de correspondência", SubjectID: ":9668", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação ou destruição de correspondência (art. 151, § 1º, I)", SubjectID: ":9668", LawDescription: "Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Submissão à Condição Análoga à de Escravo", SubjectID: ":14661", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Submissão à Condição Análoga à de Escravo", SubjectID: ":14669", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subscrição de Mais de Uma Ficha de Filiação Partidária", SubjectID: ":11518", LawDescription: "Artigo 319 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Substância Destinada à Falsificação", SubjectID: ":3519", LawDescription: "Artigo 277 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Substância Destinada à Falsificação (Art. 277)", SubjectID: ":9799", LawDescription: "Artigo 277 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Substituição do Produto", SubjectID: ":7767", LawDescription: "Parágrafo 1 Artigo 18 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Substituição Tributária", SubjectID: ":5981", LawDescription: "Parágrafo 7 Artigo 150 da Constituição Federal de 1988"},
+		{Subject: "Subtração de Incapazes", SubjectID: ":3490", LawDescription: "Artigo 249 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subtração de Incapazes (Art. 249)", SubjectID: ":9772", LawDescription: "Artigo 249 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subtração ou inutilização de livro ou documento", SubjectID: ":3571", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subtração ou inutilização de livro ou documento (art. 337, caput)", SubjectID: ":9924", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subtração ou inutilização de livro, processo ou documento", SubjectID: ":11333", LawDescription: "Artigo 337 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Subtração, ocultação ou inutilização de material de salvamento", SubjectID: ":3497", LawDescription: "Artigo 257 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subtração, ocultação ou inutilização de material de salvamento (art. 257)", SubjectID: ":9779", LawDescription: "Artigo 257 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Subtração, ocultação ou inutilização de material de socorro", SubjectID: ":11193", LawDescription: "Artigo 275 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Superendividamento", SubjectID: ":15048", LawDescription: "Artigo 4 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Superendividamento", SubjectID: ":15048", LawDescription: "Artigo 104 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Superendividamento", SubjectID: ":15048", LawDescription: "Artigo 5 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Superendividamento", SubjectID: ":15048", LawDescription: "Artigo 51 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Supressão de documento", SubjectID: ":11323", LawDescription: "Artigo 316 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Supressão de documento", SubjectID: ":3540", LawDescription: "Artigo 305 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Supressão de documento (art. 305)", SubjectID: ":9822", LawDescription: "Artigo 305 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Supressão ou Alteração de Marca em Animais", SubjectID: ":9703", LawDescription: "Artigo 162 do Decreto Lei nº 2.848 de 21 de Outubro de 1969"},
+		{Subject: "Supressão ou Alteração de Marca em Animais", SubjectID: ":5570", LawDescription: "Artigo 162 do Decreto Lei nº 2.848 de 21 de Outubro de 1969"},
+		{Subject: "Talidomida", SubjectID: ":14764", LawDescription: "Artigo 2 da Lei nº 7.070 de 20 de Dezembro de 1982"},
+		{Subject: "Talidomida", SubjectID: ":14764", LawDescription: "Artigo 1 da Lei nº 7.070 de 20 de Dezembro de 1982"},
+		{Subject: "Tentativa contra a soberania do Brasil", SubjectID: ":11220", LawDescription: "Artigo 142 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Terrorismo", SubjectID: ":12217", LawDescription: "Artigo 2 da Lei nº 13.260 de 16 de Março de 2016"},
+		{Subject: "Tráfego de Veículo com Excesso de Peso", SubjectID: ":14161", LawDescription: "Artigo 231 da Constituição Federal de 1988"},
+		{Subject: "Tráfego de Veículo com Excesso de Peso", SubjectID: ":14161", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Tráfego de Veículo com Excesso de Peso", SubjectID: ":14174", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":3607", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":3608", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":9859", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de influência", SubjectID: ":11334", LawDescription: "Artigo 336 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Tráfico de influência", SubjectID: ":3567", LawDescription: "Artigo 332 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico de influência (art. 332)", SubjectID: ":9920", LawDescription: "Artigo 332 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico de Influência em Transação Comercial Internacional", SubjectID: ":9931", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico de Influência em Transação Comercial Internacional", SubjectID: ":5877", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico Ilícito de Drogas praticado por Funcionário Público", SubjectID: ":10987", LawDescription: "Artigo 40 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico Internacional de Pessoa", SubjectID: ":14665", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico internacional de pessoa para fim de exploração sexual", SubjectID: ":11421", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico internacional de pessoa para fim de exploração sexual", SubjectID: ":9741", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico Internacional de Pessoas", SubjectID: ":9753", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico Internacional de Pessoas", SubjectID: ":5855", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico Interno de Pessoa", SubjectID: ":14659", LawDescription: "Artigo 149 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico interno de pessoa para fim de exploração sexual", SubjectID: ":11422", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico interno de pessoa para fim de exploração sexual", SubjectID: ":11460", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico Interno de Pessoas", SubjectID: ":5856", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico Interno de Pessoas", SubjectID: ":9754", LawDescription: "Artigo 231 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Tráfico, posse ou uso de entorpecente ou substância de efeito similar", SubjectID: ":11207", LawDescription: "Artigo 290 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Transgênicos", SubjectID: ":10115", LawDescription: "Artigo 1 da Lei nº 11.105 de 24 de Março de 2005"},
+		{Subject: "Poluição", SubjectID: ":14794", LawDescription: "Parágrafo 2 Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Poluição", SubjectID: ":14794", LawDescription: "Artigo 54 da Lei nº 9.605 de 12 de Fevereiro de 1998"},
+		{Subject: "Tratados e Convenções Internacionais", SubjectID: ":6212", LawDescription: "Artigo 109 da Constituição Federal de 1988"},
+		{Subject: "Turbação de objeto ou documento", SubjectID: ":11221", LawDescription: "Artigo 145 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Ultraje / Impedimento ou Perturbação de Culto Religioso", SubjectID: ":9739", LawDescription: "Artigo 208 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ultraje / Impedimento ou Perturbação de Culto Religioso", SubjectID: ":3462", LawDescription: "Artigo 208 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: ":3469", LawDescription: "Artigo 234 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: ":3469", LawDescription: "Artigo 233 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: ":9746", LawDescription: "Artigo 234 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Ultraje Público ao Pudor (Ato/Escrito Obsceno)", SubjectID: ":9746", LawDescription: "Artigo 233 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso culposo de gás tóxico ou asfixiante", SubjectID: ":11965", LawDescription: "Parágrafo 1 Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso culposo de gás tóxico ou asfixiante", SubjectID: ":11966", LawDescription: "Parágrafo 1 Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso de documento falso", SubjectID: ":11324", LawDescription: "Artigo 315 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Uso de documento falso", SubjectID: ":10817", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Uso de documento falso", SubjectID: ":3539", LawDescription: "Artigo 304 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso de documento falso", SubjectID: ":9821", LawDescription: "Artigo 304 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso de Documento Falso para Fins Eleitorais", SubjectID: ":11475", LawDescription: "Artigo 353 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Uso de documento pessoal alheio", SubjectID: ":11325", LawDescription: "Artigo 317 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Uso de gás tóxico ou asfixiante", SubjectID: ":9776", LawDescription: "Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso de gás tóxico ou asfixiante", SubjectID: ":3494", LawDescription: "Artigo 252 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Uso de símbolos governamentais em propaganda eleitoral", SubjectID: ":10823", LawDescription: "Artigo 40 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Uso indevido de uniforme, distintivo ou insígnia militar por qualquer pessoa", SubjectID: ":11284", LawDescription: "Artigo 172 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Uso indevido por militar de uniforme, distintivo ou insígnia", SubjectID: ":11285", LawDescription: "Artigo 171 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Uso ou Tráfico de Drogas", SubjectID: ":9971", LawDescription: "Artigo 19 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Uso Proibido de Alto-Falantes", SubjectID: ":11512", LawDescription: "Parágrafo 5 Artigo 39 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Uso, na Propaganda Eleitoral, de Símbolo de Órgãos de Governo", SubjectID: ":11496", LawDescription: "Artigo 40 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Usura pecuniária", SubjectID: ":11154", LawDescription: "Artigo 267 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Usurpação de águas", SubjectID: ":3424", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Esbulho possessório", SubjectID: ":9683", LawDescription: "Parágrafo 1 Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Usurpação de águas (art. 161, § 1º, I)", SubjectID: ":9683", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Usurpação de função", SubjectID: ":11335", LawDescription: "Artigo 335 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Usurpação de função pública", SubjectID: ":3565", LawDescription: "Artigo 328 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Usurpação de função pública (art. 328)", SubjectID: ":9918", LawDescription: "Artigo 328 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Utilização de Embrião Humano em Desacordo com a Legislação - Biossegurança", SubjectID: ":10514", LawDescription: "Artigo 24 da Lei nº 11.105 de 24 de Março de 2005"},
+		{Subject: "Utilização de Organização Comercial para Propaganda ou Aliciamento de Eleitores", SubjectID: ":11491", LawDescription: "Artigo 334 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Utilização de Prédios ou Serviços de Repartições Públicas para Beneficiar Partido ou Organização de Caráter Político", SubjectID: ":11451", LawDescription: "Artigo 346 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Utilização de Veículos e Embarcações Públicas em Campanha Eleitoral", SubjectID: ":11465", LawDescription: "Artigo 11 da Lei nº 6.091 de 15 de Agosto de 1974"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: ":11775", LawDescription: "Parágrafo 5 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: ":11775", LawDescription: "Parágrafo 1 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Inserções", SubjectID: ":11776", LawDescription: "Parágrafo 6 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Inserções", SubjectID: ":11776", LawDescription: "Parágrafo 1 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Veículos", SubjectID: ":14964", LawDescription: "Artigo 1 da Lei nº 8.989 de 24 de Fevereiro de 1995"},
+		{Subject: "Venda de Produtos ou Substância nas Condições dos Artigos 274 e 275", SubjectID: ":5866", LawDescription: "Artigo 276 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Venda de Produtos ou Substância nas Condições dos Artigos 274 e 275", SubjectID: ":9801", LawDescription: "Artigo 276 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Vilipêndio a Cadáver", SubjectID: ":9737", LawDescription: "Artigo 212 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Vilipêndio a Cadáver", SubjectID: ":3460", LawDescription: "Artigo 212 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação a Sepultura", SubjectID: ":3461", LawDescription: "Artigo 210 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação a Sepultura (Art. 210)", SubjectID: ":9738", LawDescription: "Artigo 210 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação ou destruição de correspondência", SubjectID: ":3410", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sonegação ou destruição de correspondência", SubjectID: ":9669", LawDescription: "Parágrafo 1 Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de comunicação telegráfica, radioelétrica ou telefônica (art. 151, § 1º, II, III e IV)", SubjectID: ":9669", LawDescription: "Parágrafo 1 Artigo 151 da do Decreto Lei nº 2.848 de 17 de Dezembro de 1940"},
+		{Subject: "Violação de correspondência", SubjectID: ":11258", LawDescription: "Artigo 227 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação de correspondência", SubjectID: ":3408", LawDescription: "Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de correspondência (art. 151, caput)", SubjectID: ":9667", LawDescription: "Artigo 151 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de Correspondência comercial", SubjectID: ":3411", LawDescription: "Artigo 152 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de Correspondência comercial (art. 152)", SubjectID: ":9670", LawDescription: "Artigo 152 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de domicílio", SubjectID: ":3406", LawDescription: "Artigo 150 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de domicílio", SubjectID: ":11259", LawDescription: "Artigo 226 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação de domicílio", SubjectID: ":9665", LawDescription: "Artigo 150 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação de recato", SubjectID: ":11260", LawDescription: "Artigo 229 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação de segredo profissional", SubjectID: ":11261", LawDescription: "Artigo 230 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação de sigilo de proposta de concorrência", SubjectID: ":11347", LawDescription: "Artigo 327 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação de sigilo funcional", SubjectID: ":11348", LawDescription: "Artigo 326 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação de território estrangeiro", SubjectID: ":11222", LawDescription: "Artigo 139 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação do dever funcional com o fim de lucro", SubjectID: ":11349", LawDescription: "Artigo 320 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação do segredo profissional", SubjectID: ":3414", LawDescription: "Artigo 154 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação do segredo profissional (art. 154)", SubjectID: ":9673", LawDescription: "Artigo 154 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação do Sigilo da Urna ou dos Invólucros", SubjectID: ":11509", LawDescription: "Artigo 317 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Violação do sigilo de proposta de concorrência", SubjectID: ":3564", LawDescription: "Artigo 326 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação do sigilo de proposta de concorrência (art. 326)", SubjectID: ":9844", LawDescription: "Artigo 326 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação do Sigilo do Voto", SubjectID: ":11508", LawDescription: "Artigo 312 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Violação do sigilo funcional", SubjectID: ":3563", LawDescription: "Artigo 325 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação do sigilo funcional (art. 325)", SubjectID: ":9843", LawDescription: "Artigo 325 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violação ou divulgação indevida de correspondência ou comunicação", SubjectID: ":11350", LawDescription: "Artigo 325 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violação sexual mediante fraude", SubjectID: ":11416", LawDescription: "Artigo 215 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência arbitrária", SubjectID: ":11351", LawDescription: "Artigo 333 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violência arbitrária", SubjectID: ":3560", LawDescription: "Artigo 322 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência arbitrária (art. 322)", SubjectID: ":9840", LawDescription: "Artigo 322 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência contra inferior", SubjectID: ":11286", LawDescription: "Artigo 175 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violência contra militar de serviço", SubjectID: ":11275", LawDescription: "Artigo 158 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violência contra superior", SubjectID: ":11276", LawDescription: "Artigo 157 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Violência doméstica", SubjectID: ":11979", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"},
+		{Subject: "Violência doméstica", SubjectID: ":10948", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"},
+		{Subject: "Violência doméstica", SubjectID: ":10949", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"},
+		{Subject: "Violência ou fraude em arrematação judicial", SubjectID: ":9952", LawDescription: "Artigo 358 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência ou fraude em arrematação judicial", SubjectID: ":3594", LawDescription: "Artigo 358 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência ou Grave Ameaça Visando a Obtenção de Voto ou a sua Abstenção", SubjectID: ":11503", LawDescription: "Artigo 301 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Ameaça", SubjectID: ":14942", LawDescription: "Artigo 147 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Votação de Eleitor na Seção Eleitoral na qual Não Está Inscrito ou Autorizado a Votar", SubjectID: ":11434", LawDescription: "Artigo 311 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Votação Múltipla ou Realizada em Lugar de Outrem", SubjectID: ":11507", LawDescription: "Artigo 309 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Adesão a Programa de Parcelamento de Débito", SubjectID: ":14953", LawDescription: "Artigo 38 da Lei nº 6.830 de Outubro de 2010"},
+		{Subject: "Adesão a Programa de Parcelamento de Débito", SubjectID: ":14953", LawDescription: "Artigo 38 da Lei nº 13.043 de 13 de Novembro de 2014"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 33 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 32 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 31 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 30 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 29 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 28 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 27 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 26 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 25 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 24 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 23 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Administração judicial", SubjectID: ":9558", LawDescription: "Artigo 22 da Lei nº 11.101 de 09 de Fevereiro de 2005"},
+		{Subject: "Afastamento do Cargo", SubjectID: ":10202", LawDescription: "Artigo 20 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Agente Agressivo - Eletricidade", SubjectID: ":14756", LawDescription: "Artigo 31 da Lei nº 3.807 de 26 de Agosto de 1960"},
+		{Subject: "Agente Cancerígeno", SubjectID: ":14751", LawDescription: "Parágrafo 4 Artigo 68 do Decreto nº 3.048 de 06 de Maio de 1999"},
+		{Subject: "Agrotóxicos", SubjectID: ":3622", LawDescription: "Artigo 15 da Lei nº 7.802 de 11 de Julho de 1989"},
+		{Subject: "AITP/Adicional de Indenização do Trabalhador Portuário Avulso", SubjectID: ":6074", LawDescription: "Artigo 61 da Lei nº 8.630 de 25 de Fevereiro de 1993"},
+		{Subject: "A alienação fiduciária regulada por esta Lei é o negócio jurídico pelo qual o devedor, ou fiduciante, com o escopo de garantia, contrata a transferência ao credor, ou fiduciário, da propriedade resolúvel de coisa imóvel.", SubjectID: ":9582", LawDescription: "Artigo 22 da Lei nº 9.514 de 20 de Novembro de 1997"},
+		{Subject: "Alimentação Escolar", SubjectID: ":12862", LawDescription: "Artigo 208 da Constituição Federal de 1988"},
+		{Subject: "Apropriação indébita", SubjectID: ":3430", LawDescription: "Artigo 168 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Arrolamento de Bens", SubjectID: ":6020", LawDescription: "Artigo 64 da Lei nº 9.532 de 10 de Dezembro de 1997"},
+		{Subject: "Ato Lesivo ao Patrimônio Artístico, Estético, Histórico ou Turístico", SubjectID: ":10010", LawDescription: "Artigo 1 da Lei nº 7.347 de 24 de Julho de 1985"},
+		{Subject: "Ato Lesivo ao Patrimônio Artístico, Estético, Histórico ou Turístico", SubjectID: ":10010", LawDescription: "Artigo 1 da Lei nº 4.717 de 29 de Junho de 1965"},
+		{Subject: "Autorização de Funcionamento/Fiscalização de Estabelecimentos de Ensino", SubjectID: ":12814", LawDescription: "Artigo 206 da Constituição Federal de 1988"},
+		{Subject: "Bullying, Violência e Discriminação", SubjectID: ":12857", LawDescription: "Artigo 3 da Constituição Federal de 1988"},
+		{Subject: "Bullying, Violência e Discriminação", SubjectID: ":12857", LawDescription: "Artigo 227 da Constituição Federal de 1988"},
+		{Subject: "Captação ilícita de votos ou corrupção eleitoral", SubjectID: ":10751", LawDescription: "Artigo 41 da Lei nº 9.504 de 30 de Setembro de 1997"},
+		{Subject: "Captação ilícita de votos ou corrupção eleitoral", SubjectID: ":10751", LawDescription: "Artigo 299 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Cartão de Crédito", SubjectID: ":9585", LawDescription: "Artigo 39 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Cartão de Crédito", SubjectID: ":9585", LawDescription: "Artigo 1 do Decreto nº 22.626 de 07 de Abril de 1933"},
+		{Subject: "Cartão de Crédito", SubjectID: ":9585", LawDescription: "Artigo 10 da Lei nº 4.595 de 31 de Dezembro de 1964"},
+		{Subject: "Cartão de Crédito", SubjectID: ":9585", LawDescription: "Artigo 4 da Lei nº 4.595 de 31 de Dezembro de 1964"},
+		{Subject: "Colaboração Premiada", SubjectID: ":14877", LawDescription: "Artigo 4 da Lei nº 12.850 de 02 de Agosto de 2013"},
+		{Subject: "Crime Contra a Economia e as Relações de Consumo", SubjectID: ":9875", LawDescription: "Artigo 6 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crime Contra a Economia e as Relações de Consumo", SubjectID: ":9875", LawDescription: "Artigo 2 da Lei nº 8.176 de 08 de Fevereiro de 1991"},
+		{Subject: "Crime contra a ordem econômica", SubjectID: ":9875", LawDescription: "Artigo 1 da Lei nº 8.176 de 08 de Fevereiro de 1991"},
+		{Subject: "Crimes Contra a Ordem Tributária", SubjectID: ":9874", LawDescription: "Artigo 3 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes Contra a Ordem Tributária", SubjectID: ":9874", LawDescription: "Artigo 2 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes Contra a Ordem Tributária", SubjectID: ":9874", LawDescription: "Artigo 1 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crimes Contra a Ordem Tributária", SubjectID: ":9874", LawDescription: "Artigo 1 da Lei nº 4.729 de 14 de Julho de 1965"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 80 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 79 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 78 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 77 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 76 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 75 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 74 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 73 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 72 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 71 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 70 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 69 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 68 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 67 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 66 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 65 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 64 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 63 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 62 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 61 da Lei nº 8.078 de 11 de Setembro de 1990"},
+		{Subject: "Crimes Contra as Relações de Consumo", SubjectID: ":9876", LawDescription: "Artigo 7 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Contribuição INCRA", SubjectID: ":6041", LawDescription: "Artigo 7 da Lei nº 2.613 de 23 de Setembro de 1955"},
+		{Subject: "Contribuição INCRA", SubjectID: ":6041", LawDescription: "Artigo 6 da Lei nº 2.613 de 23 de Setembro de 1955"},
+		{Subject: "Contribuição INCRA", SubjectID: ":6041", LawDescription: "Artigo 1 do Decreto Lei nº 1.110 de 09 de Julho de 1970"},
+		{Subject: "Violência doméstica", SubjectID: ":12342", LawDescription: "Parágrafo 12 Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio qualificado", SubjectID: ":12342", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes cometidos contra autoridade ou agente descrito nos arts. 142 e 143 da Constituição Federal, integrantes do sistema prisional e da Força Nacional de Segurança Pública", SubjectID: ":12342", LawDescription: "Artigo 1 da Lei nº 8.072 de 25 de Julho de 1990"},
+		{Subject: "Lesão corporal", SubjectID: ":12342", LawDescription: "Artigo 129 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":12342", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crime contra a Economia e as Relações de Consumo", SubjectID: ":3615", LawDescription: "Artigo 6 da Lei nº 8.137 de 27 de Dezembro de 1990"},
+		{Subject: "Crime contra a ordem econômica", SubjectID: ":3615", LawDescription: "Artigo 1 da Lei nº 8.176 de 08 de Fevereiro de 1991"},
+		{Subject: "Crimes de Responsabilidade", SubjectID: ":3604", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Crimes de Responsabilidade", SubjectID: ":3604", LawDescription: "Artigo 1 da Lei nº 1.079 de 10 de Abril de 1950"},
+		{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: ":11895", LawDescription: "Artigo 41G da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: ":11895", LawDescription: "Artigo 41F da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: ":11895", LawDescription: "Artigo 41D da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: ":11895", LawDescription: "Artigo 41C da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Crimes Previstos no Estatuto do Torcedor", SubjectID: ":11895", LawDescription: "Artigo 41B da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Crimes de Responsabilidade", SubjectID: ":9855", LawDescription: "Artigo 1 do Decreto Lei nº 201 de 27 de Fevereiro de 1967"},
+		{Subject: "Debêntures", SubjectID: ":4971", LawDescription: "Artigo 72 da Lei nº 6.404 de 15 de Dezembro de 1976"},
+		{Subject: "Debêntures", SubjectID: ":4971", LawDescription: "Artigo 52 da Lei nº 6.404 de 15 de Dezembro de 1976"},
+		{Subject: "Demonstrações Financeiras (DCTF)", SubjectID: ":5935", LawDescription: "Artigo 2 da Lei nº 7.799 de 10 de Julho de 1989"},
+		{Subject: "Demonstrações Financeiras (DCTF)", SubjectID: ":5935", LawDescription: "Artigo 4 da Lei nº 9.249 de 26 de Dezembro de 1995"},
+		{Subject: "Demonstrações Financeiras (DCTF)", SubjectID: ":5935", LawDescription: "Artigo 1 da Lei nº 8.200 de 28 de Junho de 1991"},
+		{Subject: "Desapropriação por Interesse Social para Reforma Agrária", SubjectID: ":10124", LawDescription: "Artigo 184 da Constituição Federal de 1988"},
+		{Subject: "Desastre ferroviário", SubjectID: ":9781", LawDescription: "Parágrafo 2 Artigo 260 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Despejo por Inadimplemento", SubjectID: ":14915", LawDescription: "Parágrafo 1 Artigo 9 da Lei nº 8.245 de 18 de Outubro de 1991"},
+		{Subject: "Despesa", SubjectID: ":12837", LawDescription: "Artigo 69 da Lei nº 9.394 de 21 de Setembro de 1999"},
+		{Subject: "Despesas Condominiais", SubjectID: ":10467", LawDescription: "Artigo 12 da Lei nº 4.591 de 16 de Dezembro de 1964"},
+		{Subject: "Destinação de Bens e Mercadorias/Coisas Apreendidas", SubjectID: ":14881", LawDescription: "Artigo 118 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Destruição ou Destinação das Coisas Apreendidas", SubjectID: ":14958", LawDescription: "Artigo 124 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Dívida Ativa (Execução Fiscal)", SubjectID: ":6017", LawDescription: "Parágrafo 3 Artigo 131 da Constituição Federal de 1988"},
+		{Subject: "Importunação sexual", SubjectID: ":12398", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"},
+		{Subject: "Enriquecimento ilícito", SubjectID: ":10013", LawDescription: "Artigo 9 da Lei nº 8.429 de 02 de Junho de 1992"},
+		{Subject: "Equiparação com Instituições Financeiras", SubjectID: ":14892", LawDescription: "Parágrafo 6 Artigo 3 da Lei nº 9.718 de 27 de Novembro de 1998"},
+		{Subject: "Equivalência salarial", SubjectID: ":4840", LawDescription: "Artigo 19 da Lei nº 10.150 de 21 de Dezembro de 2000"},
+		{Subject: "Erro Médico", SubjectID: ":10503", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Esbulho possessório", SubjectID: ":3425", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Esbulho possessório", SubjectID: ":9684", LawDescription: "Parágrafo 1 Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Esbulho possessório (art. 161, § 1º, II)", SubjectID: ":9684", LawDescription: "Artigo 161 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Escala de Salário-Base", SubjectID: ":6130", LawDescription: "Artigo 6 da Lei nº 6.332 de 18 de Maio de 1976"},
+		{Subject: "Exclusão - ICMS", SubjectID: ":10556", LawDescription: "Parágrafo 2 Artigo 3 da Lei nº 9.718 de 27 de Novembro de 1998"},
+		{Subject: "Exclusão - ICMS", SubjectID: ":10556", LawDescription: "Artigo 3 da Lei nº 10.833 de 29 de Dezembro de 2003"},
+		{Subject: "Fac-símile", SubjectID: ":10668", LawDescription: "Artigo 2 da Lei nº 9.800 de 26 de Maio de 1999"},
+		{Subject: "Feminicídio", SubjectID: ":12358", LawDescription: "Artigo 104 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Feminicídio", SubjectID: ":12358", LawDescription: "Artigo 103 da Lei nº 8.069 de 13 de Julho de 1990"},
+		{Subject: "Homicídio qualificado", SubjectID: ":12358", LawDescription: "Parágrafo 2 Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Homicídio", SubjectID: ":12358", LawDescription: "Artigo 121 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Importunação sexual", SubjectID: ":12384", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"},
+		{Subject: "Importunação sexual", SubjectID: ":12397", LawDescription: "Artigo 2 da Lei nº 13.718 de 24 de Setembro de 2018"},
+		{Subject: "Impostos", SubjectID: ":5916", LawDescription: "Artigo 40 da Lei nº 5.172 de 31 de Julho de 2055"},
+		{Subject: "Incidência sobre 1/3 de férias (art. 7º, XVII da CF)", SubjectID: ":5927", LawDescription: "Artigo 43 do Decreto nº 3.000 de 26 de Março de 1999"},
+		{Subject: "Incidência sobre 13° Salário", SubjectID: ":5928", LawDescription: "Artigo 638 do Decreto nº 3.000 de 26 de Março de 1999"},
+		{Subject: "Incidência sobre 13° Salário", SubjectID: ":5928", LawDescription: "Artigo 26 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Ajuda de Custo", SubjectID: ":14988", LawDescription: "Artigo 6 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Ajuda de Custo", SubjectID: ":14988", LawDescription: "Artigo 39 do Decreto nº 3.000 de 26 de Março de 1999"},
+		{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: ":5920", LawDescription: "Artigo 43 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: ":5936", LawDescription: "Artigo 20 da Lei nº 8.383 de 30 de Dezembro de 1991"},
+		{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: ":5936", LawDescription: "Artigo 37 da Lei nº 8.541 de 23 de Dezembro de 1992"},
+		{Subject: "Incidência sobre Aplicações Financeiras", SubjectID: ":5936", LawDescription: "Artigo 36 da Lei nº 8.541 de 23 de Dezembro de 1992"},
+		{Subject: "Incidência sobre Aposentadoria", SubjectID: ":5919", LawDescription: "Artigo 6 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Função Comissionada", SubjectID: ":5929", LawDescription: "Artigo 43 do Decreto nº 3.000 de 26 de Março de 1999"},
+		{Subject: "Incidência sobre Indenização por Rescisão de Contrato de Trabalho", SubjectID: ":14995", LawDescription: "Artigo 6 da Lei nº 7.713 de 22 de Dezembro de 1988"},
+		{Subject: "Incidência sobre Indenização por Rescisão de Contrato de Trabalho", SubjectID: ":14995", LawDescription: "Artigo 39 do Decreto nº 3.000 de 26 de Março de 1999"},
+		{Subject: "Inclusão do 13º salário (gratificação natalina) no PBC", SubjectID: ":11940", LawDescription: "Parágrafo 4 Artigo 201 da Constituição Federal de 1988"},
+		{Subject: "Inclusão do 13º salário (gratificação natalina) no PBC", SubjectID: ":11940", LawDescription: "Parágrafo 3 Artigo 201 da Constituição Federal de 1988"},
+		{Subject: "Inclusão/exclusão de Jurado", SubjectID: ":7937", LawDescription: "Artigo 440 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Inclusão/exclusão de Jurado", SubjectID: ":7937", LawDescription: "Artigo 439 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Indenização por Dano Ambiental", SubjectID: ":9994", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Indenização por Dano Ambiental", SubjectID: ":9994", LawDescription: "Parágrafo 1 Artigo 14 da Lei nº 6.938 de 31 de Agosto de 1981"},
+		{Subject: "Indução, Instigação ou Auxílio ao Uso de Drogas", SubjectID: ":9862", LawDescription: "Parágrafo 2 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":9862", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Inelegibilidade - Desincompatibilização", SubjectID: ":11600", LawDescription: "Parágrafo 2 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Desincompatibilização", SubjectID: ":11600", LawDescription: "Parágrafo 1 Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Inalistável", SubjectID: ":11601", LawDescription: "Artigo 1 da Lc nº 64 de 18 de Maio de 1990"},
+		{Subject: "Inelegibilidade - Inalistável", SubjectID: ":11601", LawDescription: "Parágrafo 4 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Inalistável", SubjectID: ":11601", LawDescription: "Parágrafo 2 Artigo 14 da Constituição Federal de 1988"},
+		{Subject: "Inelegibilidade - Inalistável", SubjectID: ":11601", LawDescription: "Artigo 5 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Infração à Legislação Previdenciária", SubjectID: ":15006", LawDescription: "Artigo 79 da Lei nº 11.941 de 27 de Maio de 2009"},
+		{Subject: "Infração à Legislação Previdenciária", SubjectID: ":15006", LawDescription: "Parágrafo 1 Artigo 291 do Decreto nº 3.048 de 06 de Maio de 1999"},
+		{Subject: "Infração à Legislação Trabalhista", SubjectID: ":15007", LawDescription: "Artigo 69 da Lei nº 3.857 de 22 de Dezembro de 1960"},
+		{Subject: "Internação", SubjectID: ":7795", LawDescription: "Parágrafo 1 Artigo 112 do Decreto Lei nº 1.001 de 21 de Outubro de 1969"},
+		{Subject: "Internação", SubjectID: ":7795", LawDescription: "Artigo 659 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Internação", SubjectID: ":7795", LawDescription: "Artigo 97 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Isenção", SubjectID: ":5915", LawDescription: "Parágrafo 6 Artigo 150 da Constituição Federal de 1988"},
+		{Subject: "Isenção sobre Bens Contidos em Remessas Postais Internacionais", SubjectID: ":14962", LawDescription: "Artigo 2 do Decreto Lei nº 1.804 de 03 de Setembro de 1980"},
+		{Subject: "Jornada de Trabalho", SubjectID: ":12866", LawDescription: "Artigo 7 da Constituição Federal de 1988"},
+		{Subject: "Juros/Correção Monetária", SubjectID: ":6005", LawDescription: "Parágrafo 4 Artigo 39 da Lei nº 9.250 de 26 de Dezembro de 1995"},
+		{Subject: "Juros/Correção Monetária", SubjectID: ":6005", LawDescription: "Artigo 16 da Lei nº 9.250 de 26 de Dezembro de 1995"},
+		{Subject: "Juros/Correção Monetária", SubjectID: ":6005", LawDescription: "Artigo 14 da Lei nº 9.250 de 26 de Dezembro de 1995"},
+		{Subject: "Laudo Arbitral Internacional", SubjectID: ":9565", LawDescription: "Artigo 9 do Decreto Lei nº 4.657 de 04 de Setembro de 1942"},
+		{Subject: "Lei Geral de Proteção de Dados (LGPD)", SubjectID: ":14202", LawDescription: "Artigo 1 da Lei nº 13.709 de 14 de Agosto de 2018"},
+		{Subject: "Levantamento de depósito", SubjectID: ":6025", LawDescription: "Parágrafo 4 Artigo 1 da Lei nº 9.703 de 17 de Novembro de 1998"},
+		{Subject: "Levantamento de depósito", SubjectID: ":6025", LawDescription: "Parágrafo 3 Artigo 1 da Lei nº 9.703 de 17 de Novembro de 1998"},
+		{Subject: "Levantamento de depósito", SubjectID: ":6025", LawDescription: "Artigo 2 do Decreto nº 2.850 de 27 de Novembro de 1998"},
+		{Subject: "Liberação de mercadorias", SubjectID: ":6024", LawDescription: "Parágrafo 4 Artigo 23 do Decreto Lei nº 1.455 de 07 de Abril de 1976"},
+		{Subject: "Liberação de mercadorias", SubjectID: ":6024", LawDescription: "Artigo 23 do Decreto Lei nº 1.455 de 07 de Abril de 1976"},
+		{Subject: "Liberação de mercadorias", SubjectID: ":6024", LawDescription: "Artigo 26 do Decreto nº 4.543 de 26 de Dezembro de 2002"},
+		{Subject: "Liberação de Veículo Apreendido", SubjectID: ":6028", LawDescription: "Artigo 604 do Decreto nº 4.543 de 26 de Dezembro de 2002"},
+		{Subject: "Limitação do salário-de-benefício e da renda mensal inicial", SubjectID: ":6128", LawDescription: "Artigo 29 da Lei nº 8.870 de 15 de Abril de 1994"},
+		{Subject: "Liquidação Parcelada", SubjectID: ":10885", LawDescription: "Parágrafo 20 Artigo 100 da Constituição Federal de 1988"},
+		{Subject: "Manutenção e Desenvolvimento do Ensino", SubjectID: ":12838", LawDescription: "Artigo 212 da Constituição Federal de 1988"},
+		{Subject: "Monitoração Eletrônica - Medida Cautelar", SubjectID: ":14935", LawDescription: "Artigo 319 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Oferecimento de Drogas para Consumo Conjunto", SubjectID: ":9863", LawDescription: "Parágrafo 3 Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Tráfico de Drogas", SubjectID: ":9863", LawDescription: "Artigo 33 da Lei nº 11.343 de 23 de Agosto de 2006"},
+		{Subject: "Operações Comerciais", SubjectID: ":15002", LawDescription: "Artigo 4 do Decreto Lei nº 288 de 28 de Fevereiro de 1967"},
+		{Subject: "Operações Comerciais", SubjectID: ":15002", LawDescription: "Artigo 7 da Lc nº 70 de 30 de Dezembro de 1991"},
+		{Subject: "Operações Comerciais", SubjectID: ":15002", LawDescription: "Artigo 2 da Lei nº 10.637 de 30 de Dezembro de 2002"},
+		{Subject: "Operações Comerciais", SubjectID: ":15002", LawDescription: "Parágrafo 2 Artigo 149 da Constituição Federal de 1988"},
+		{Subject: "Ordenação da Cidade / Plano Diretor", SubjectID: ":10109", LawDescription: "Artigo 39 da Lei nº 10.257 de 10 de Julho de 2001"},
+		{Subject: "Pagamento ou Parcelamento do Crédito Tributário", SubjectID: ":10627", LawDescription: "Artigo 34 da Lei nº 9.249 de 23 de Março de 1982"},
+		{Subject: "Paridade Salarial", SubjectID: ":14744", LawDescription: "Artigo 7 da Emenda Constitucional nº 41 de 19 de Dezembro de 2003"},
+		{Subject: "Perda da qualidade de segurado", SubjectID: ":6170", LawDescription: "Artigo 13 do Decreto nº 3.048 de 06 de Maio de 1999"},
+		{Subject: "Perda por crime contra titular do mesmo poder ou descendente (L. 13.715/2018)", SubjectID: ":12383", LawDescription: "Artigo 4 da Lei nº 13.715 de 24 de Setembro de 2018"},
+		{Subject: "Perdimento de Bens", SubjectID: ":6029", LawDescription: "Artigo 604 do Decreto nº 4.543 de 26 de Dezembro de 2002"},
+		{Subject: "Perempção", SubjectID: ":7935", LawDescription: "Artigo 60 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Pesca", SubjectID: ":3627", LawDescription: "Parágrafo 3 Artigo 27 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Pesca (Lei nº 5.197/67, Lei nº 7.643/87, Lei 7.679/88, DL 221/67)", SubjectID: ":9887", LawDescription: "Parágrafo 3 Artigo 27 da Lei nº 5.197 de 03 de Janeiro de 1967"},
+		{Subject: "Pessoa Jurídica Estrangeira", SubjectID: ":6218", LawDescription: "Artigo 11 do Decreto Lei nº 4.657 de 04 de Setembro de 1942"},
+		{Subject: "Pessoa Portadora de Deficiência", SubjectID: ":14966", LawDescription: "Parágrafo 2 Artigo 1 da Lei nº 10.182 de 12 de Fevereiro de 2001"},
+		{Subject: "Pessoa Portadora de Deficiência", SubjectID: ":14966", LawDescription: "Artigo 4 do Decreto nº 3.298 de 20 de Dezembro de 1999"},
+		{Subject: "PIS", SubjectID: ":6039", LawDescription: "Artigo 239 da Constituição Federal de 1988"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 6 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 5 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 4 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 3 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 2 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":12887", LawDescription: "Artigo 2 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 1 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":12887", LawDescription: "Artigo 1 da Lei nº 11.738 de 16 de Julho de 2008"},
+		{Subject: "Piso Salarial", SubjectID: ":10312", LawDescription: "Artigo 41 da Lei nº 11.494 de 20 de Junho de 2007"},
+		{Subject: "Piso Salarial", SubjectID: ":12887", LawDescription: "Artigo 206 da Constituição Federal de 1988"},
+		{Subject: "Plano Municipal de Educação", SubjectID: ":12850", LawDescription: "Artigo 214 da Constituição Federal de 1988"},
+		{Subject: "Política Pública de Preços", SubjectID: ":14173", LawDescription: "Parágrafo 6 Artigo 37 da Constituição Federal de 1988"},
+		{Subject: "Preparo/Deserção", SubjectID: ":9050", LawDescription: "Parágrafo 2 Artigo 806 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Preparo/Deserção", SubjectID: ":9050", LawDescription: "Artigo 712 do Decreto Lei nº 1.002 de 21 de Outubro de 1969"},
+		{Subject: "Preparo/Deserção", SubjectID: ":9050", LawDescription: "Parágrafo 2 Artigo 275 da Lei nº 4.737 de 15 de Julho de 1965"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 78 da Lei nº 4.320 de 17 de Março de 1964"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 78 da Lei nº 4.320 de 17 de Março de 1964"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 67 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 67 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 56 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 56 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 49 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 49 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 48 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 48 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 25 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 25 da Lc nº 101 de 04 de Maio de 2000"},
+		{Subject: "Prestação de Contas", SubjectID: ":10211", LawDescription: "Artigo 34 da Alínea \"d\" do Constituição Federal de 1988"},
+		{Subject: "Prestação de Contas", SubjectID: ":10217", LawDescription: "Artigo 34 da Alínea \"d\" do Constituição Federal de 1988"},
+		{Subject: "Previstos no Estatuto do Torcedor", SubjectID: ":11896", LawDescription: "Artigo 41 da da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Previstos no Estatuto do Torcedor", SubjectID: ":11896", LawDescription: "Artigo 41F da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Previstos no Estatuto do Torcedor", SubjectID: ":11896", LawDescription: "Artigo 41D da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Previstos no Estatuto do Torcedor", SubjectID: ":11896", LawDescription: "Artigo 41C da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Previstos no Estatuto do Torcedor", SubjectID: ":11896", LawDescription: "Artigo 41B da Lei nº 10.671 de 15 de Maio de 2003"},
+		{Subject: "Processo Administrativo Fiscal", SubjectID: ":6018", LawDescription: "Artigo 5 da Inciso LV do Constituição Federal de 1988"},
+		{Subject: "Produção Agropecuária", SubjectID: ":6057", LawDescription: "Parágrafo 8 Artigo 195 da Constituição Federal de 1988"},
+		{Subject: "Produção Agropecuária", SubjectID: ":6057", LawDescription: "Parágrafo 4 Artigo 195 da Constituição Federal de 1988"},
+		{Subject: "Produção Agropecuária", SubjectID: ":6057", LawDescription: "Artigo 154 da Constituição Federal de 1988"},
+		{Subject: "Produção Antecipada de Provas", SubjectID: ":14238", LawDescription: "Artigo 11 da Lei nº 13.431 de 04 de Abril de 2017"},
+		{Subject: "Propaganda Política - Propaganda Eleitoral - Rádio Comunitária", SubjectID: ":11674", LawDescription: "Artigo 1 da Lei nº 9.612 de 19 de Fevereiro de 1998"},
+		{Subject: "Proteção de Dados Pessoais", SubjectID: ":14206", LawDescription: "Artigo 1 da Lei nº 13.709 de 14 de Agosto de 2018"},
+		{Subject: "Quebra de Sigilo Bancário", SubjectID: ":10560", LawDescription: "Parágrafo 2 Artigo 38 da Lei nº 4.595 de 31 de Dezembro de 1964"},
+		{Subject: "Quebra de Sigilo Bancário", SubjectID: ":10560", LawDescription: "Artigo 8 da Lei nº 8.021 de 12 de Abril de 1990"},
+		{Subject: "Quebra de Sigilo Bancário", SubjectID: ":10560", LawDescription: "Artigo 2 da Lei nº 9.034 de 03 de Maio de 1995"},
+		{Subject: "Quebra de Sigilo Telemático", SubjectID: ":14124", LawDescription: "Parágrafo 1 Artigo 1 da Lei nº 9.296 de 24 de Julho de 1996"},
+		{Subject: "Quesitos", SubjectID: ":10599", LawDescription: "Artigo 564 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Quinto Constitucional", SubjectID: ":10675", LawDescription: "Artigo 94 da Constituição Federal de 1988"},
+		{Subject: "Quinto Constitucional", SubjectID: ":10675", LawDescription: "Artigo 100 da Lc nº 35 de 14 de Março de 1979"},
+		{Subject: "Reajuste de Prestações", SubjectID: ":4842", LawDescription: "Artigo 1 da Lei nº 8.100 de 05 de Dezembro de 1990"},
+		{Subject: "Reajuste de Prestações", SubjectID: ":4842", LawDescription: "Artigo 1 da Lei nº 8.177 de 01 de Março de 1991"},
+		{Subject: "Renda Mensal Vitalícia", SubjectID: ":6117", LawDescription: "Artigo 40 da Lei nº 8.742 de 07 de Dezembro de 1993"},
+		{Subject: "Restituição de Coisas Apreendidas", SubjectID: ":14957", LawDescription: "Parágrafo 2 Artigo 120 do Decreto Lei nº 3.689 de 03 de Outubro de 1941"},
+		{Subject: "Revisão do Saldo Devedor", SubjectID: ":4854", LawDescription: "Artigo 15 da Lei nº 8.692 de 28 de Julho de 1993"},
+		{Subject: "RMI cuja salário-de-benefício supera menor valor teto", SubjectID: ":6129", LawDescription: "Artigo 5 da Lei nº 5.890 de 08 de Junho de 1973"},
+		{Subject: "Salário-Educação", SubjectID: ":6037", LawDescription: "Parágrafo 5 Artigo 212 da Constituição Federal de 1988"},
+		{Subject: "Salário-Família (Art. 65/70)", SubjectID: ":6102", LawDescription: "Artigo 3 da Lei nº 4.266 de 03 de Outubro de 1963"},
+		{Subject: "Seguro Acidentes do Trabalho", SubjectID: ":6038", LawDescription: "Artigo 195 da Alínea \"a\" do Constituição Federal de 1988"},
+		{Subject: "Sobre Aquisição de Bens/Veículos", SubjectID: ":14963", LawDescription: "Artigo 1 da Lei nº 8.989 de 24 de Fevereiro de 1995"},
+		{Subject: "Sonegação de contribuição previdenciária", SubjectID: ":3598", LawDescription: "Artigo 337 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Sucessão de Bens de Estrangeiro", SubjectID: ":6215", LawDescription: "Artigo 10 do Decreto Lei nº 4.657 de 04 de Setembro de 1942"},
+		{Subject: "Taxa de Despacho Aduaneiro", SubjectID: ":5960", LawDescription: "Artigo 10 da Lei nº 2.145 de 29 de Dezembro de 1953"},
+		{Subject: "Taxa de Fiscalização Ambiental", SubjectID: ":5962", LawDescription: "Artigo 17 da Lei nº 6.938 de 31 de Agosto de 1981"},
+		{Subject: "Taxa de Fiscalização da Comissão de Valores Mobiliários", SubjectID: ":5968", LawDescription: "Artigo 1 da Lei nº 7.940 de 20 de Dezembro de 1989"},
+		{Subject: "Taxa de Fiscalização da Comissão de Valores Mobiliários", SubjectID: ":5968", LawDescription: "Artigo 52 da Lei nº 11.076 de 30 de Dezembro de 2004"},
+		{Subject: "Terreno Aldeado", SubjectID: ":10103", LawDescription: "Artigo 20 da Constituição Federal de 1988"},
+		{Subject: "Utilização de Dados Relativos à CPMF para Fins de Fiscalização", SubjectID: ":6023", LawDescription: "Parágrafo 3 Artigo 11 da Lei nº 9.311 de 24 de Outubro de 1996"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: ":11775", LawDescription: "Parágrafo 4 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: ":11775", LawDescription: "Parágrafo 3 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Veiculação de Propaganda Partidária - Em Bloco", SubjectID: ":11775", LawDescription: "Parágrafo 2 Artigo 46 da Lei nº 9.096 de 19 de Setembro de 1995"},
+		{Subject: "Violação de direito autoral", SubjectID: ":3443", LawDescription: "Artigo 184 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Violência doméstica", SubjectID: ":14097", LawDescription: "Artigo 7 da Lei nº 11.340 de 07 de Agosto de 2006"},
+		{Subject: "Warrant", SubjectID: ":4981", LawDescription: "Artigo 1 da Lei nº 11.076 de 30 de Dezembro de 2004"},
+		{Subject: "Roubo", SubjectID: ":11149", LawDescription: "Artigo 157 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Extorsão", SubjectID: ":11149", LawDescription: "Artigo 158 do Decreto Lei nº 2.848 de 07 de Dezembro de 1940"},
+		{Subject: "Crimes de Lavagem ou Ocultação de Bens, Direitos ou Valores", SubjectID: ":10983", LawDescription: "Artigo 1 da Lei nº 9.613 de 03 de Março de 1998"},
+	}
 
-	return laws
+	return l
 }
