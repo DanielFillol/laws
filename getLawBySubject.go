@@ -1,28 +1,16 @@
 package laws
 
 import (
-	"log"
+	"github.com/DanielFillol/laws/data"
 	"strings"
 
-	"github.com/DanielFillol/laws/csv"
 	"github.com/DanielFillol/laws/models"
-)
-
-const (
-	FILEPATH   = "data/laws_by_subject.csv"
-	SEPARATOR  = ','
-	SKIPHeader = true
 )
 
 var SubjectData []models.LawBySubject
 
 func init() {
-	// Initialize the lawsSubject variable by reading the CSV file.
-	csvLaw, err := csv.Read(FILEPATH, SEPARATOR, SKIPHeader)
-	if err != nil {
-		log.Fatalf("error reading source file: %v", err)
-	}
-	SubjectData = csvLaw
+	SubjectData = data.CreateLaws()
 }
 
 // GetLawsBySubject returns legal typification's related to a given subject.
